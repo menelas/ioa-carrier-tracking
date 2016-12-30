@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Insurance Office of America</title>
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/app.bootstrap.css">
+   <link rel="stylesheet" href="css/app.css">
+   <link rel="stylesheet" href="css/carrier-visit-results.css">
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+   <!--Carrier Visit Pie Chart-->
+   <script type="text/javascript" src="js/carrier-visit/pie-charts/carrier-visit-results.js"></script>
+</head>
+
+<body class="carrier-pad carrier-tracking">
+   <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+      <div class="container-fluid menu-margin">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="150" alt="Insurance Office of America">
+            </a>
+            <h4 class="company-title">Insurance Office of America</h4>
+            <h5>Carrier Visit Tracking System</h5>
+         </div>
+         <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jeff Lagos <i class="fa fa-cog" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu">
+                     <div class="arrow-up"></div>
+                     <li><a href="#">Edit Profile</a>
+                     </li>
+                     <li><a href="#">Logout</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <div class="container-fluid content">
+      <div class="row sidebar-container">
+         <div id="sidebar" class="col-sm-3 sidebar1 sidebar navbar-collapse collapse">
+            <ul class="nav nav-sidebar">
+               <li>
+                  <a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span>Home</span></a>
+                  <hr />
+               </li>
+            </ul>
+
+            <ul class="nav nav-sidebar nav-sidebar2">
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Jeff Lagos</span>
+                     <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="#">Edit Profile</a>
+                     </li>
+                     <li><a href="#">Help</a>
+                     </li>
+                     <li><a href="#">Logout</a>
+                     </li>
+                  </ul>
+                  <hr>
+               </li>
+            </ul>
+         </div>
+         <!-- Body -->
+         <div class="body-container">
+
+            <div class="col-md-9 col-lg-9">
+               <div class="panel-body">
+
+                  <ol class="breadcrumb">
+                     <li><a href="index.html">Branch</a></li>
+                     <li class="active"><a href="#">Carrier Visits</a></li>
+                  </ol>
+
+                  <div id="carrier-visit-results"></div>
+               </div>
+            </div>
+
+            <div class="col-md-3 col-lg-3">
+               <div class="col-md-12 col-xs-12 title-header">
+                  <div class="pull-left head-drop">
+                     <div class="btn-group">
+                        Select Carrier to View Results
+                     </div>
+                  </div>
+               </div>
+
+               <div class="panel-body">
+                  <div class="carrier carrier-active">
+                     <a href="#"><img src="img/cna.png" alt="CNA" />
+                     </a>
+                  </div>
+                  <div class="carrier1">
+                     <a href="#"><img src="img/fcci.png" alt="FCCI" />
+                     </a>
+                  </div>
+                  <div class="carrier">
+                     <a href="#"><img src="img/the-hartford.png" alt="The Hartford" />
+                     </a>
+                  </div>
+                  <div class="carrier1">
+                     <a href="#"><img src="img/liberty-mutual.png" alt="Liberty Mutual" />
+                     </a>
+                  </div>
+                  <div class="carrier">
+                     <a href="#"><img src="img/nationwide.png" alt="Nationwide" />
+                     </a>
+                  </div>
+                  <div class="carrier1">
+                     <a href="#"><img src="img/travelers.png" alt="Travelers" />
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="col-md-12 col-lg-12">
+               <div class="col-md-12 col-xs-12 title-header">
+                  <div class="pull-left head-drop">
+                     <div class="btn-group">
+                        Date of Visits
+                     </div>
+                  </div>
+            </div>
+
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body location-tables">
+
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
+                     <div class="state-title">Alabama, Georgia, Florida</div>
+                     <div class="carrier-tables">
+                        <table class="table-hover table-striped table-condensed cf">
+                           <thead>
+                              <tr>
+                                 <th>Locations</th>
+                                 <th class="text-right"># of visits</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td data-title="Location">Birmingham - BRM
+                                    <br> Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Birmingham - BRZ
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Atlanta - ATL
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Atlanta - ATZ
+                                    <br /> PEA - Atlanta, GA</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Atlanta - CRL
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <div class="text-center pagination-container">
+                        <ul class="pagination">
+                           <li class="active"><a href="#">1</a>
+                           </li>
+                           <li><a href="#">2</a>
+                           </li>
+                           <li><a href="#">3</a>
+                           </li>
+                        </ul>
+                     </div>
+
+                  </div>
+
+
+                  <!--
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
+                     <div class="state-title">Florida</div>
+
+                     <div class="carrier-tables">
+                        <table class="table-hover table-striped table-condensed cf">
+                           <thead>
+                              <tr>
+                                 <th>Locations</th>
+                                 <th class="text-right"># of visits</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td data-title="Location">Cocoa - COA
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Fort Lauderdale - FTL
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Jacksonville - JAX
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Jupiter - JUP
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Lakeland - LKL
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <div class="text-center pagination-container">
+                        <ul class="pagination">
+                           <li class="active"><a href="#">1</a>
+                           </li>
+                           <li><a href="#">2</a>
+                           </li>
+                           <li><a href="#">3</a>
+                           </li>
+                        </ul>
+                     </div>
+
+                  </div>
+                  -->
+
+
+
+
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
+                     <div class="state-title">Texas, North/South Carolina, California</div>
+
+                     <div class="carrier-tables">
+                        <table class="table-hover table-striped table-condensed cf">
+                           <thead>
+                              <tr>
+                                 <th>Locations</th>
+                                 <th class="text-right"># of visits</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td data-title="Location">Houston - COO
+                                    <br />ASAP Insurance Agency a division of IOA</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Katy - MAS
+                                    <br />ASAP Insurance Agency a division of IOA</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Humble - HUM
+                                    <br />ASAP Insurance Agency a division of IOA</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Houston - AIR
+                                    <br />ASAP Insurance Agency a division of IOA</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Houston - PMI
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <div class="text-center pagination-container">
+                        <ul class="pagination">
+                           <li class="active"><a href="#">1</a>
+                           </li>
+                           <li><a href="#">2</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
+                     <div class="state-title">Colorado, Maryland, New Jersey, Arizona, Tennessee</div>
+                     <div class="carrier-tables">
+                        <table class="table-hover table-striped table-condensed cf">
+                           <thead>
+                              <tr>
+                                 <th>Locations</th>
+                                 <th class="text-right"># of visits</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td data-title="Location">Colorado Springs - COS
+                                    <br />Leading Edge Aviation Insurance</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Walsenburg - WAL
+                                    <br />Walsenburg Insurance Center</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Westcliffe - WES
+                                    <br />Westcliffe Insurance Center</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Arvada - ARV
+                                    <br />Eidyia Insurance Services</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Denver - DEN
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <div class="text-center pagination-container">
+                        <ul class="pagination">
+                           <li class="active"><a href="#">1</a>
+                           </li>
+                           <li><a href="#">2</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
+                     <div class="state-title">Illinois, New York, Nevada, Ohio, Massachusetts</div>
+                     <div class="carrier-tables">
+                        <table class="table-hover table-striped table-condensed cf">
+                           <thead>
+                              <tr>
+                                 <th>Locations</th>
+                                 <th class="text-right"># of visits</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td data-title="Location">West Dundee - CHI
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Binghamton - BIN
+                                    <br />Robert J Hanafin a division of IOA</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Syracuse - SYR
+                                    <br />Robert J Hanafin a division of IOA</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Las Vegas - LV
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td data-title="Location">Cleveland - CLE
+                                    <br />Insurance Office of America, Inc.</td>
+                                 <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="text-center pagination-container">
+                        <ul class="pagination">
+                           <li class="active"><a href="#">1</a>
+                           </li>
+                           <li><a href="#">2</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="text-center copyright">
+      <p>Copyright &#169; 2016 Insurance Office of America. All rights reserved. Version 1.0</p>
+   </div>
+   <!-- Carrier Visit Pie/Bar Chart -->
+   <script type="text/javascript" src="js/carrier-visit/pie-charts/carrier-visit-results-highchart.js"></script>
+   <script type="text/javascript" src="js/carrier-visit/pie-charts/carrier-visit-results-exporting.js"></script>
+</body>
+
+</html>

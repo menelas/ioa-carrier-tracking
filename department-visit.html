@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Insurance Office of America</title>
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/app.bootstrap.css">
+   <link rel="stylesheet" href="css/app.css">
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+   <!--Branch Department Visit Pie/Bar Chart-->
+   <script type="text/javascript" src="js/department-visit/pie-charts/branch/branch-department-visit.js"></script>
+   <script type="text/javascript" src="js/department-visit/pie-charts/carrier/carrier-visit.js"></script>
+   <script type="text/javascript" src="js/department-visit/bar-charts/branch-date-of-visit.js"></script>
+
+</head>
+
+<body class="carrier-pad carrier-tracking">
+   <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+      <div class="container-fluid menu-margin">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="150" alt="Insurance Office of America">
+            </a>
+            <h4 class="company-title">Insurance Office of America</h4>
+            <h5>Carrier Visit Tracking System</h5>
+         </div>
+         <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jeff Lagos <i class="fa fa-cog" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu">
+                     <div class="arrow-up"></div>
+                     <li><a href="#">Edit Profile</a>
+                     </li>
+                     <li><a href="#">Logout</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <div class="container-fluid content">
+      <div class="row sidebar-container">
+         <div id="sidebar" class="col-sm-3 sidebar1 sidebar navbar-collapse collapse">
+            <ul class="nav nav-sidebar">
+               <li>
+                  <a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span>Home</span></a>
+                  <hr />
+               </li>
+            </ul>
+
+            <ul class="nav nav-sidebar nav-sidebar2">
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Jeff Lagos</span>
+                     <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="#">Edit Profile</a>
+                     </li>
+                     <li><a href="#">Help</a>
+                     </li>
+                     <li><a href="#">Logout</a>
+                     </li>
+                  </ul>
+                  <hr>
+               </li>
+            </ul>
+         </div>
+         <!-- Body -->
+         <div class="body-container">
+
+            <div class="col-md-9 col-lg-9">
+               <div class="panel-body">
+                  <ol class="breadcrumb">
+                     <li><a href="index.html">Branch</a></li>
+                     <li class="active"><a href="#">Department Visits at Longwood - LNG, FL</a></li>
+                     <li class="btn claims-btn pull-right">Generate Report</li>
+                  </ol>
+                  <div id="branch-department-visit"></div>
+               </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+               <div class="col-md-12 col-xs-12 title-header">
+                  <div class="pull-left head-drop">
+                     <div class="btn-group">
+                     Carrier Visits at Longwood - LNG, FL
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body">
+                  <div id="branch-carrier-visit"></div>
+               </div>
+            </div>
+
+            <div class="col-md-12 col-lg-12">
+               <div class="col-md-12 col-xs-12 title-header">
+                  <div class="pull-left head-drop">
+                     <div class="btn-group">
+                        Date of Visits at Longwood - LNG, FL
+                     </div>
+                  </div>
+
+                  <div class="pull-right head-drop month-dropdown-date-visit">
+                     <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MONTH <span class="caret"></span>
+                     </button>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">WEEK</a>
+                        </li>
+                        <li><a href="#">MONTH</a>
+                        </li>
+                        <li><a href="#">QUARTER</a>
+                        </li>
+                        <li><a href="#">SEMIN-ANNUAL</a>
+                        </li>
+                        <li><a href="#">YEAR</a>
+                        </li>
+                        <li><a href="#">TOTAL</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body">
+                  <div id="branch-date-of-visit"></div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+
+   <div class="text-center copyright">
+      <p>Copyright &#169; 2016 Insurance Office of America. All rights reserved. Version 1.0</p>
+   </div>
+   <!-- Branch Department Visit Pie/Bar Chart -->
+   <script type="text/javascript" src="js/department-visit/pie-charts/branch/branch-department-visit-highchart.js"></script>
+   <script type="text/javascript" src="js/department-visit/pie-charts/branch/branch-department-visit-exporting.js"></script>
+   <script type="text/javascript" src="js/department-visit/pie-charts/carrier/branch-department-visit-highchart.js"></script>
+   <script type="text/javascript" src="js/department-visit/pie-charts/carrier/branch-department-visit-exporting.js"></script>
+
+   <!-- Date of Visit Bar Chart-->
+   <script type="text/javascript" src="js/department-visit/bar-charts/branch-date-of-visit-highchart.js"></script>
+   <script type="text/javascript" src="js/department-visit/bar-charts/branch-date-of-visit-exporting.js"></script>
+</body>
+
+</html>

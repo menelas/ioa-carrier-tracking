@@ -1,0 +1,46 @@
+.fa-1x {
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+
+.btn-primary {
+	background-color: #4995cf;
+	border-radius: 3px;
+	border: none;
+}
+
+.breadcrumb{
+    padding: 0 !important;
+    clear: both;
+    overflow: hidden;
+}
+
+.breadcrumb > li {
+    float: left;
+    display: block;
+}
+
+.breadcrumb > li + li::before {
+    color: transparent;
+    content: "";
+    display: none;
+    padding: 0;
+}
+
+.breadcrumb > li a {
+    border-right: 1px solid #3f88bf;
+}
+
+.breadcrumb > li:last-child a{
+    border-right: 0;
+}
+
+.breadcrumb li a {
+    display: inline-block;
+    padding: 14px 10px;
+}
+
+.breadcrumb li a:hover, .breadcrumb li.active a {
+    background: #3e83b8;
+    text-decoration: none;
+}
