@@ -31,7 +31,6 @@
     font-size: 17px;
     font-weight: bold;
     padding: 25px;
-    height: 90px;
     text-align: center;
 }
 .location-tables {
@@ -74,5 +73,21 @@
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
     tr {
         height: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .visit-container {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .visit-container {
+        width: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .visit-container {
+        width: 20%;
     }
 }
