@@ -54,44 +54,44 @@ $(function () {
                 colorByPoint: true,
                 data: [{
                     name: 'Inland Marine',
-                    y: 70,
-                    color: '#d5d5d5'//color of the pie
+                    y: 150,
+                    color: '#446d8c'//color of the pie
                 }, {
                     name: 'Management Liability/Crime',
-                    y: 30,
-                    color: '#ababab'//color of the pie
+                    y: 90,
+                    color: '#67a8d7'//color of the pie
                 }, {
                     name: 'Marketing',
                     y: 80,
-                    color: '#67a8d7'//color of the pie
+                    color: '#8ca94a'//color of the pie
                 }, {
                     name: 'Middle Market Construction',
-                    y: 150,
-                    color: '#446d8c'
+                    y: 70,
+                    color: '#aecd6a'
                 }, {
                     name: 'Middle Market Marketing',
                     y: 60,
-                    color: '#62bcbb'
+                    color: '#ea8e4b'
                 }, {
                     name: 'Middle Marketing General',
                     y: 50,
-                    color: '#356a69'
+                    color: '#d2623f'
                 }, {
                     name: 'Middle Market Technology',
                     y: 40,
-                    color: '#0e5088'
+                    color: '#ca555c'
                 }, {
                     name: 'Risk Management',
                     y: 20,
-                    color: '#072742'
+                    color: '#e27980'
                 }, {
                     name: 'Small Business',
                     y: 10,
-                    color: '#9eb5c6'
+                    color: '#a49cec'
                 }, {
                     name: 'Speciality Lines',
                     y: 5,
-                    color: '#708799'
+                    color: '#746cbc'
                 }]
             }],
             responsive: {

@@ -1,3 +1,5 @@
+// To edt this map, visit simplemaps.com/custom/us/Mm6RvZea
+
 var simplemaps_usmap_mapdata={
   main_settings: {
     //General settings

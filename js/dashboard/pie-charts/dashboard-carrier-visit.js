@@ -62,27 +62,27 @@ $(function () {
                     name: 'FCCI in Florida',
                     y: 18,
                     url: 'carrier-visit.html',
-                    color: '#68a8d7'
+                    color: '#67a8d7'
                 }, {
                     name: 'Hartford',
                     y: 2,
                     url: 'carrier-visit.html',
-                    color: '#62bdbb'
+                    color: '#8ca94a'
                 },  {
                     name: 'Liberty Mutual',
                     y: 8,
                     url: 'carrier-visit.html',
-                    color: '#d5d5d5'
+                    color: '#aecd6a'
                 }, {
                     name: 'Nationwide',
                     y: 12,
                     url: 'carrier-visit.html',
-                    color: '#366a69'
+                    color: '#ea8e4b'
                 }, {
                     name: 'Travelers',
                     y: 3,
                     url: 'carrier-visit.html',
-                    color: '#ababab'
+                    color: '#d2623f'
                 }]
             }]
         });

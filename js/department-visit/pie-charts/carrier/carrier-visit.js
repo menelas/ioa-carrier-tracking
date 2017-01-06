@@ -9,7 +9,7 @@ $(function () {
                 plotBorderWidth: null,
                 plotShadow: false,
                 type: 'pie',
-                backgroundColor: '#fcfcfc'//chart bg
+                backgroundColor: '#fcfcfc'
 
             },
             title: {
@@ -56,33 +56,33 @@ $(function () {
                 data: [{
                     name: 'CNA',
                     y: 28,
-                    url: 'carrier-visit-results-longwood.html',
+                    url: 'carrier-visit.html',
                     color: '#446d8c'//color of the pie
                 }, {
                     name: 'FCCI in Florida',
                     y: 18,
-                    url: 'carrier-visit-results-longwood.html',
-                    color: '#68a8d7'
+                    url: 'carrier-visit.html',
+                    color: '#67a8d7'
                 }, {
                     name: 'Hartford',
                     y: 2,
-                    url: 'carrier-visit-results-longwood.html',
-                    color: '#62bdbb'
+                    url: 'carrier-visit.html',
+                    color: '#8ca94a'
                 },  {
                     name: 'Liberty Mutual',
                     y: 8,
-                    url: 'carrier-visit-results-longwood.html',
-                    color: '#d5d5d5'
+                    url: 'carrier-visit.html',
+                    color: '#aecd6a'
                 }, {
                     name: 'Nationwide',
                     y: 12,
-                    url: 'carrier-visit-results-longwood.html',
-                    color: '#366a69'
+                    url: 'carrier-visit.html',
+                    color: '#ea8e4b'
                 }, {
                     name: 'Travelers',
                     y: 3,
-                    url: 'carrier-visit-results-longwood.html',
-                    color: '#ababab'
+                    url: 'carrier-visit.html',
+                    color: '#d2623f'
                 }]
             }]
         });
