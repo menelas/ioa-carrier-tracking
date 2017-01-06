@@ -53,13 +53,21 @@ $(function () {
                 name: 'Carriers',
                 colorByPoint: true,
                 data: [{
+                    name: 'Inland Marine',
+                    y: 70,
+                    color: '#d5d5d5'//color of the pie
+                }, {
+                    name: 'Management Liability/Crime',
+                    y: 30,
+                    color: '#ababab'//color of the pie
+                }, {
                     name: 'Marketing',
                     y: 80,
-                    color: '#446d8c'//color of the pie
+                    color: '#67a8d7'//color of the pie
                 }, {
                     name: 'Middle Market Construction',
-                    y: 70,
-                    color: '#67a8d7'
+                    y: 150,
+                    color: '#446d8c'
                 }, {
                     name: 'Middle Market Marketing',
                     y: 60,
@@ -71,11 +79,7 @@ $(function () {
                 }, {
                     name: 'Middle Market Technology',
                     y: 40,
-                    color: '#d5d5d5'
-                }, {
-                    name: 'Professional Lines',
-                    y: 30,
-                    color: '#ababab'
+                    color: '#0e5088'
                 }, {
                     name: 'Risk Management',
                     y: 20,
@@ -87,7 +91,7 @@ $(function () {
                 }, {
                     name: 'Speciality Lines',
                     y: 5,
-                    color: '#393e44'
+                    color: '#708799'
                 }]
             }],
             responsive: {
@@ -98,7 +102,8 @@ $(function () {
                     chartOptions: {
                         legend: {
                             width: 250,
-                            itemWidth: 250
+                            itemWidth: 250,
+                            itemMarginBottom: 20
                         }
                     }
                 },{

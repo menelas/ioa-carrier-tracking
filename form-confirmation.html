@@ -82,18 +82,20 @@
                   <ol class="breadcrumb">
                      <li><a href="form.html">Form</a>
                      </li>
+                     <li class="active"><a href="form-confirmation.html">Confirmation</a>
+                     </li>
                   </ol>
 
                   <form>
                      <div class="row">
                         <div class="form-group col-sm-12 col-md-6 col-lg-6">
                            <label class="required control-label" for="employee-name">Name:</label>
-                           <input id="name" name="name" class="form-control input-md" required="" type="text">
+                           <input id="name" name="name" class="form-control input-md" required="" value="James Peterson" type="text">
                         </div>
 
                         <div class="form-group col-sm-12 col-md-6 col-lg-6">
                            <label class="required control-label" for="position">Position/Title:</label>
-                           <input id="position" name="position" class="form-control input-md" required="" type="text">
+                           <input id="position" name="position" class="form-control input-md" required="" value="Producer" type="text">
                         </div>
                      </div>
 
@@ -104,7 +106,7 @@
                               <option value="-- Please Select Department --">-- Please Select Department --</option>
                               <option value="Inland Marine">Inland Marine</option>
                               <option value="Management Liability/Crime">Management Liability/Crime</option>
-                              <option value="Marketing">Marketing</option>
+                              <option value="Marketing" selected>Marketing</option>
                               <option value="Middle Market Construction">Middle Market Construction</option>
                               <option value="Middle Market Marketing">Middle Market Marketing</option>
                               <option value="Middle Marketing General">Middle Marketing General</option>
@@ -121,7 +123,7 @@
                               <option value="-- Please Select Carrier --">-- Please Select Carrier --</option>
                               <option value="CNA">CNA</option>
                               <option value="FCCI in Florida">FCCI in Florida</option>
-                              <option value="Hartford">Hartford</option>
+                              <option value="Hartford" selected>Hartford</option>
                               <option value="Liberty Mutual">Liberty Mutual</option>
                               <option value="Nationwide">Nationwide</option>
                               <option value="Travelers">Travelers</option>
@@ -163,7 +165,7 @@
                               <option value="">Cocoa, FL - COA, Insurance Office of America, Inc.</option>
                               <option value="">Longwood, FL - HO, Home Office</option>
                               <option value="">Miami, FL - MIA,Insurance Office of America, Inc. </option>
-                              <option value="">Longwood, FL - DAY, Insurance Office of America, Inc.</option>
+                              <option value="" selected>Longwood, FL - DAY, Insurance Office of America, Inc.</option>
                               <option value="">Longwood, FL - FTM, Insurance Office of America, Inc.</option>
                               <option value="">Longwood, FL - SMK, Insurance Office of America, Inc.</option>
                               <option value="">Longwood, FL - ABX, Insurance Office of America, Inc.</option>
@@ -203,11 +205,12 @@
 
                         <div class="form-group col-sm-12 col-md-2 col-lg-2">
                            <label class="required control-label" for="date-of-visit">Date of Visit:</label>
-                           <input id="date-of-visit" name="date-of-visit" class="form-control input-md" required="" type="text">
+                           <input id="date-of-visit" name="date-of-visit" class="form-control input-md" required="" value="01/04/2016" type="text">
                         </div>
                      </div>
 
-                     <button id="submit" name="submit" class="btn btn-primary pull-right"> Continue</button>
+                        <button id="save-changes" name="save-changes" class="btn btn-grey pull-left"> Save Changes</button>
+                        <button id="submit" name="submit" class="btn btn-primary pull-right disabled"> Submit</button>
 
                   </form>
 

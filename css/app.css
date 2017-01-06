@@ -964,6 +964,14 @@ td {
     text-align: center;
 }
 
+.btn-grey {
+    display: inline-block;
+    background-color: #adadad;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
 .green {
     background: #58c71f;
 }
