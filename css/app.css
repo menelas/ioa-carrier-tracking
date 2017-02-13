@@ -29,6 +29,10 @@ a, a:active, a:hover, a:focus, a:visited  {
     color: #fff;
 }
 
+.btn.btn-default:hover {
+    color: #333;
+}
+
 /***** Left Side Main Nav ***********************************/
 
 #sidebar {
@@ -354,7 +358,7 @@ a, a:active, a:hover, a:focus, a:visited  {
 }
 
 
-.title-header {
+.title-header, .title-header2 {
     padding: 5px 0 5px;
     background: #4995cf;
     color: #fff;
@@ -362,6 +366,11 @@ a, a:active, a:hover, a:focus, a:visited  {
     border-radius: 5px 5px 0px 0px;
     z-index: 1;
     margin-bottom: -3px;
+}
+
+.title-header2 .btn-group {
+    margin: -3px;
+    padding: 8px;
 }
 
 body.carrier-pad {
@@ -899,13 +908,12 @@ thead tr {
 }
 
 .table-striped > tbody > tr:nth-of-type(even) {
-    background-color: #efefef;
     border-left: 1px solid #ccc;
  }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
     border-right: 1px solid #ccc;
-
+    background-color: #efefef;
  }
  
 
@@ -1105,23 +1113,36 @@ th {
     font-size: 15px;
 }
 
-.claims-btn {
+.visit-btn {
     background-color: #296198;
-    color: #fff;
-    padding: 6px 9px;
     border-radius: 4px;
+    color: #fff;
     font-size: 12px;
-    margin-top: 5px;
+    margin-left: 30px;
     margin-right: 10px;
+    margin-top: 8px;
+    padding: 6px 9px;
 }
 
-.claims-btn:hover {
+
+.visit-btn:hover, .visit-btn:visited {
     background-color: #245280;
-    padding: 6px 9px;
     border-radius: 4px;
+    color: #fff;
     font-size: 12px;
-    margin-top: 5px;
+    margin-left: 30px;
     margin-right: 10px;
+    margin-top: 8px;
+    padding: 6px 9px;
+    text-decoration: none !important;
+}
+
+.clear {
+    margin-right: 7px;
+}
+
+.btn-search {
+    font-size: 13px;
 }
 
 
@@ -1164,6 +1185,10 @@ th {
     z-index: 100;
     right: 2;
     background-color: #ededed;
+}
+
+.margin-bottom15 {
+    margin-bottom: 15px;
 }
 
 .spacer60 {

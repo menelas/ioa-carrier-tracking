@@ -37,7 +37,7 @@
 
 .breadcrumb li a {
     display: inline-block;
-    padding: 14px 10px;
+    padding: 16px 10px;
 }
 
 .breadcrumb li a:hover, .breadcrumb li.active a {

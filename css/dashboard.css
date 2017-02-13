@@ -57,3 +57,40 @@
     opacity: 1;
   }
 }
+
+/* Filter Search CSS */
+
+.form-group {
+    display: inline-block;
+    margin-bottom: 0 !important;
+    margin-left: -10px;
+    margin-top: -2px;
+}
+
+label {
+    color: #fff !important;
+    margin-right: 0;
+    margin-top: 13px;
+}
+
+@media (max-width: 460px) {
+    .form-group {
+        margin-left: 0px;
+    }
+    .month-dropdown-date-visit {
+        margin-right: 25px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+}
+
+
+.month-dropdown-date-visit {
+    margin-right: 10px !important;
+    margin-top: 0px;
+    margin-left: 15px !important;
+}
+
+.datepicker-days tr {
+    height: auto;
+}
