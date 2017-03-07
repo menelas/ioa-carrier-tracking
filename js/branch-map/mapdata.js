@@ -1,9 +1,7 @@
-// To edt this map, visit simplemaps.com/custom/us/Mm6RvZea
-
 var simplemaps_usmap_mapdata={
   main_settings: {
     //General settings
-	width: "responsive", //or 'responsive'
+  width: "responsive", //or 'responsive'
     background_color: "#135596",
     background_transparent: "yes",
     border_color: "#ffffff",
@@ -28,16 +26,16 @@ var simplemaps_usmap_mapdata={
     all_locations_inactive: "no",
     all_locations_hidden: "no",
     
-	///Label defaults
-	label_color: "#ffffff",
+  ///Label defaults
+  label_color: "#ffffff",
     label_hover_color: "#d5ddec",
     label_size: "22",
     label_font: "Arial",
     hide_labels: "no",
     hide_eastern_labels: "no",
    
-	//Zoom settings
-	zoom: "yes",
+  //Zoom settings
+  zoom: "yes",
     back_image: "no",
     arrow_color: "#3B729F",
     arrow_color_border: "#88A4BC",
@@ -50,16 +48,16 @@ var simplemaps_usmap_mapdata={
     zoom_percentage: 0.99,
     zoom_time: 0.5,
     
-	//Popup settings
-	popup_color: "white",
+  //Popup settings
+  popup_color: "white",
     popup_opacity: 0.9,
     popup_shadow: 1,
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
     
-	//Advanced settings
-	div: "map",
+  //Advanced settings
+  div: "map",
     auto_load: "yes",
     url_new_tab: "no",
     images_directory: "/static/lib/simplemaps/map_images/",
@@ -81,13 +79,13 @@ var simplemaps_usmap_mapdata={
     },
     AK: {
       hide: "yes",
-      name: "Alaska",
-      description: " "
+      description: " ",
+      name: "Alaska"
     },
     FL: {
       inactive: "no",
       name: "Florida",
-      description: " "
+      description: "114 Visits"
     },
     NH: {
       inactive: "yes",
@@ -112,7 +110,7 @@ var simplemaps_usmap_mapdata={
     NY: {
       inactive: "no",
       name: "New York",
-      description: " "
+      description: "114 Visits"
     },
     PA: {
       inactive: "yes",
@@ -122,7 +120,7 @@ var simplemaps_usmap_mapdata={
     NJ: {
       inactive: "no",
       name: "New Jersey",
-      description: " "
+      description: "114 Visits"
     },
     DE: {
       inactive: "yes",
@@ -132,7 +130,7 @@ var simplemaps_usmap_mapdata={
     MD: {
       inactive: "no",
       name: "Maryland",
-      description: " "
+      description: "114 Visits"
     },
     VA: {
       inactive: "yes",
@@ -147,7 +145,7 @@ var simplemaps_usmap_mapdata={
     OH: {
       inactive: "no",
       name: "Ohio",
-      description: " "
+      description: "114 Visits"
     },
     IN: {
       inactive: "yes",
@@ -157,7 +155,7 @@ var simplemaps_usmap_mapdata={
     IL: {
       inactive: "no",
       name: "Illinois",
-      description: " "
+      description: "114 Visits"
     },
     CT: {
       inactive: "yes",
@@ -170,7 +168,7 @@ var simplemaps_usmap_mapdata={
       description: " "
     },
     NC: {
-      inactive: "no",
+      inactive: "yes",
       name: "North Carolina",
       description: " "
     },
@@ -182,7 +180,7 @@ var simplemaps_usmap_mapdata={
     MA: {
       inactive: "no",
       name: "Massachusetts",
-      description: " "
+      description: "114 Visits"
     },
     TN: {
       inactive: "yes",
@@ -202,12 +200,12 @@ var simplemaps_usmap_mapdata={
     GA: {
       inactive: "no",
       name: "Georgia",
-      description: " "
+      description: "114 Visits"
     },
     SC: {
       inactive: "no",
       name: "South Carolina",
-      description: " "
+      description: "114 Visits"
     },
     KY: {
       inactive: "yes",
@@ -217,7 +215,7 @@ var simplemaps_usmap_mapdata={
     AL: {
       inactive: "no",
       name: "Alabama",
-      description: " "
+      description: "114 Visits"
     },
     LA: {
       inactive: "yes",
@@ -245,7 +243,7 @@ var simplemaps_usmap_mapdata={
       description: " "
     },
     TX: {
-      inactive: "no",
+      inactive: "yes",
       name: "Texas",
       description: " "
     },
@@ -287,7 +285,7 @@ var simplemaps_usmap_mapdata={
     CO: {
       inactive: "no",
       name: "Colorado",
-      description: " "
+      description: "114 Visits"
     },
     UT: {
       inactive: "yes",
@@ -297,12 +295,12 @@ var simplemaps_usmap_mapdata={
     AZ: {
       inactive: "no",
       name: "Arizona",
-      description: " "
+      description: "114 Visits"
     },
     NV: {
       inactive: "no",
       name: "Nevada",
-      description: " "
+      description: "114 Visits"
     },
     OR: {
       inactive: "yes",
@@ -317,7 +315,7 @@ var simplemaps_usmap_mapdata={
     CA: {
       inactive: "no",
       name: "California",
-      description: " "
+      description: "114 Visits"
     },
     MI: {
       inactive: "yes",
@@ -359,452 +357,302 @@ var simplemaps_usmap_mapdata={
     "0": {
       lat: 33.521,
       lng: -86.812,
-      name: "Birmingham - BRM",
+      name: "Birmingham",
       color: "default",
-      description: "EUS - Birmingham, AL",
+      description: "23 Visits",
       url: "default",
       size: "default",
       type: "default",
       image_url: "default",
       opacity: "default"
     },
-    "1": {
-      lat: "33.821",
-      lng: "-86.012",
-      name: "Birmingham - BRZ",
-      description: "Insurance Office of America, Inc."
-    },
     "2": {
       lat: "33.548",
       lng: "-84.291",
-      name: "Atlanta - ATL",
-      description: "Insurance Office of America, Inc."
+      name: "Atlanta",
+      description: "23 Visits"
     },
     "3": {
       lat: "34.306643",
       lng: "-83.82352",
-      name: "Gainesville - GGA",
-      description: "PEA - Atlanta, GA"
-    },
-    "4": {
-      lat: 33.748,
-      lng: -84.391,
-      name: "Atlanta - ATZ",
-      description: "Insurance Office of America, Inc."
-    },
-    "5": {
-      lat: "34.048",
-      lng: "-84.591",
-      name: "Atlanta - CRL",
-      description: "ACN Insurance Brokers International"
-    },
-    "6": {
-      lat: "34.248",
-      lng: "-84.791",
-      name: "Atlanta - DLI",
-      description: "King and Brim a Division of IOA"
-    },
-    "7": {
-      lat: "34.448",
-      lng: "-84.991",
-      name: "Atlanta - K&B",
-      description: "Insurance Office of America, Inc."
+      name: "Gainesville",
+      description: "23 Visits"
     },
     "8": {
       lat: "28.7",
       lng: -81.348,
-      name: "Longwood - LNG",
-      description: "Insurance Office of America, Inc."
+      name: "Longwood",
+      description: "23 Visits"
     },
     "9": {
       lat: 30.331,
       lng: -81.656,
-      name: "Jacksonville - JAX",
-      description: "Insurance Office of America, Inc."
+      name: "Jacksonville",
+      description: "23 Visits"
     },
     "10": {
       lat: 26.933,
       lng: -80.102,
-      name: "Jupiter - JUP",
-      description: "Insurance Office of America, Inc.",
+      name: "Jupiter",
+      description: "23 Visits",
       url: "#"
     },
     "11": {
       lat: 28.044,
       lng: -81.948,
-      name: "Lakeland - LKL",
-      description: "Insurance Office of America, Inc.",
+      name: "Lakeland",
+      description: "23 Visits",
       url: "#"
     },
     "12": {
       lat: 29.188,
       lng: -82.14,
-      name: "Ocala - OCA",
-      description: "Insurance Office of America, Inc.",
+      name: "Ocala",
+      description: "23 Visits",
       url: "#"
     },
     "13": {
       lat: 30.44,
       lng: -84.281,
-      name: "Tallahassee - TAL",
-      description: "Insurance Office of America, Inc.",
+      name: "Tallahassee",
+      description: "23 Visits",
       url: "#"
     },
     "14": {
       lat: 27.947,
       lng: -82.459,
-      name: "Tampa - TPA",
-      description: "Insurance Office of America, Inc.",
+      name: "Tampa",
+      description: "23 Visits",
       url: "#"
     },
     "15": {
       lat: 28.352,
       lng: -80.726,
-      name: "Cocoa - COA",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
+      name: "Cocoa",
+      description: "23 Visits"
     },
     "16": {
       lat: "28.6",
       lng: "-81.248",
-      name: "Longwood - HO",
-      description: "Home Office",
+      name: "Longwood",
+      description: "23 Visits",
       url: "#"
     },
     "17": {
       lat: 25.775,
       lng: -80.198,
-      name: "Miami - MIA",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
-    },
-    "18": {
-      lat: "28.5",
-      lng: "-81.148",
-      name: "Longwood - DAY",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
-    },
-    "19": {
-      lat: "28.4",
-      lng: "-81.138",
-      name: "Longwood - FTM",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
-    },
-    "20": {
-      lat: "28.3",
-      lng: "-81.128",
-      name: "Longwood - SMK",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
-    },
-    "21": {
-      lat: "28.2",
-      lng: "-81.118",
-      name: "Longwood - ABX",
-      description: "ABX Healthcare Solutions",
+      name: "Miami",
+      description: "23 Visits",
       url: "#"
     },
     "22": {
       lat: 28.538,
       lng: -81.377,
-      name: "Orlando - ORL",
-      description: "Pine Street Insurance",
-      url: "#"
-    },
-    "23": {
-      lat: "28.0",
-      lng: "-81.008",
-      name: "Longwood - EAG",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
-    },
-    "24": {
-      lat: "27.8",
-      lng: "-80.918",
-      name: "Longwood - LKM",
-      description: "Insurance Office of America, Inc.",
+      name: "Orlando",
+      description: "23 Visits",
       url: "#"
     },
     "25": {
       lat: "29.316606",
       lng: "-81.05611",
-      name: "Ormond Beach - ORM",
-      description: "Insurance Office of America, Inc.",
+      name: "Ormond Beach",
+      description: "23 Visits",
       url: "#"
     },
     "26": {
       lat: "26.121114",
       lng: "-80.13187",
-      name: "Fort Lauderdale - FTL",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
-    },
-    "27": {
-      lat: 29.76,
-      lng: -95.37,
-      name: "Houston - COO",
-      description: "ASAP Insurance Agency a division of IOA",
-      url: "#"
-    },
-    "28": {
-      lat: 29.767,
-      lng: -95.829,
-      name: "Katy - MAS",
-      description: "ASAP Insurance Agency a division of IOA",
-      url: "#"
-    },
-    "29": {
-      lat: 30,
-      lng: -95.269,
-      name: "Humble - HUM",
-      description: "ASAP Insurance Agency a division of IOA",
-      url: "#"
-    },
-    "30": {
-      lat: "29.66",
-      lng: "-95.17",
-      name: "Houston - AIR",
-      description: "ASAP Insurance Agency a division of IOA",
-      url: "#"
-    },
-    "31": {
-      lat: "29.56",
-      lng: "-94.99",
-      name: "Houston - PMI",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
-    },
-    "32": {
-      lat: 32.778,
-      lng: -96.795,
-      name: "Dallas - DAL",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
-    },
-    "33": {
-      lat: 35.223,
-      lng: -80.838,
-      name: "Charlotte - CHR",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
-    },
-    "34": {
-      lat: 35.786,
-      lng: -78.643,
-      name: "Raleigh - RNC",
-      description: "PEA - Raleigh, NC",
+      name: "Fort Lauderdale",
+      description: "23 Visits",
       url: "#"
     },
     "35": {
       lat: 33.999,
       lng: -81.045,
-      name: "Columbia - COL",
-      description: "Insurance Office of America, Inc.",
+      name: "Columbia",
+      description: "23 Visits",
       url: "#"
     },
     "36": {
       lat: 33.567,
       lng: -117.728,
-      name: "Aliso Viejo - ORG",
-      description: "IOA Insurance Services",
+      name: "Aliso Viejo",
+      description: "23 Visits",
       url: "#"
     },
     "37": {
       lat: 41.238,
       lng: -122.27,
-      name: "Sacramento - SAC",
-      description: "IOA Insurance Services",
+      name: "Sacramento",
+      description: "23 Visits",
       url: "#"
     },
     "38": {
       lat: 32.716,
       lng: -117.162,
-      name: "San Diego - SD",
-      description: "IOA Insurance Services",
+      name: "San Diego",
+      description: "23 Visits",
       url: "#"
     },
     "39": {
       lat: "37.658",
       lng: -121.877,
-      name: "Pleasanton - SF",
-      description: "IOA Insurance Services",
+      name: "Pleasanton",
+      description: "23 Visits",
       url: "#"
     },
     "40": {
       lat: 34.419,
       lng: -119.699,
-      name: "Santa Barbara - SB",
-      description: "IOA Insurance Services",
+      name: "Santa Barbara",
+      description: "23 Visits",
       url: "#"
     },
     "41": {
       lat: "33.857",
       lng: -118.5,
-      name: "Encino - LAN",
-      description: "IOA Insurance Services",
+      name: "Encino",
+      description: "23 Visits",
       url: "#"
     },
     "42": {
       lat: 34.103,
       lng: -117.574,
-      name: "Rancho Cucamonga - RAN",
-      description: "IOA Insurance Services",
+      name: "Rancho Cucamonga",
+      description: "23 Visits",
       url: "#"
     },
     "43": {
       lat: "32.867",
       lng: "-117.328",
-      name: "Aliso Viejo - LEG",
-      description: "Legends Environmental Ins. Services",
+      name: "Aliso Viejo",
+      description: "23 Visits",
       url: "#"
     },
     "44": {
       lat: 34.157,
       lng: -118.5,
-      name: "Encino - LA",
-      description: "IOA Insurance Services",
+      name: "Encino",
+      description: "23 Visits",
       url: "#"
     },
     "45": {
       lat: "37.458",
       lng: "-121.677",
-      name: "Pleasanton - AUB",
-      description: "IOA Insurance Services",
+      name: "Pleasanton",
+      description: "23 Visits",
       url: "#"
     },
     "46": {
       lat: "34.065",
       lng: "-117.448",
-      name: "Ontario - ONT",
-      description: "IOA Insurance Services",
+      name: "Ontario",
+      description: "23 Visits",
       url: "#"
     },
     "47": {
       lat: 38.833,
       lng: -104.822,
-      name: "Colorado Springs - COS",
-      description: "Leading Edge Aviation Insurance",
+      name: "Colorado Springs",
+      description: "23 Visits",
       url: "#"
     },
     "48": {
       lat: 37.625,
       lng: -104.78,
-      name: "Walsenburg - WAL",
-      description: "Walsenburg Insurance Center",
+      name: "Walsenburg",
+      description: "23 Visits",
       url: "#"
     },
     "49": {
       lat: 38.136,
       lng: -105.467,
-      name: "Westcliffe - WES",
-      description: "Westcliffe Insurance Center",
+      name: "Westcliffe",
+      description: "23 Visits",
       url: "#"
     },
     "50": {
       lat: 39.802,
       lng: -105.088,
-      name: "Arvada - ARV",
-      description: "Eidyia Insurance Services",
+      name: "Arvada",
+      description: "23 Visits",
       url: "#"
     },
     "51": {
       lat: 39.74,
       lng: -104.992,
-      name: "Denver - DEN",
-      description: "Insurance Office of America, Inc.",
+      name: "Denver",
+      description: "23 Visits",
       url: "#"
     },
     "52": {
       lat: 39.808,
       lng: -74.989,
-      name: "Clementon - BLT",
-      description: "Spectrum Transportation, LLC",
+      name: "Clementon",
+      description: "23 Visits",
       url: "#"
     },
     "53": {
       lat: 40.732,
       lng: -73.446,
-      name: "Farmingdale - VNJ",
-      description: "Insurance Office of America, Inc.",
+      name: "Farmingdale",
+      description: "23 Visits",
       url: "#"
     },
     "54": {
       lat: 40.784,
       lng: -74.397,
-      name: "Florham Park - FLP",
-      description: "Insurance Office of America, Inc.",
+      name: "Florham Park",
+      description: "23 Visits",
       url: "#"
     },
     "55": {
       lat: 39.91,
       lng: -74.987,
-      name: "Cherry Hill - NJ",
-      description: "Insurance Office of America, Inc.",
+      name: "Cherry Hill",
+      description: "23 Visits",
       url: "#"
     },
     "56": {
       lat: 32.222,
       lng: -110.97,
-      name: "Tucson - TUC",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
-    },
-    "57": {
-      lat: 36.305,
-      lng: -86.62,
-      name: "Hendersonville - HTN",
-      description: "PEA - Hendersonville, TN",
-      url: "#"
-    },
-    "58": {
-      lat: 42.098,
-      lng: -88.279,
-      name: "West Dundee - CHI",
-      description: "Insurance Office of America, Inc.",
+      name: "Tucson",
+      description: "23 Visits",
       url: "#"
     },
     "59": {
       lat: 42.099,
       lng: -75.911,
-      name: "Binghamton - BIN",
-      description: "Robert J Hanafin a division of IOA",
+      name: "Binghamton",
+      description: "23 Visits",
       url: "#"
     },
     "60": {
       lat: 43.05,
       lng: -76.147,
-      name: "Syracuse - SYR",
-      description: "Robert J Hanafin a division of IOA",
+      name: "Syracuse",
+      description: "23 Visits",
       url: "#"
     },
     "61": {
       lat: 36.172,
       lng: -115.14,
-      name: "Las Vegas - LV",
-      description: "Insurance Office of America, Inc.",
+      name: "Las Vegas",
+      description: "23 Visits",
       url: "#"
     },
     "62": {
       lat: 41.505,
       lng: -81.691,
-      name: "Cleveland - CLE",
-      description: "Insurance Office of America, Inc.",
+      name: "Cleveland",
+      description: "23 Visits",
       url: "#"
     },
     "63": {
       lat: 42.359,
       lng: -71.057,
-      name: "Boston - BOS",
-      description: "Insurance Office of America, Inc.",
-      url: "#"
-    },
-    "64": {
-      lat: "34",
-      lng: "-71",
-      name: "London, UK",
-      description: "ACN International, LLC",
+      name: "Boston",
+      description: "23 Visits",
       url: "#"
     }
   },
@@ -817,5 +665,37 @@ var simplemaps_usmap_mapdata={
       width: "default"
     }
   },
-  regions: {}
+  regions: {
+    "0": {
+      states: [
+        "AL"
+      ],
+      name: "Alabama",
+      color: "#3b729f"
+    },
+    "1": {
+      states: [
+        "NY",
+        "MA",
+        "NJ",
+        "SC",
+        "RI",
+        "DE"
+      ],
+      name: "Carolina/NE",
+      color: "#3b729f"
+    },
+    "2": {
+      states: []
+    },
+    "3": {
+      states: []
+    },
+    "4": {
+      states: []
+    }
+  },
+  data: {
+    data: {}
+  }
 };

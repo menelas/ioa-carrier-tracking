@@ -1,3 +1,44 @@
+/* Filter Search CSS */
+
+.chosen-choices {
+  border: 1px solid #ccc !important;
+  border-radius: 4px;
+  margin-top: 6px !important;
+}
+
+.form-group {
+    display: inline-block;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.btn-default {
+    margin-top: 5px;
+}
+
+.multi-select {
+  width: 50%;
+}
+ 
+@media (max-width: 460px) {
+    .multi-select {
+      width: 100%;
+    }
+    .form-group {
+        margin-left: 0px;
+    }
+    .month-dropdown-date-visit {
+        margin-right: 25px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+}
+ 
+.datepicker-days tr {
+    height: auto;
+}
+
+
 .carrier {
     background-color: #fcfcfc;
     cursor: pointer;
@@ -36,12 +77,6 @@
 
 .location-tables {
     padding: 0px;
-}
-
-.btn.btn-default {
-    margin-bottom: -2px;
-    margin-right: -7px;
-    margin-top: 0px;
 }
 
 .pagination-container {
@@ -102,39 +137,4 @@
     .visit-container {
         width: 20%;
     }
-}
-
-/* Filter Search CSS */
-
-.form-group {
-    display: inline-block;
-    margin-bottom: 5px !important;
-    margin-left: -10px;
-}
-
-label {
-    color: #fff !important;
-    margin-right: 0;
-    margin-top: 13px;
-}
-
-@media (max-width: 460px) {
-    .form-group {
-        margin-left: 0px;
-    }
-    .month-dropdown-date-visit {
-        margin-right: 25px;
-        margin-top: 0px !important;
-        margin-left: 20px;
-    }
-}
-
-.month-dropdown-date-visit {
-    margin-right: 10px !important;
-    margin-top: -26px;
-    margin-left: 15px !important;
-}
-
-.datepicker-days tr {
-    height: auto;
 }

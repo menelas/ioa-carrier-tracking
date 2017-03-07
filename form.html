@@ -50,24 +50,30 @@
    <div class="container-fluid content">
       <div class="row sidebar-container">
          <div id="sidebar" class="col-sm-3 sidebar1 sidebar navbar-collapse collapse">
-            <ul class="nav nav-sidebar">
-               <li>
-                  <a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span>Home</span></a>
-                  <hr />
-               </li>
-               <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-id-card-o fa-2x" aria-hidden="true"></i><span> Visits</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu">
-                     <li><a href="form.html">Add Visit</a>
-                        <hr>
-                     </li>
-                     <li><a href="submissions.html">Past Visits</a>
-                        <hr>
-                     </li>
-                  </ul>
-                  <hr />
-               </li>
-            </ul>
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span>Home</span></a>
+                        <hr />
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-id-card-o fa-2x" aria-hidden="true"></i><span> Visits</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="form.html">Add Visit</a>
+                                <hr>
+                            </li>
+                            <li><a href="submissions.html">Past Visits</a>
+                                <hr>
+                            </li>
+                            <li><a href="carrier-visit-results-longwood.html">Carrier</a>
+                                <hr>
+                            </li>
+                            <li><a href="department-visit.html">Department</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                </ul>
             <!--
             <ul class="nav nav-sidebar nav-sidebar2">
                <li class="dropdown">
@@ -146,70 +152,60 @@
                            <label class="required control-label" for="branch">Branch Visited:</label>
                            <select id="branch" name="branch" class="form-control">
                               <option value="Please Choose Branch">--Please Choose Branch--</option>
-                              <option value="">Birmingham, AL - BRM, Insurance Office of America, Inc.</option>
-                              <option value="">Birmingham, AL - BRZ, EUS - Birmingham, AL </option>
-                              <option value="">Tucson, AZ - TUC, Insurance Office of America, Inc.</option>
-                              <option value="">Aliso Viejo, CA - ORG, IOA Insurance Services</option>
-                              <option value="">Sacramento, CA - SAC, IOA Insurance Services</option>
-                              <option value="">San Diego, CA - SD, IOA Insurance Services</option>
-                              <option value="">Pleasanton, CA - SF, IOA Insurance Services</option>
-                              <option value="">Santa Barbara, CA - SB, IOA Insurance Services</option>
-                              <option value="">Encino, CA - LAN, IOA Insurance Services</option>
-                              <option value="">Rancho Cucamonga, CA - RA, IOA Insurance Services</option>
-                              <option value="">Aliso Viejo, CA - LEG, IOA Insurance Services</option>
-                              <option value="">Encino, CA - LA, IOA Insurance Services</option>
-                              <option value="">Pleasanton, CA - AUB, IOA Insurance Services</option>
-                              <option value="">Ontario, CA - ONT, IOA Insurance Services</option>
-                              <option value="">Colorado Springs, CA - COS, Leading Edge Aviation Insurance</option>
-                              <option value="">Walsenburg, CO - WAL, Walsenburg Insurance Center</option>
-                              <option value="">Westcliffe, CO - WES, Westcliffe Insurance Center</option>
-                              <option value="">Arvada, CO - ARV, Eidyia Insurance Services</option>
-                              <option value="">Denver, CO - DEN, Insurance Office of America, Inc.</option>
-                              <option value="">Longwood, FL - LNG, Insurance Office of America, Inc.</option>
-                              <option value="">Jacksonville, FL - JAX, Insurance Office of America, Inc.</option>
-                              <option value="">Jupiter, FL - JUP, Insurance Office of America, Inc.</option>
-                              <option value="">Lakeland, FL - LKL, Insurance Office of America, Inc.</option>
-                              <option value="">Ocala, FL - OCA, Insurance Office of America, Inc.</option>
-                              <option value="">Tallahassee, FL - TAL, Insurance Office of America, Inc.</option>
-                              <option value="">Tampa, FL - TPA, Insurance Office of America, Inc.</option>
-                              <option value="">Cocoa, FL - COA, Insurance Office of America, Inc.</option>
-                              <option value="">Longwood, FL - HO, Home Office</option>
-                              <option value="">Miami, FL - MIA,Insurance Office of America, Inc. </option>
-                              <option value="">Longwood, FL - DAY, Insurance Office of America, Inc.</option>
-                              <option value="">Longwood, FL - FTM, Insurance Office of America, Inc.</option>
-                              <option value="">Longwood, FL - SMK, Insurance Office of America, Inc.</option>
-                              <option value="">Longwood, FL - ABX, Insurance Office of America, Inc.</option>
-                              <option value="">Orlando, FL - ORL, Pine Street Insurance</option>
-                              <option value="">Longwood, FL - EAG, Insurance Office of America, Inc.</option>
-                              <option value="">Longwood, FL - LKM, Insurance Office of America, Inc.</option>
-                              <option value="">Ormond Beach, FL - ORM, Insurance Office of America, Inc.</option>
-                              <option value="">Fort Lauderdale, FL - FTL, Insurance Office of America, Inc.</option>
-                              <option value="">Gainesville, GA - GGA, Insurance Office of America, Inc. </option>
-                              <option value="">Atlanta, GA - ATL, Insurance Office of America, Inc. </option>
-                              <option value="">Atlanta, GA - ATZ, PEA - Atlanta, GA</option>
-                              <option value="">Atlanta, GA - CRL, Insurance Office of America, Inc.</option>
-                              <option value="">Atlanta, GA - DLI, ACN Insurance Brokers International</option>
-                              <option value="">Atlanta, GA - K&B, King and Brim a Division of IOA</option>
-                              <option value="">Boston, MA - BOS, Insurance Office of America, Inc.</option>
-                              <option value="">Clementon, MD - VNJ, Insurance Office of America, Inc.</option>
-                              <option value="">Charlotte, NC - CHR, Insurance Office of America, Inc.</option>
-                              <option value="">Raleigh, NC - RNC, PEA - Raleigh, NC</option>
-                              <option value="">Farmingdale, NJ - FAR, Spectrum Transportation, LLC</option>
-                              <option value="">Florham Park, NJ - FLP, Insurance Office of America, Inc.</option>
-                              <option value="">Cherry Hill, NJ - NJ, Insurance Office of America, Inc.</option>
-                              <option value="">Las Vegas, NV - LV, Insurance Office of America, Inc.</option>
-                              <option value="">West Dundee, NY - CHI, Insurance Office of America, Inc.</option>
-                              <option value="">Binghamton, NY - BIN, Robert J Hanafin a division of IOA</option>
-                              <option value="">Syracuse, NY - SYR, Robert J Hanafin a division of IOA</option>
-                              <option value="">Cleveland, OH - CLE, Insurance Office of America, Inc.</option>
-                              <option value="">Columbia, SC - COL, Insurance Office of America, Inc.</option>
-                              <option value="">Hendersonville, TN - HTN, PEA - Hendersonville, TN</option>
-                              <option value="">Houston, TX - COO, ASAP Insurance Agency a division of IOA</option>
-                              <option value="">Katy, TX - MAS, ASAP Insurance Agency a division of IOA</option>
-                              <option value="">Humble, TX - HUM, ASAP Insurance Agency a division of IOA</option>
-                              <option value="">Houston, TX - AIR, ASAP Insurance Agency a division of IOA</option>
-                              <option value="">Houston, TX - PMI, Insurance Office of America, Inc.</option>
-                              <option value="">Dallas, TX - DAL, Insurance Office of America, Inc.</option>
+                              <option value="">Birmingham, AL</option>
+                              <option value="">Tucson, AZ</option>
+                              <option value="">Aliso Viejo, CA</option>
+                              <option value="">Sacramento, CA</option>
+                              <option value="">San Diego, CA</option>
+                              <option value="">Pleasanton, CA</option>
+                              <option value="">Santa Barbara, CA</option>
+                              <option value="">Encino, CA</option>
+                              <option value="">Rancho Cucamonga, CA </option>
+                              <option value="">Aliso Viejo, CA</option>
+                              <option value="">Encino, CA</option>
+                              <option value="">Pleasanton, CA</option>
+                              <option value="">Ontario, CA</option>
+                              <option value="">Colorado Springs, CA</option>
+                              <option value="">Walsenburg, CO</option>
+                              <option value="">Westcliffe, CO</option>
+                              <option value="">Arvada, CO</option>
+                              <option value="">Denver, CO</option>
+                              <option value="">Longwood, FL</option>
+                              <option value="">Jacksonville, FL</option>
+                              <option value="">Jupiter, FL</option>
+                              <option value="">Lakeland, FL</option>
+                              <option value="">Ocala, FL</option>
+                              <option value="">Tallahassee, FL</option>
+                              <option value="">Tampa, FL</option>
+                              <option value="">Cocoa, FL.</option>
+                              <option value="">Longwood, FL</option>
+                              <option value="">Miami, FL</option>
+                              <option value="">Orlando, FL</option>
+                              <option value="">Longwood, FL</option>
+                              <option value="">Longwood, FL</option>
+                              <option value="">Ormond Beach, FL</option>
+                              <option value="">Fort Lauderdale, FL</option>
+                              <option value="">Gainesville, GA</option>
+                              <option value="">Atlanta, GA</option>
+                              <option value="">Boston, MA</option>
+                              <option value="">Clementon, MD</option>
+                              <option value="">Charlotte, NC</option>
+                              <option value="">Raleigh, NC</option>
+                              <option value="">Farmingdale, NJ</option>
+                              <option value="">Florham Park, NJ</option>
+                              <option value="">Cherry Hill, NJ</option>
+                              <option value="">Las Vegas, NV</option>
+                              <option value="">West Dundee, NY</option>
+                              <option value="">Binghamton, NY</option>
+                              <option value="">Syracuse, NY</option>
+                              <option value="">Cleveland, OH</option>
+                              <option value="">Columbia, SC</option>
+                              <option value="">Hendersonville, TN</option>
+                              <option value="">Houston, TX</option>
+                              <option value="">Katy, TX</option>
+                              <option value="">Humble, TX </option>
+                              <option value="">Houston, TX</option>
+                              <option value="">Dallas, TX</option>
                            </select>
                         </div>
 

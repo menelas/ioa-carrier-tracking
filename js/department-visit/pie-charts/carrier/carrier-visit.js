@@ -56,32 +56,32 @@ $(function () {
                 data: [{
                     name: 'CNA',
                     y: 28,
-                    url: 'carrier-visit.html',
+                    url: '#',
                     color: '#446d8c'//color of the pie
                 }, {
                     name: 'FCCI in Florida',
                     y: 18,
-                    url: 'carrier-visit.html',
+                    url: '#',
                     color: '#67a8d7'
                 }, {
                     name: 'Hartford',
                     y: 2,
-                    url: 'carrier-visit.html',
+                    url: '#',
                     color: '#8ca94a'
                 },  {
                     name: 'Liberty Mutual',
                     y: 8,
-                    url: 'carrier-visit.html',
+                    url: '#',
                     color: '#aecd6a'
                 }, {
                     name: 'Nationwide',
                     y: 12,
-                    url: 'carrier-visit.html',
+                    url: '#',
                     color: '#ea8e4b'
                 }, {
                     name: 'Travelers',
                     y: 3,
-                    url: 'carrier-visit.html',
+                    url: '#',
                     color: '#d2623f'
                 }]
             }]

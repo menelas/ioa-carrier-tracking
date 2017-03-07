@@ -10,38 +10,31 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/carrier-visit-results.css">
     <link rel="stylesheet" href="css/app.bootstrap.css">
-
-
     <link rel="stylesheet" href="css/app.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
     <!--Branch Department Visit Pie/Bar Chart-->
     <script type="text/javascript" src="js/department-visit/pie-charts/branch/branch-department-visit.js"></script>
     <script type="text/javascript" src="js/department-visit/pie-charts/carrier/carrier-visit.js"></script>
     <script type="text/javascript" src="js/department-visit/bar-charts/branch-date-of-visit.js"></script>
 
+    <!-- Chosen Multi Select -->
+    <link rel="stylesheet" href="chosen_v1.6.2/docsupport/style.css">
+    <link rel="stylesheet" href="chosen_v1.6.2/docsupport/prism.css">
+    <link rel="stylesheet" href="chosen_v1.6.2/chosen.css">
+    <script type="text/javascript" src="chosen_v1.6.2/chosen.jquery.js"></script>
+    <script type="text/javascript" src="chosen_v1.6.2/docsupport/prism.js"></script>
+
+    <!--Carrier Visit Pie Chart-->
+    <script type="text/javascript" src="js/carrier-visit-results-longwood/pie-charts/carrier-visit-results.js"></script>
+    <script type="text/javascript" src="js/carrier-visit-results-longwood/bar-charts/carrier-visit-results.js"></script>
+
     <!-- Bootstrap Date-Picker Plugin -->
     <!-- Use default app date picker when programming date picker and not this demo version-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
-    <script>
-$(document)
-    .ready(function()
-    {
-        var date_input = $('input[name="date"]'); //our date input has the name "date"
-        var container = $('.bootstrap-iso form')
-            .length > 0 ? $('.bootstrap-iso form')
-            .parent() : "body";
-        var options = {
-            format: 'mm/dd/yyyy',
-            container: container,
-            todayHighlight: true,
-            autoclose: true,
-        };
-        date_input.datepicker(options);
-    })
-
-    </script>
+    <script type="text/javascript" src="js/date-picker.js"></script>
 
 </head>
 
@@ -84,8 +77,25 @@ $(document)
                         <a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span>Home</span></a>
                         <hr />
                     </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-id-card-o fa-2x" aria-hidden="true"></i><span> Visits</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="form.html">Add Visit</a>
+                                <hr>
+                            </li>
+                            <li><a href="submissions.html">Past Visits</a>
+                                <hr>
+                            </li>
+                            <li><a href="carrier-visit-results-longwood.html">Carrier</a>
+                                <hr>
+                            </li>
+                            <li><a href="department-visit.html">Department</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
                 </ul>
-
                 <ul class="nav nav-sidebar nav-sidebar2">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Jeff Lagos</span>
@@ -105,44 +115,75 @@ $(document)
             <!-- Body -->
             <div class="body-container">
 
-                <div class="col-md-12 col-lg-9">
-                    <div class="panel-body">
-
-                        <div class="breadcrumb">
-                            <li><a href="index.html">Branch</a>
-                            </li>
-                            <li class="active"><a href="#">Department Visits at Longwood - LNG, FL</a>
-                            </li>
-
-                            <div class="pull-right">
-                                <form class="horizontal" role="form">
-                                    <fieldset>
-                                        <div class="form-group">
-                                            <label class="control-label sr-only" for="start-date">Start Date:</label>
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Filter Start Date">
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group">
-                                            <label class="control-label sr-only" for="start-date">End Date:</label>
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Filter End Date">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                <button type="submit" class="btn btn-default btn-sm">Search</button>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </form>
+                <div class="col-md-9 col-lg-9">
+                    <div class="col-xs-12 col-md-12 title-header">
+                        <div class="head-drop2">
+                            <div class="btn-group">
+                                Department Visits
                             </div>
+
+                            <form class="form-inline">
+                                <div class="form-group multi-select">
+                                    <label class="control-label sr-only" for="start-date">Select State:</label>
+                                    <select data-placeholder="Select Location(s)" multiple class="chosen-select-width" tabindex="16">
+                                        <optgroup label="Alabama">
+                                            <option>All Alabama</option>
+                                            <option>Birmingham, Alabama</option>
+                                            <option>Cleveland, Alabama</option>
+                                            <option>Colorado Springs, Alabama</option>
+                                            <option>Dallas, Alabama</option>
+                                            <option>Denver, Alabama</option>
+                                        </optgroup>
+                                        <optgroup label="Carolina/NE">
+                                            <option>All Carolina/NE</option>
+                                            <option>Baltimore, New York</option>
+                                            <option>Boston, Massachusetts</option>
+                                            <option>Cherry Hill, New Jersey</option>
+                                            <option>Columbia, South Carolina</option>
+                                        </optgroup>
+                                        <optgroup label="Florida">
+                                            <option>All Florida</option>
+                                            <option>Fort Lauderdale, Florida</option>
+                                            <option>Jacksonville, Florida</option>
+                                            <option>Jupiter, Florida</option>
+                                            <option>Lakeland, Florida</option>
+                                            <option>Longwood, Florida</option>
+                                        </optgroup>
+                                        <optgroup label="Georgia">
+                                            <option>All Georgia</option>
+                                            <option>Atlanta, Georgia</option>
+                                            <option>Carrollton, Georgia</option>
+                                            <option>Gainesville, Georgia</option>
+                                        </optgroup>
+                                        <optgroup label="Western">
+                                            <option>All Western</option>
+                                            <option>Aliso Viejo, California</option>
+                                            <option>Las Vegas, Nevada</option>
+                                            <option>Legends, Arizona</option>
+                                            <option>Los Angeles, California</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label sr-only" for="start-date">Start Date:</label>
+                                    <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Filter Start Date">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label sr-only" for="start-date">End Date:</label>
+                                    <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Filter End Date">
+                                </div>
+
+                                <div class="form-group pull-right">
+                                    <button type="clear" class="btn btn-default btn-sm clear">Clear</button>
+                                    <button type="submit" class="btn btn-default btn-sm">Submit</button>
+                                </div>
+                            </form>
                         </div>
+                    </div>
 
-
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body">
                         <div id="branch-department-visit"></div>
                     </div>
                 </div>
@@ -151,7 +192,7 @@ $(document)
                     <div class="col-md-12 col-xs-12 title-header">
                         <div class="pull-left head-drop">
                             <div class="btn-group">
-                                Carrier Visits at Longwood - LNG, FL
+                                Carrier
                             </div>
                         </div>
                     </div>
@@ -162,16 +203,279 @@ $(document)
                 </div>
 
                 <div class="col-md-12 col-lg-12">
-                    <div class="col-md-12 col-xs-12 title-header">
+                    <div class="col-md-12 col-xs-12 title-header2">
                         <div class="pull-left head-drop">
                             <div class="btn-group">
-                                Date of Visits at Longwood - LNG, FL
+                                Number of Visits
                             </div>
                         </div>
+
+                        <div class="pull-right head-drop">
+                            <div class="btn-group">
+                                <strong>TOTAL: 516</strong>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body">
-                        <div id="branch-date-of-visit"></div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body location-tables">
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
+                            <div class="state-title">Alabama</div>
+                            <div class="carrier-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead>
+                                        <tr>
+                                            <th>Branch</th>
+                                            <th class="text-right"># of visits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Branch">Birmingham</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Cleveland</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Colorado Springs</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Dallas</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">3</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Total"><strong>TOTAL:</strong>
+                                            </td>
+                                            <td data-title="# of visits" class="text-right"><strong>23</strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="text-center pagination-container">
+                                <ul class="pagination">
+                                    <li class="active"><a href="#">1</a>
+                                    </li>
+                                    <li><a href="#">2</a>
+                                    </li>
+                                    <li><a href="#">3</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
+                            <div class="state-title">Carolina/NE</div>
+
+                            <div class="carrier-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead>
+                                        <tr>
+                                            <th>Branch</th>
+                                            <th class="text-right"># of visits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Branch">Baltimore</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">13</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Binghamton </td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">12</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Boston</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">17</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Cherry Hill </td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">19</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="TOTAL"><strong>TOTAL:</strong>
+                                            </td>
+                                            <td data-title="# of visits" class="text-right"><strong>116</strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="text-center pagination-container">
+                                <ul class="pagination">
+                                    <li class="active"><a href="#">1</a>
+                                    </li>
+                                    <li><a href="#">2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
+                            <div class="state-title">Florida</div>
+                            <div class="carrier-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead>
+                                        <tr>
+                                            <th>Branch</th>
+                                            <th class="text-right"># of visits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Branch">Fort Lauderdale </td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">20</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Jacksonville</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">23</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Jupiter</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">27</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Lakeland</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">29</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="TOTAL"><strong>TOTAL:</strong>
+                                            </td>
+                                            <td data-title="# of visits" class="text-right"><strong>151</strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="text-center pagination-container">
+                                <ul class="pagination">
+                                    <li class="active"><a href="#">1</a>
+                                    </li>
+                                    <li><a href="#">2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
+                            <div class="state-title">Georgia</div>
+                            <div class="carrier-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead>
+                                        <tr>
+                                            <th>Branch</th>
+                                            <th class="text-right"># of visits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Branch">Atlanta</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">32</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Carrollton </td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">34</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Gainesville</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">37</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="TOTAL"><strong>TOTAL:</strong>
+                                            </td>
+                                            <td data-title="# of visits" class="text-right"><strong>73</strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="text-center pagination-container">
+                                <ul class="pagination">
+                                    <li class="active"><a href="#">1</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
+                            <div class="state-title">Western</div>
+                            <div class="carrier-tables">
+                                <table class="table-hover table-striped table-condensed cf">
+                                    <thead>
+                                        <tr>
+                                            <th>Branch</th>
+                                            <th class="text-right"># of visits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Branch">Aliso Viejo</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">44</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Auburn</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">43</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Las Vegas</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">42</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Branch">Legends</td>
+                                            <td data-title="# of visits" class="text-right"><a href="#">41</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="TOTAL"><strong>TOTAL:</strong>
+                                            </td>
+                                            <td data-title="# of visits" class="text-right"><strong>173</strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-center pagination-container">
+                                <ul class="pagination">
+                                    <li class="active"><a href="#">1</a>
+                                    </li>
+                                    <li><a href="#">2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -191,5 +495,8 @@ $(document)
     <!-- Date of Visit Bar Chart-->
     <script type="text/javascript" src="js/department-visit/bar-charts/branch-date-of-visit-highchart.js"></script>
     <script type="text/javascript" src="js/department-visit/bar-charts/branch-date-of-visit-exporting.js"></script>
+
+    <script type="text/javascript" src="chosen_v1.6.2/docsupport/multi-select.js"></script>
 </body>
+
 </html>

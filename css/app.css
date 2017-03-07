@@ -780,6 +780,11 @@ tr {
     margin: 0;
 }
 
+.head-drop2 {
+    margin: 0;
+    padding: 8px 12px;
+}
+
 .btn-group > p {
     font-size: 15px;
 }
