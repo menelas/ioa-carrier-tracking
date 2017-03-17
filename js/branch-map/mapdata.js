@@ -1,3 +1,5 @@
+// To edit map visit: simplemaps.com/custom/us/Mm6RvZea
+
 var simplemaps_usmap_mapdata={
   main_settings: {
     //General settings
@@ -667,23 +669,10 @@ var simplemaps_usmap_mapdata={
   },
   regions: {
     "0": {
-      states: [
-        "AL"
-      ],
-      name: "Alabama",
-      color: "#3b729f"
+      states: []
     },
     "1": {
-      states: [
-        "NY",
-        "MA",
-        "NJ",
-        "SC",
-        "RI",
-        "DE"
-      ],
-      name: "Carolina/NE",
-      color: "#3b729f"
+      states: []
     },
     "2": {
       states: []
