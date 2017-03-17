@@ -19,14 +19,6 @@
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
-
-.btn-default {
-    margin-top: 5px;
-}
-
-.multi-select {
-  width: 50%;
-}
  
 @media (max-width: 460px) {
     .multi-select {

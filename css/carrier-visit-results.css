@@ -15,10 +15,6 @@
 .btn-default {
     margin-top: 5px;
 }
-
-.multi-select {
-  width: 50%;
-}
  
 @media (max-width: 460px) {
     .multi-select {

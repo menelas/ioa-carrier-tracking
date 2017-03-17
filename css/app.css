@@ -25,13 +25,27 @@ a, a:active, a:hover, a:focus, a:visited  {
 .btn {
     padding-bottom: 8px;
 }
-.btn:hover {
+
+.btn-default {
+    background-color: #296198 !important;
+    border-radius: 4px;
     color: #fff;
+    font-size: 12px;
+    padding: 6px 9px;
+    margin-top: 8px;
+    border: none;
 }
 
-.btn.btn-default:hover {
-    color: #333;
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+    background-color: #245280 !important;
+    border-radius: 4px;
+    color: #fff !important;
+    font-size: 12px;
+    padding: 6px 9px;
+    margin-top: 8px;
+    border: none;
 }
+
 
 /***** Left Side Main Nav ***********************************/
 
@@ -1103,6 +1117,102 @@ th {
     padding-bottom: 6px;
     font-weight: bold;
     text-align: left !important;
+}
+
+.multi-select {
+    width: 40%;
+}
+.carrierts-form-inline {
+    display: table;
+    width: 100%;
+    margin-top: 10px;
+}
+.carrierts-form-inline .form-group {
+    display: table-cell !important;
+    vertical-align: top !important;
+    box-sizing: border-box;
+}
+.carrierts-form-inline .date-form {
+    width: 20%
+}
+.carrierts-form-inline .form-button {
+    width: 20%;
+    float: none !important;
+}
+.form-button .btn {
+    display: block !important;
+    float: left;
+    width: 49.5%;
+    margin-right: 1%;
+    box-sizing: border-box;
+    margin-top: 0 !important;
+}
+.form-button .btn:last-child {
+    margin-right: 0;
+}
+.carrierts-form-inline .chosen-container {
+    width: 99% !important;
+}
+.carrierts-form-inline .date-form input {
+    width: 97% !important;
+}
+.carrierts-form-inline .chosen-container-multi .chosen-choices {
+    margin: 0 !important;
+}
+.carrierts-form-inline .form-group .form-control {
+    margin-top: 0;
+}
+@media (max-width: 1200px) {
+    .multi-select {
+        width: 30%;
+    }
+    .carrierts-form-inline .date-form {
+        width: 22%
+    }
+    .carrierts-form-inline .form-button {
+        width: 26%;
+    }
+}
+@media (max-width: 770px) {
+    .carrierts-form-inline {
+        display: block;
+    }
+    .carrierts-form-inline .form-group {
+        display: block !important;
+        float: left;
+        width: 33.33%;
+    }
+    .carrierts-form-inline .date-form input {
+        width: 99% !important;
+    }
+    .carrierts-form-inline .date-form.date-form-mb input {
+        width: 100% !important;
+    }
+    .carrierts-form-inline .form-button {
+        max-width: 220px;
+        width: 100% !important;
+        padding: 10px 0;
+        clear: both;
+        float: right !important;
+    }
+    .form-button .btn {
+        width: 49%;
+        margin-right: 2%;
+    }
+}
+@media (max-width: 500px) {
+    .carrierts-form-inline .chosen-container {
+        width: 100% !important;
+    }
+    .carrierts-form-inline .form-group {
+        width: 50%;
+    }
+    .carrierts-form-inline .form-group.multi-select {
+        width: 100%;
+        float: none;
+        clear: both;
+        margin-bottom: 10px !important;
+    }
 }
 
 /************ Misc *********/

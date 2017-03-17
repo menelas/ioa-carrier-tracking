@@ -1,3 +1,6 @@
+## 2017-3-17
+• Updated css to add styling to filter and submit buttons
+
 ## 2017-3-7
 • Updated branch map to reflect latest changes
 • Bar chart has been removed and replaced with number of visits
