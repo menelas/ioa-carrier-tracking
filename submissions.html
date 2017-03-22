@@ -23,21 +23,20 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
     <script>
-$(document)
-    .ready(function()
-    {
-        var date_input = $('input[name="date"]'); //our date input has the name "date"
-        var container = $('.bootstrap-iso form')
-            .length > 0 ? $('.bootstrap-iso form')
-            .parent() : "body";
-        var options = {
-            format: 'mm/dd/yyyy',
-            container: container,
-            todayHighlight: true,
-            autoclose: true,
-        };
-        date_input.datepicker(options);
-    })
+        $(document)
+            .ready(function() {
+                var date_input = $('input[name="date"]'); //our date input has the name "date"
+                var container = $('.bootstrap-iso form')
+                    .length > 0 ? $('.bootstrap-iso form')
+                    .parent() : "body";
+                var options = {
+                    format: 'mm/dd/yyyy',
+                    container: container,
+                    todayHighlight: true,
+                    autoclose: true,
+                };
+                date_input.datepicker(options);
+            })
     </script>
 
 </head>
@@ -78,7 +77,7 @@ $(document)
             <div id="sidebar" class="col-sm-3 sidebar1 sidebar navbar-collapse collapse">
                 <ul class="nav nav-sidebar">
                     <li>
-                        <a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span>Home</span></a>
+                        <a href="index.html"><i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span></a>
                         <hr />
                     </li>
                     <li class="dropdown">
@@ -88,12 +87,6 @@ $(document)
                                 <hr>
                             </li>
                             <li><a href="submissions.html">Past Visits</a>
-                                <hr>
-                            </li>
-                            <li><a href="carrier-visit-results-longwood.html">Carrier</a>
-                                <hr>
-                            </li>
-                            <li><a href="department-visit.html">Department</a>
                                 <hr>
                             </li>
                         </ul>

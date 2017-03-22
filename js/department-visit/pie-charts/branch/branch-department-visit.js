@@ -27,7 +27,8 @@ $(function () {
                         enabled: false
                     },
                     showInLegend: true,
-                    borderWidth: 0
+                    borderWidth: 0,
+
                 }
             },
             legend:

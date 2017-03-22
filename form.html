@@ -2,35 +2,35 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Insurance Office of America</title>
-   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-   <link rel="stylesheet" href="css/app.bootstrap.css">
-   <link rel="stylesheet" href="css/app.css">
-   <script type="text/javascript" src="js/jquery.min.js"></script>
-   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body class="carrier-pad carrier-tracking">
-   <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
-      <div class="container-fluid menu-margin">
-         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="150" alt="Insurance Office of America">
-            </a>
-            <h4 class="company-title">Insurance Office of America</h4>
-            <h5>Carrier Visit Tracking System</h5>
-         </div>
-         <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-            <!--
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+        <div class="container-fluid menu-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="150" alt="Insurance Office of America">
+                </a>
+                <h4 class="company-title">Insurance Office of America</h4>
+                <h5>Carrier Visit Tracking System</h5>
+            </div>
+            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <!--
             <ul class="nav navbar-nav navbar-right">
                <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jeff Lagos <i class="fa fa-cog" aria-hidden="true"></i></a>
@@ -44,15 +44,15 @@
                </li>
             </ul>
             -->
-         </div>
-      </div>
-   </nav>
-   <div class="container-fluid content">
-      <div class="row sidebar-container">
-         <div id="sidebar" class="col-sm-3 sidebar1 sidebar navbar-collapse collapse">
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content">
+        <div class="row sidebar-container">
+            <div id="sidebar" class="col-sm-3 sidebar1 sidebar navbar-collapse collapse">
                 <ul class="nav nav-sidebar">
                     <li>
-                        <a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span>Home</span></a>
+                        <a href="index.html"><i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span></a>
                         <hr />
                     </li>
                     <li class="dropdown">
@@ -64,17 +64,11 @@
                             <li><a href="submissions.html">Past Visits</a>
                                 <hr>
                             </li>
-                            <li><a href="carrier-visit-results-longwood.html">Carrier</a>
-                                <hr>
-                            </li>
-                            <li><a href="department-visit.html">Department</a>
-                                <hr>
-                            </li>
                         </ul>
                         <hr />
                     </li>
                 </ul>
-            <!--
+                <!--
             <ul class="nav nav-sidebar nav-sidebar2">
                <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Jeff Lagos</span>
@@ -91,142 +85,143 @@
                </li>
             </ul>
             -->
-         </div>
-         <!-- Body -->
-         <div class="body-container">
-
-            <div class="col-md-12 col-lg-12">
-               <div class="panel-body">
-                  <ol class="breadcrumb">
-                     <li><a href="form.html">Form</a>
-                     </li>
-                  </ol>
-
-                  <form>
-                     <div class="row">
-                        <div class="form-group col-sm-12 col-md-6 col-lg-6">
-                           <label class="required control-label" for="employee-name">Name:</label>
-                           <input id="name" name="name" class="form-control input-md" required="" type="text">
-                        </div>
-
-                        <div class="form-group col-sm-12 col-md-6 col-lg-6">
-                           <label class="required control-label" for="position">Position/Title:</label>
-                           <input id="position" name="position" class="form-control input-md" required="" type="text">
-                        </div>
-                     </div>
-
-                     <div class="row">
-                        <div class="form-group col-sm-12 col-md-6 col-lg-6">
-                           <label class="required control-label" for="department-representing">Department Representing:</label>
-                           <select id="department-representing" name="department-representing" class="form-control">
-                              <option value="-- Please Select Department --">-- Please Select Department --</option>
-                              <option value="Inland Marine">Inland Marine</option>
-                              <option value="Management Liability/Crime">Management Liability/Crime</option>
-                              <option value="Marketing">Marketing</option>
-                              <option value="Middle Market Construction">Middle Market Construction</option>
-                              <option value="Middle Market Marketing">Middle Market Marketing</option>
-                              <option value="Middle Marketing General">Middle Marketing General</option>
-                              <option value="Middle Market Technology">Middle Market Technology</option>
-                              <option value="Risk Management">Risk Management</option>
-                              <option value="Small Business">Small Business</option>
-                              <option value="Speciality Lines">Speciality Lines</option>
-                           </select>
-                        </div>
-
-                        <div class="form-group col-sm-12 col-md-6 col-lg-6">
-                           <label class="required control-label" for="carrier-representative">Carrier Representative:</label>
-                           <select id="carrier-representative" name="carrier-representative" class="form-control">
-                              <option value="-- Please Select Carrier --">-- Please Select Carrier --</option>
-                              <option value="CNA">CNA</option>
-                              <option value="FCCI in Florida">FCCI in Florida</option>
-                              <option value="Hartford">Hartford</option>
-                              <option value="Liberty Mutual">Liberty Mutual</option>
-                              <option value="Nationwide">Nationwide</option>
-                              <option value="Travelers">Travelers</option>
-                           </select>
-                        </div>
-                     </div>
-
-                     <div class="row">
-                        <div class="form-group col-sm-12 col-md-6 col-lg-6 col-md-6">
-                           <label class="required control-label" for="branch">Branch Visited:</label>
-                           <select id="branch" name="branch" class="form-control">
-                              <option value="Please Choose Branch">--Please Choose Branch--</option>
-                              <option value="">Birmingham, AL</option>
-                              <option value="">Tucson, AZ</option>
-                              <option value="">Aliso Viejo, CA</option>
-                              <option value="">Sacramento, CA</option>
-                              <option value="">San Diego, CA</option>
-                              <option value="">Pleasanton, CA</option>
-                              <option value="">Santa Barbara, CA</option>
-                              <option value="">Encino, CA</option>
-                              <option value="">Rancho Cucamonga, CA </option>
-                              <option value="">Aliso Viejo, CA</option>
-                              <option value="">Encino, CA</option>
-                              <option value="">Pleasanton, CA</option>
-                              <option value="">Ontario, CA</option>
-                              <option value="">Colorado Springs, CA</option>
-                              <option value="">Walsenburg, CO</option>
-                              <option value="">Westcliffe, CO</option>
-                              <option value="">Arvada, CO</option>
-                              <option value="">Denver, CO</option>
-                              <option value="">Longwood, FL</option>
-                              <option value="">Jacksonville, FL</option>
-                              <option value="">Jupiter, FL</option>
-                              <option value="">Lakeland, FL</option>
-                              <option value="">Ocala, FL</option>
-                              <option value="">Tallahassee, FL</option>
-                              <option value="">Tampa, FL</option>
-                              <option value="">Cocoa, FL.</option>
-                              <option value="">Longwood, FL</option>
-                              <option value="">Miami, FL</option>
-                              <option value="">Orlando, FL</option>
-                              <option value="">Longwood, FL</option>
-                              <option value="">Longwood, FL</option>
-                              <option value="">Ormond Beach, FL</option>
-                              <option value="">Fort Lauderdale, FL</option>
-                              <option value="">Gainesville, GA</option>
-                              <option value="">Atlanta, GA</option>
-                              <option value="">Boston, MA</option>
-                              <option value="">Clementon, MD</option>
-                              <option value="">Charlotte, NC</option>
-                              <option value="">Raleigh, NC</option>
-                              <option value="">Farmingdale, NJ</option>
-                              <option value="">Florham Park, NJ</option>
-                              <option value="">Cherry Hill, NJ</option>
-                              <option value="">Las Vegas, NV</option>
-                              <option value="">West Dundee, NY</option>
-                              <option value="">Binghamton, NY</option>
-                              <option value="">Syracuse, NY</option>
-                              <option value="">Cleveland, OH</option>
-                              <option value="">Columbia, SC</option>
-                              <option value="">Hendersonville, TN</option>
-                              <option value="">Houston, TX</option>
-                              <option value="">Katy, TX</option>
-                              <option value="">Humble, TX </option>
-                              <option value="">Houston, TX</option>
-                              <option value="">Dallas, TX</option>
-                           </select>
-                        </div>
-
-                        <div class="form-group col-sm-12 col-md-2 col-lg-2">
-                           <label class="required control-label" for="date-of-visit">Date of Visit:</label>
-                           <input id="date-of-visit" name="date-of-visit" class="form-control input-md" required="" type="text">
-                        </div>
-                     </div>
-
-                     <button id="submit" name="submit" class="btn btn-primary pull-right"> Continue</button>
-
-                  </form>
-
-               </div>
             </div>
-         </div>
-      </div>
-   </div>
+            <!-- Body -->
+            <div class="body-container">
 
-   <div class="text-center copyright">
-      <p>Copyright &#169; 2016 Insurance Office of America. All rights reserved. Version 1.0</p>
-   </div>
+                <div class="col-md-12 col-lg-12">
+                    <div class="panel-body">
+                        <ol class="breadcrumb">
+                            <li><a href="form.html">Form</a>
+                            </li>
+                        </ol>
+
+                        <form>
+                            <div class="row">
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                    <label class="requiredfield control-label" for="employee-name">Name:</label>
+                                    <input id="name" name="name" class="form-control input-md" required="" type="text">
+                                </div>
+
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                    <label class="requiredfield control-label" for="position">Position/Title:</label>
+                                    <input id="position" name="position" class="form-control input-md" required="" type="text">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                    <label class="requiredfield control-label" for="department-representing">Department Representing:</label>
+                                    <select id="department-representing" name="department-representing" class="form-control">
+                                        <option value="-- Please Select Department --">-- Please Select Department --</option>
+                                        <option value="Inland Marine">Inland Marine</option>
+                                        <option value="Management Liability/Crime">Management Liability/Crime</option>
+                                        <option value="Marketing">Marketing</option>
+                                        <option value="Middle Market Construction">Middle Market Construction</option>
+                                        <option value="Middle Market Marketing">Middle Market Marketing</option>
+                                        <option value="Middle Marketing General">Middle Marketing General</option>
+                                        <option value="Middle Market Technology">Middle Market Technology</option>
+                                        <option value="Risk Management">Risk Management</option>
+                                        <option value="Small Business">Small Business</option>
+                                        <option value="Speciality Lines">Speciality Lines</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                    <label class="requiredfield control-label" for="carrier-representative">Carrier Representative:</label>
+                                    <select id="carrier-representative" name="carrier-representative" class="form-control">
+                                        <option value="-- Please Select Carrier --">-- Please Select Carrier --</option>
+                                        <option value="CNA">CNA</option>
+                                        <option value="FCCI in Florida">FCCI in Florida</option>
+                                        <option value="Hartford">Hartford</option>
+                                        <option value="Liberty Mutual">Liberty Mutual</option>
+                                        <option value="Nationwide">Nationwide</option>
+                                        <option value="Travelers">Travelers</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-12 col-md-6 col-lg-6 col-md-6">
+                                    <label class="requiredfield control-label" for="branch">Branch Visited:</label>
+                                    <select id="branch" name="branch" class="form-control">
+                                        <option value="Please Choose Branch">--Please Choose Branch--</option>
+                                        <option value="">Birmingham, AL</option>
+                                        <option value="">Tucson, AZ</option>
+                                        <option value="">Aliso Viejo, CA</option>
+                                        <option value="">Sacramento, CA</option>
+                                        <option value="">San Diego, CA</option>
+                                        <option value="">Pleasanton, CA</option>
+                                        <option value="">Santa Barbara, CA</option>
+                                        <option value="">Encino, CA</option>
+                                        <option value="">Rancho Cucamonga, CA </option>
+                                        <option value="">Aliso Viejo, CA</option>
+                                        <option value="">Encino, CA</option>
+                                        <option value="">Pleasanton, CA</option>
+                                        <option value="">Ontario, CA</option>
+                                        <option value="">Colorado Springs, CA</option>
+                                        <option value="">Walsenburg, CO</option>
+                                        <option value="">Westcliffe, CO</option>
+                                        <option value="">Arvada, CO</option>
+                                        <option value="">Denver, CO</option>
+                                        <option value="">Longwood, FL</option>
+                                        <option value="">Jacksonville, FL</option>
+                                        <option value="">Jupiter, FL</option>
+                                        <option value="">Lakeland, FL</option>
+                                        <option value="">Ocala, FL</option>
+                                        <option value="">Tallahassee, FL</option>
+                                        <option value="">Tampa, FL</option>
+                                        <option value="">Cocoa, FL.</option>
+                                        <option value="">Longwood, FL</option>
+                                        <option value="">Miami, FL</option>
+                                        <option value="">Orlando, FL</option>
+                                        <option value="">Longwood, FL</option>
+                                        <option value="">Longwood, FL</option>
+                                        <option value="">Ormond Beach, FL</option>
+                                        <option value="">Fort Lauderdale, FL</option>
+                                        <option value="">Gainesville, GA</option>
+                                        <option value="">Atlanta, GA</option>
+                                        <option value="">Boston, MA</option>
+                                        <option value="">Clementon, MD</option>
+                                        <option value="">Charlotte, NC</option>
+                                        <option value="">Raleigh, NC</option>
+                                        <option value="">Farmingdale, NJ</option>
+                                        <option value="">Florham Park, NJ</option>
+                                        <option value="">Cherry Hill, NJ</option>
+                                        <option value="">Las Vegas, NV</option>
+                                        <option value="">West Dundee, NY</option>
+                                        <option value="">Binghamton, NY</option>
+                                        <option value="">Syracuse, NY</option>
+                                        <option value="">Cleveland, OH</option>
+                                        <option value="">Columbia, SC</option>
+                                        <option value="">Hendersonville, TN</option>
+                                        <option value="">Houston, TX</option>
+                                        <option value="">Katy, TX</option>
+                                        <option value="">Humble, TX </option>
+                                        <option value="">Houston, TX</option>
+                                        <option value="">Dallas, TX</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-sm-12 col-md-2 col-lg-2">
+                                    <label class="requiredfield control-label" for="date-of-visit">Date of Visit:</label>
+                                    <input id="date-of-visit" name="date-of-visit" class="form-control input-md" required="" type="text">
+                                </div>
+                            </div>
+
+                            <button id="submit" name="submit" class="btn btn-primary pull-right"> Continue</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 1.0</p>
+    </div>
 </body>
+
 </html>
