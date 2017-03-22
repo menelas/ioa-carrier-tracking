@@ -4,6 +4,7 @@
 • Updated stylesheets
 • Added department tab
 • Removed pages that are no longer needed
+• Added fictitious info
 
 ## 2017-3-17
 • Updated css to add styling to filter and submit buttons
