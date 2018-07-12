@@ -4,7 +4,7 @@
 }
 
 .btn-primary {
-	background-color: #4995cf;
+
 	border-radius: 3px;
 	border: none;
 }
@@ -43,4 +43,8 @@
 .breadcrumb li a:hover, .breadcrumb li.active a {
     background: #3e83b8;
     text-decoration: none;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    color: inherit;
 }

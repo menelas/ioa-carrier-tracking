@@ -15,78 +15,102 @@
 </head>
 
 <body class="carrier-pad carrier-tracking">
-    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
-        <div class="container-fluid menu-margin">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="150" alt="Insurance Office of America">
-                </a>
-                <h4 class="company-title">Insurance Office of America</h4>
-                <h5>Carrier Visit Tracking System</h5>
-            </div>
-            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-                <!--
-            <ul class="nav navbar-nav navbar-right">
-               <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chris Robertson <i class="fa fa-cog" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu">
-                     <div class="arrow-up"></div>
-                     <li><a href="#">Edit Profile</a>
-                     </li>
-                     <li><a href="#">Logout</a>
-                     </li>
-                  </ul>
-               </li>
-            </ul>
-            -->
-            </div>
+<nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+    <div class="container-fluid menu-margin">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="150" alt="Insurance Office of America">
+            </a>
+            <h4 class="company-title">Insurance Office of America</h4>
+            <h5>Operations</h5>
         </div>
-    </nav>
-    <div class="container-fluid content">
-        <div class="row sidebar-container">
-            <div id="sidebar" class="col-sm-3 sidebar1 sidebar navbar-collapse collapse">
-                <ul class="nav nav-sidebar">
-                    <li>
-                        <a href="index.html"><i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span></a>
-                        <hr />
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-id-card-o fa-2x" aria-hidden="true"></i><span> Visits</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="form.html">Add Visit</a>
-                                <hr>
-                            </li>
-                            <li><a href="submissions.html">Past Visits</a>
-                                <hr>
-                            </li>
-                        </ul>
-                        <hr />
-                    </li>
-                </ul>
-                <!--
-            <ul class="nav nav-sidebar nav-sidebar2">
-               <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Chris Robertson</span>
-                     <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu">
-                     <li><a href="#">Edit Profile</a>
-                     </li>
-                     <li><a href="#">Help</a>
-                     </li>
-                     <li><a href="#">Logout</a>
-                     </li>
-                  </ul>
-                  <hr>
-               </li>
+        <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chris Robertson <i class="fa fa-cog" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                        <div class="arrow-up"></div>
+                        <li><a href="#">Edit Profile</a>
+                        </li>
+                        <li><a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-            -->
-            </div>
-            <!-- Body -->
+        </div>
+    </div>
+</nav>
+<div class="container-fluid content">
+    <div class="row sidebar-container">
+        <div id="sidebar" class="col-sm-3 sidebar1 sidebar navbar-collapse collapse">
+            <ul class="nav nav-sidebar">
+                <li>
+                    <a href="index.html"><i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span></a>
+                    <hr />
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="reports/view-policy-expiration-report.html">Policy Expiration</a>
+                            <hr>
+                        </li>
+                        <li><a href="reports/view-user-access-report.html">User Access</a>
+                            <hr>
+                        </li>
+                    </ul>
+                    <hr />
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-id-card-o fa-2x" aria-hidden="true"></i><span> Visits</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="form.html">Add Visit</a>
+                            <hr>
+                        </li>
+                        <li><a href="submissions.html">Past Visits</a>
+                            <hr>
+                        </li>
+                    </ul>
+                    <hr />
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-gears fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="reports/add-user.html">Add/View Users</a>
+                            <hr>
+                        </li>
+
+                        <li><a href="reports/add-template.html">Add/Edit Templates</a>
+                            <hr>
+                        </li>
+                        <li><a href="reports/branches.html">Add/View Branches</a>
+                            <hr>
+                        </li>
+                    </ul>
+                    <hr />
+                </li>
+            </ul>
+            <ul class="nav nav-sidebar nav-sidebar2">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Chris Robertson</span>
+                        <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Edit Profile</a>
+                        </li>
+                        <li><a href="#">Help</a>
+                        </li>
+                        <li><a href="#">Logout</a>
+                        </li>
+                    </ul>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+        <!-- Body -->
             <div class="body-container">
 
                 <div class="col-md-12 col-lg-12">
@@ -100,12 +124,12 @@
                             <div class="row">
                                 <div class="form-group col-sm-12 col-md-6 col-lg-6">
                                     <label class="requiredfield control-label" for="employee-name">Name:</label>
-                                    <input id="name" name="name" class="form-control input-md" required="" type="text">
+                                    <input id="name" name="name" class="form-control input-md" required type="text">
                                 </div>
 
                                 <div class="form-group col-sm-12 col-md-6 col-lg-6">
                                     <label class="requiredfield control-label" for="position">Position/Title:</label>
-                                    <input id="position" name="position" class="form-control input-md" required="" type="text">
+                                    <input id="position" name="position" class="form-control input-md" required type="text">
                                 </div>
                             </div>
 
@@ -205,7 +229,7 @@
 
                                 <div class="form-group col-sm-12 col-md-2 col-lg-2">
                                     <label class="requiredfield control-label" for="date-of-visit">Date of Visit:</label>
-                                    <input id="date-of-visit" name="date-of-visit" class="form-control input-md" required="" type="text">
+                                    <input id="date-of-visit" name="date-of-visit" class="form-control input-md" required type="text">
                                 </div>
                             </div>
 
@@ -220,7 +244,7 @@
     </div>
 
     <div class="text-center copyright">
-        <p>Copyright &#169; 2017 Insurance Office of America. All rights reserved. Version 1.0</p>
+        <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 1.0</p>
     </div>
 </body>
 

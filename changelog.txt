@@ -1,3 +1,7 @@
+## 2018-7-12
+• Added reports section 
+• Updated dashboard and view user access.html
+
 ## 2017-3-22
 • Changed breadcrumbs to tabs on dashboard
 • Changed Home to Dashboard

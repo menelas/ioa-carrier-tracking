@@ -1,0 +1,36 @@
+.title-header {
+    padding: 3px 0 5px;
+    background: #4995cf;
+    color: #fff;
+    display: block;
+    clear: both;
+    text-align: center;
+    font-size: 17px;
+}
+
+.claim-header {
+    color: #4995cf;
+}
+
+.control-label {
+    color: #5e5e5e;
+    padding-bottom: 6px;
+    font-weight: 400;
+    text-align: left !important;
+}
+
+.form-control {
+    margin-top: 8px;
+}
+
+.checkbox input {
+    margin: 8px;
+}
+
+.spacer {
+    margin-top: 40px;
+}
+
+.statusBtn {
+    width: auto;
+}

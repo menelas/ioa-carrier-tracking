@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/app.bootstrap.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/view-user-access-report.css">
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Chosen Multi Select -->
+    <link rel="stylesheet" href="../chosen_v1.6.2/docsupport/style.css">
+    <link rel="stylesheet" href="../chosen_v1.6.2/docsupport/prism.css">
+    <link rel="stylesheet" href="../chosen_v1.6.2/chosen.css">
+    <script type="text/javascript" src="../chosen_v1.6.2/chosen.jquery.js"></script>
+    <script type="text/javascript" src="../chosen_v1.6.2/docsupport/prism.js"></script>
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <!-- Use default app date picker when programming date picker and not this demo version-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
+    <script type="text/javascript" src="../js/date-picker.js"></script>
+</head>
+
+<body class="carrier-pad carrier-tracking">
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+        <div class="container-fluid menu-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="index.html"><img src="../img/logo.png" width="150" alt="Insurance Office of America">
+            </a>
+                <h4 class="company-title">Insurance Office of America</h4>
+                <h5>Operations</h5>
+            </div>
+            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chris Robertson <i class="fa fa-cog" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content">
+        <div class="row sidebar-container">
+            <div id="sidebar" class="col-sm-3 sidebar1 sidebar navbar-collapse collapse">
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="view-policy-expiration-report.html"><i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span></a>
+                        <hr />
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="view-policy-expiration-report.html">Policy Expiration</a>
+                                <hr>
+                            </li>
+                            <li><a href="view-user-access-report.html">User Access</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-id-card-o fa-2x" aria-hidden="true"></i><span> Visits</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../form.html">Add Visit</a>
+                                <hr>
+                            </li>
+                            <li><a href="../submissions.html">Past Visits</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-gears fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="add-user.html">Add User</a>
+                                <hr>
+                            </li>
+                            <li><a href="user-search.html">View Users</a>
+                                <hr>
+                            </li>
+                            <li><a href="add-template.html">Add Template</a>
+                                <hr>
+                            </li>
+                            <li><a href="edit-template.html">Edit Template</a>
+                                <hr>
+                            </li>
+                            <li><a href="branches.html">View Branches</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                </ul>
+                <ul class="nav nav-sidebar nav-sidebar2">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Chris Robertson</span>
+                            <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="#">Help</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+            <!-- Body -->
+            <div class="body-container">
+
+                <div class="col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
+                        <div class="pull-left head-drop">
+                            <div class="btn-group">
+                                View User Access Report
+                            </div>
+                        </div>
+                    </div>
+                    <form class="template">
+                        <div class="row">
+                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                <label class="control-label" for="">Region:</label>
+                                <select data-placeholder=" -- Select Region --" multiple class="chosen-select-width" tabindex="16">
+                                    <option selected>FL</option>
+                                    <option value="2">NY</option>
+                                    <option value="3">TX</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                <label class="control-label" for="">User:</label>
+                                <select data-placeholder=" -- Select User --" multiple class="chosen-select-width" tabindex="16">
+                                    <option value="1">Jayce Ritter</option>
+                                    <option value="2">Eliza Collins</option>
+                                    <option value="3">Carter Hahn</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                <label class="control-label" for="">Branch:</label>
+                                <select data-placeholder=" -- Select Department --" multiple class="chosen-select-width" tabindex="16">
+                                    <option selected>ALT</option>
+                                    <option selected>LNG</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                <label class="control-label" for="">As of:</label>
+                                <div class="input-group branch-add">
+                                    <input type="text" class="form-control" name="date" id="expire2" value="05/1/2018" placeholder="">
+                                    <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr />
+
+                        <div class="buttons-footer">
+                            <button id="cancel" name="cancel" class="btn btn-default"> Clear Filters</button>
+                            <button id="save" name="save" class="pull-right btn btn-primary"> View Report</button>
+                        </div>
+
+                        <div class="row table-template table-style2">
+                            <div class="col-md-12 col-lg-12">
+                                <div class="col-md-12 col-xs-12 title-header">
+                                    <div class="pull-left head-drop">
+                                        <div class="btn-group">
+                                            Report Generated
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <div class="btn-group">
+                                            <button class="btn visit-btn pull-right"> <i class="fa fa-file-excel-o" aria-hidden="true"></i> Export to Excel</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body location-tables">
+
+                                    <div class="carrier-tables">
+                                        <table class="table-hover table-striped table-condensed cf">
+                                            <thead>
+                                                <tr>
+                                                    <th>Region</th>
+                                                    <th>User</th>
+                                                    <th>Branch</th>
+                                                    <th>Accessed Date</th>
+                                                    <th>Number of Section(s)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-title="Region">GA</td>
+                                                    <td data-title="User">Jayce Ritter</td>
+                                                    <td data-title="Branch">ATL</td>
+                                                    <td data-title="Accessed Date">05/1/2018</td>
+                                                    <td data-title="Number of Section(s)">8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="Region">GA</td>
+                                                    <td data-title="User">Eliza Collins</td>
+                                                    <td data-title="Branch">ATL</td>
+                                                    <td data-title="Accessed Date">04/30/2018</td>
+                                                    <td data-title="Number of Section(s)">7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="Region">GA</td>
+                                                    <td data-title="User">Carter Hahn</td>
+                                                    <td data-title="Branch">ATL</td>
+                                                    <td data-title="Accessed Date">04/28/2018</td>
+                                                    <td data-title="Number of Section(s)">7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="Region">GA</td>
+                                                    <td data-title="User">Aleah Stein</td>
+                                                    <td data-title="Branch">ATL</td>
+                                                    <td data-title="Accessed Date">04/28/2018</td>
+                                                    <td data-title="Number of Section(s)">6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="Region">GA</td>
+                                                    <td data-title="User">Deborah Colon</td>
+                                                    <td data-title="Branch">ATL</td>
+                                                    <td data-title="Accessed Date">04/27/2018</td>
+                                                    <td data-title="Number of Section(s)">6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="Region">GA</td>
+                                                    <td data-title="User">Luca Atkins</td>
+                                                    <td data-title="Branch">ATL</td>
+                                                    <td data-title="Accessed Date">04/26/2018</td>
+                                                    <td data-title="Number of Section(s)">5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="Region">FL</td>
+                                                    <td data-title="User">Erica Compton</td>
+                                                    <td data-title="Branch">LNG</td>
+                                                    <td data-title="Accessed Date">04/25/2018</td>
+                                                    <td data-title="Number of Section(s)">4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="Region">FL</td>
+                                                    <td data-title="User">Lawson Haney</td>
+                                                    <td data-title="Branch">LNG</td>
+                                                    <td data-title="Accessed Date">04/25/2018</td>
+                                                    <td data-title="Number of Section(s)">4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="Region">FL</td>
+                                                    <td data-title="User">Brian Dorsey</td>
+                                                    <td data-title="Branch">LNG</td>
+                                                    <td data-title="Accessed Date">04/23/2018</td>
+                                                    <td data-title="Number of Section(s)">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="Region">FL</td>
+                                                    <td data-title="User">Barbara Kline</td>
+                                                    <td data-title="Branch">LNG</td>
+                                                    <td data-title="Accessed Date">04/22/2018</td>
+                                                    <td data-title="Number of Section(s)">2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="Region">FL</td>
+                                                    <td data-title="User">Chris Evans</td>
+                                                    <td data-title="Branch">LNG</td>
+                                                    <td data-title="Accessed Date">04/20/2018</td>
+                                                    <td data-title="Number of Section(s)">2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="Region">FL</td>
+                                                    <td data-title="User">Jake Townsend</td>
+                                                    <td data-title="Branch">LNG</td>
+                                                    <td data-title="Accessed Date">04/18/2018</td>
+                                                    <td data-title="Number of Section(s)">1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p class="count">Showing 1 to 12 out of 48 entries</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
+
+                                        <ul class="pagination">
+                                            <li>
+                                                <a href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="active"><a href="#">1</a>
+                                            </li>
+                                            <li><a href="#">2</a>
+                                            </li>
+                                            <li><a href="#">3</a>
+                                            </li>
+                                            <li><a href="#">4</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 1.0</p>
+    </div>
+    <script type="text/javascript" src="../chosen_v1.6.2/docsupport/multi-select.js"></script>
+    <script type="text/javascript" src="../js/add-user.js"></script>
+</body>
+
+</html>
