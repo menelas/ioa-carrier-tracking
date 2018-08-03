@@ -41,7 +41,6 @@ a, a:active, a:hover, a:focus, a:visited  {
     color: #fff !important;
     font-size: 12px;
     padding: 6px 9px;
-    margin-top: 8px;
     border: none;
 }
 
@@ -1749,4 +1748,8 @@ div.dataTables_paginate {
     margin: 0;
     white-space: nowrap;
     text-align: right;
+}
+
+.chosen-container-multi .chosen-choices {
+  height: auto !important;
 }

@@ -41,3 +41,39 @@
 .panel-body {
     margin-bottom:  20px;
 }
+
+.icon-btn {
+    background-color: #296198;
+    color: #fff;
+    padding: 6px 9px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-right: 4px;
+    text-transform: uppercase;
+    position: sticky;
+    z-index: 100;
+}
+
+.icon-btn:hover {
+    background-color: #296198;
+    color: #fff;
+    padding: 6px 9px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-right: 4px;
+    text-transform: uppercase;
+    position: sticky;
+    z-index: 100;
+    opacity: .9;
+}
+
+.custom-group-form .template-save {
+    float: left;
+    width: 85%;
+}
+
+.add-button, .add-button:hover {
+    margin-top: 10px;
+}

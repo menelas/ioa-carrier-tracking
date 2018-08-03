@@ -1,3 +1,6 @@
+## 2018-8-3
+• Updated view-policy-expiration-report.html, app.css, and app.bootstrap.css
+
 ## 2018-7-13
 • Updated menu links
 

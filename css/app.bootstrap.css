@@ -46,5 +46,5 @@
 }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
-    color: inherit;
+    color: #fff;
 }

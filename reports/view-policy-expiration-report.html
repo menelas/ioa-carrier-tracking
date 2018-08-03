@@ -144,14 +144,17 @@
                     </div>
                     <form class="template">
                         <div class="row">
-                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
-                                <label class="control-label">Template:</label>
-                                <select class="form-control">
-                                    <option value="1">Template 1</option>
-                                    <option value="2">Template 2</option>
-                                </select>
-                                <input id="make-default-template" name="" value="true" checked type="checkbox"> <label class="control-label control-label-normal" for=""><small>Make Default Template</small></label><br>
-                                <i class="fa fa-info-circle" aria-hidden="true"></i> <small>Default template for viewing reports</small>
+                            <div class="form-group col-sm-12 col-md-4 col-lg-3">
+                                <label class="control-label" for="">Template:</label>
+                                <div class="custom-group-form">
+                                    <div class="input-group template-save">
+                                        <select class="form-control">
+                                            <option value="1">Template 1</option>
+                                            <option value="2">Template 2</option>
+                                        </select>
+                                    </div>
+                                    <a class="btn icon-btn add-button pull-right" data-toggle="tooltip" data-placement="top" title="Save as default template for viewing reports. "><i class="fa fa-save"></i></a>
+                                </div>
                             </div>
 
                             <div class="form-group col-sm-12 col-md-3 col-lg-3">
@@ -264,10 +267,10 @@
                                                     <td data-title="Premium Payable Name">Travelers</td>
                                                     <td data-title="Producer">Bernard Ware</td>
                                                     <td data-title="Account Manager">Jayce Ritter</td>
-                                                    <td data-title="Premium Billed">12000</td>
-                                                    <td data-title="Premium Estimated">12000</td>
-                                                    <td data-title="Commission Billed">12000</td>
-                                                    <td data-title="Commission Estimated">12000</td>
+                                                    <td data-title="Premium Billed">$12,000</td>
+                                                    <td data-title="Premium Estimated">$12,000</td>
+                                                    <td data-title="Commission Billed">$12,000</td>
+                                                    <td data-title="Commission Estimated">$12,000</td>
                                                 </tr>
                                                 <tr>
                                                     <td data-title="Expiration Date">6/1/2018</td>
@@ -280,10 +283,10 @@
                                                     <td data-title="Premium Payable Name">New Jersey Insurance Companies</td>
                                                     <td data-title="Producer">Chris Evans</td>
                                                     <td data-title="Account Manager">Eliza Collins</td>
-                                                    <td data-title="Premium Billed">2619</td>
-                                                    <td data-title="Premium Estimated">2400</td>
-                                                    <td data-title="Commission Billed">2619</td>
-                                                    <td data-title="Commission Estimated">2300</td>
+                                                    <td data-title="Premium Billed">$2,619</td>
+                                                    <td data-title="Premium Estimated">$2,400</td>
+                                                    <td data-title="Commission Billed">$2,619</td>
+                                                    <td data-title="Commission Estimated">$2,300</td>
                                                 </tr>
                                                 <tr>
                                                     <td data-title="Expiration Date">6/1/2018</td>
@@ -296,10 +299,10 @@
                                                     <td data-title="Premium Payable Name">AMWins Financial Group</td>
                                                     <td data-title="Producer">Bernard Ware</td>
                                                     <td data-title="Account Manager">Carter Hahn</td>
-                                                    <td data-title="Premium Billed">2588</td>
-                                                    <td data-title="Premium Estimated">2000</td>
-                                                    <td data-title="Commission Billed">2000</td>
-                                                    <td data-title="Commission Estimated">2000</td>
+                                                    <td data-title="Premium Billed">$2,588</td>
+                                                    <td data-title="Premium Estimated">$2,000</td>
+                                                    <td data-title="Commission Billed">$2,000</td>
+                                                    <td data-title="Commission Estimated">$2,000</td>
                                                 </tr>
                                                 <tr>
                                                     <td data-title="Expiration Date">6/1/2018</td>
@@ -312,10 +315,10 @@
                                                     <td data-title="Premium Payable Name">Zenith N.A.</td>
                                                     <td data-title="Producer">Chris Evans</td>
                                                     <td data-title="Account Manager">Aleah Stein</td>
-                                                    <td data-title="Premium Billed">3195</td>
-                                                    <td data-title="Premium Estimated">3000</td>
-                                                    <td data-title="Commission Billed">2000</td>
-                                                    <td data-title="Commission Estimated">2000</td>
+                                                    <td data-title="Premium Billed">$3,195</td>
+                                                    <td data-title="Premium Estimated">$3,000</td>
+                                                    <td data-title="Commission Billed">$2,000</td>
+                                                    <td data-title="Commission Estimated">$2,000</td>
                                                 </tr>
                                                 <tr>
                                                     <td data-title="Expiration Date">6/2/2018</td>
@@ -328,10 +331,10 @@
                                                     <td data-title="Premium Payable Name">Travelers</td>
                                                     <td data-title="Producer">Bernard Ware</td>
                                                     <td data-title="Account Manager">Deborah Colon</td>
-                                                    <td data-title="Premium Billed">4500</td>
-                                                    <td data-title="Premium Estimated">3849</td>
-                                                    <td data-title="Commission Billed">4300</td>
-                                                    <td data-title="Commission Estimated">4300</td>
+                                                    <td data-title="Premium Billed">$4,500</td>
+                                                    <td data-title="Premium Estimated">$3,849</td>
+                                                    <td data-title="Commission Billed">$4,300</td>
+                                                    <td data-title="Commission Estimated">$4,300</td>
                                                 </tr>
                                                 <tr>
                                                     <td data-title="Expiration Date">6/2/2018</td>
@@ -344,10 +347,10 @@
                                                     <td data-title="Premium Payable Name">New Jersey Insurance Companies</td>
                                                     <td data-title="Producer">Chris Evans</td>
                                                     <td data-title="Account Manager">Luca Atkins</td>
-                                                    <td data-title="Premium Billed">5108</td>
-                                                    <td data-title="Premium Estimated">5023</td>
-                                                    <td data-title="Commission Billed">5220</td>
-                                                    <td data-title="Commission Estimated">5220</td>
+                                                    <td data-title="Premium Billed">$5,108</td>
+                                                    <td data-title="Premium Estimated">$5,023</td>
+                                                    <td data-title="Commission Billed">$5,220</td>
+                                                    <td data-title="Commission Estimated">$5,220</td>
                                                 </tr>
                                                 <tr>
                                                     <td data-title="Expiration Date">6/2/2018</td>
@@ -360,10 +363,10 @@
                                                     <td data-title="Premium Payable Name">Zenith N.A.</td>
                                                     <td data-title="Producer">Bernard Ware</td>
                                                     <td data-title="Account Manager">Erica Compton</td>
-                                                    <td data-title="Premium Billed">5140</td>
-                                                    <td data-title="Premium Estimated">5000</td>
-                                                    <td data-title="Commission Billed">5140</td>
-                                                    <td data-title="Commission Estimated">5140</td>
+                                                    <td data-title="Premium Billed">$5,140</td>
+                                                    <td data-title="Premium Estimated">$5,000</td>
+                                                    <td data-title="Commission Billed">$5,140</td>
+                                                    <td data-title="Commission Estimated">$5,140</td>
                                                 </tr>
                                                 <tr>
                                                     <td data-title="Expiration Date">6/2/2018</td>
@@ -376,10 +379,10 @@
                                                     <td data-title="Premium Payable Name">Zenith N.A.</td>
                                                     <td data-title="Producer">Bernard Ware</td>
                                                     <td data-title="Account Manager">Lawson Haney</td>
-                                                    <td data-title="Premium Billed">6539</td>
-                                                    <td data-title="Premium Estimated">6219</td>
-                                                    <td data-title="Commission Billed">6539</td>
-                                                    <td data-title="Commission Estimated">6439</td>
+                                                    <td data-title="Premium Billed">$6,539</td>
+                                                    <td data-title="Premium Estimated">$6,219</td>
+                                                    <td data-title="Commission Billed">$6,539</td>
+                                                    <td data-title="Commission Estimated">$6,439</td>
                                                 </tr>
                                                 <tr>
                                                     <td data-title="Expiration Date">6/3/2018</td>
@@ -392,10 +395,10 @@
                                                     <td data-title="Premium Payable Name">Travelers</td>
                                                     <td data-title="Producer">Chris Evans</td>
                                                     <td data-title="Account Manager">Brian Dorsey</td>
-                                                    <td data-title="Premium Billed">7382</td>
-                                                    <td data-title="Premium Estimated">6328</td>
-                                                    <td data-title="Commission Billed">6500</td>
-                                                    <td data-title="Commission Estimated">6500</td>
+                                                    <td data-title="Premium Billed">$7,382</td>
+                                                    <td data-title="Premium Estimated">$6,328</td>
+                                                    <td data-title="Commission Billed">$6,500</td>
+                                                    <td data-title="Commission Estimated">$6,500</td>
                                                 </tr>
                                                 <tr>
                                                     <td data-title="Expiration Date">6/4/2018</td>
@@ -408,10 +411,10 @@
                                                     <td data-title="Premium Payable Name">Zenith N.A</td>
                                                     <td data-title="Producer">Bernard Ware</td>
                                                     <td data-title="Account Manager">Barbara Kline</td>
-                                                    <td data-title="Premium Billed">8232</td>
-                                                    <td data-title="Premium Estimated">7328</td>
-                                                    <td data-title="Commission Billed">7100</td>
-                                                    <td data-title="Commission Estimated">7100</td>
+                                                    <td data-title="Premium Billed">$8,232</td>
+                                                    <td data-title="Premium Estimated">$7,328</td>
+                                                    <td data-title="Commission Billed">$7,100</td>
+                                                    <td data-title="Commission Estimated">$7,100</td>
                                                 </tr>
                                                 <tr>
                                                     <td data-title="Expiration Date">6/5/2018</td>
@@ -424,10 +427,10 @@
                                                     <td data-title="Premium Payable Name">AMWins Financial Group</td>
                                                     <td data-title="Producer">Bernard Ware</td>
                                                     <td data-title="Account Manager">Jake Patterson</td>
-                                                    <td data-title="Premium Billed">3433</td>
-                                                    <td data-title="Premium Estimated">2322</td>
-                                                    <td data-title="Commission Billed">3200</td>
-                                                    <td data-title="Commission Estimated">3200</td>
+                                                    <td data-title="Premium Billed">$3,433</td>
+                                                    <td data-title="Premium Estimated">$2,322</td>
+                                                    <td data-title="Commission Billed">$3,200</td>
+                                                    <td data-title="Commission Estimated">$3,200</td>
                                                 </tr>
                                                 <tr>
                                                     <td data-title="Expiration Date">6/6/2018</td>
@@ -440,10 +443,10 @@
                                                     <td data-title="Premium Payable Name">Travelers</td>
                                                     <td data-title="Producer">Chris Evans</td>
                                                     <td data-title="Account Manager">Carter Hahn</td>
-                                                    <td data-title="Premium Billed">7232</td>
-                                                    <td data-title="Premium Estimated">6434</td>
-                                                    <td data-title="Commission Billed">5400</td>
-                                                    <td data-title="Commission Estimated">5400</td>
+                                                    <td data-title="Premium Billed">$7,232</td>
+                                                    <td data-title="Premium Estimated">$6,434</td>
+                                                    <td data-title="Commission Billed">$5,400</td>
+                                                    <td data-title="Commission Estimated">$5,400</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -491,6 +494,7 @@
     </div>
     <script type="text/javascript" src="../chosen_v1.6.2/docsupport/multi-select.js"></script>
     <script type="text/javascript" src="../js/add-user.js"></script>
+    <script type="text/javascript" src="../js/tooltip.js"></script>
 </body>
 
 </html>
