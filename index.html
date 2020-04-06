@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/app.bootstrap.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/view-policy-expiration-report.css">
+    <link rel="stylesheet" href="css/reports.dataaudit.css">
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -21,20 +23,6 @@
     <link rel="stylesheet" href="chosen_v1.6.2/chosen.css">
     <script type="text/javascript" src="chosen_v1.6.2/chosen.jquery.js"></script>
     <script type="text/javascript" src="chosen_v1.6.2/docsupport/prism.js"></script>
-
-    <!--Carrier Visit Pie/Bar Chart-->
-    <script type="text/javascript" src="js/dashboard/pie-charts/dashboard-carrier-visit.js"></script>
-    <script type="text/javascript" src="js/dashboard/pie-charts/dashboard-date-of-visits.js"></script>
-
-    <!-- Branch Map -->
-    <script type="text/javascript" src="js/branch-map/mapdata.js"></script>
-    <script type="text/javascript" src="js/branch-map/usmap.js"></script>
-    <script type="text/javascript" src="js/branch-map/select-state.js"></script>
-
-    <!--Branch Department Visit Pie/Bar Chart-->
-    <script type="text/javascript" src="js/department-visit/pie-charts/branch/branch-department-visit.js"></script>
-    <script type="text/javascript" src="js/department-visit/pie-charts/carrier/carrier-visit.js"></script>
-    <script type="text/javascript" src="js/department-visit/bar-charts/branch-date-of-visit.js"></script>
 
     <!-- Bootstrap Date-Picker Plugin -->
     <!-- Use default app date picker when programming date picker and not this demo version-->
@@ -97,18 +85,6 @@
                         <hr />
                     </li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-id-card-o fa-2x" aria-hidden="true"></i><span> Visits</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="form.html">Add Visit</a>
-                                <hr>
-                            </li>
-                            <li><a href="submissions.html">Past Visits</a>
-                                <hr>
-                            </li>
-                        </ul>
-                        <hr />
-                    </li>
-                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-gears fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="reports/add-user.html">Add User</a>
@@ -149,388 +125,502 @@
             <!-- Body -->
             <div class="body-container">
 
-                <div class="col-md-9 col-lg-9">
+                <div class="col-md-12 col-lg-12">
                     <div class="col-xs-12 col-md-12 title-header">
-
                         <ul class="nav nav-pills">
-                            <li class="active"><a data-toggle="pill" href="#branch">Branch</a>
+                            <li class="active"><a data-toggle="pill" href="#view-policy-expiration">View Policy Expiration Report</a>
                             </li>
-                            <li><a data-toggle="pill" href="#department">Department Visits</a>
+                            <li><a data-toggle="pill" href="#data-audit">Data Audit</a>
                             </li>
                         </ul>
-
-
-                        <div class="head-drop">
-                            <form class="form-inline carrier-tracking-system-form-inline">
-                                <div class="form-group multi-select">
-                                    <label class="control-label sr-only" for="start-date">Select Location(s):</label>
-                                    <select data-placeholder="Select Location(s)" multiple class="chosen-select-width" tabindex="16">
-                                        <optgroup label="Alabama">
-                                            <option>All Alabama</option>
-                                            <option>Birmingham, Alabama</option>
-                                            <option>Cleveland, Alabama</option>
-                                            <option>Colorado Springs, Alabama</option>
-                                            <option>Dallas, Alabama</option>
-                                            <option>Denver, Alabama</option>
-                                        </optgroup>
-                                        <optgroup label="Carolina/NE">
-                                            <option>All Carolina/NE</option>
-                                            <option>Baltimore, New York</option>
-                                            <option>Boston, Massachusetts</option>
-                                            <option>Cherry Hill, New Jersey</option>
-                                            <option>Columbia, South Carolina</option>
-                                        </optgroup>
-                                        <optgroup label="Florida">
-                                            <option>All Florida</option>
-                                            <option>Fort Lauderdale, Florida</option>
-                                            <option>Jacksonville, Florida</option>
-                                            <option>Jupiter, Florida</option>
-                                            <option>Lakeland, Florida</option>
-                                            <option>Longwood, Florida</option>
-                                        </optgroup>
-                                        <optgroup label="Georgia">
-                                            <option>All Georgia</option>
-                                            <option>Atlanta, Georgia</option>
-                                            <option>Carrollton, Georgia</option>
-                                            <option>Gainesville, Georgia</option>
-                                        </optgroup>
-                                        <optgroup label="Western">
-                                            <option>All Western</option>
-                                            <option>Aliso Viejo, California</option>
-                                            <option>Las Vegas, Nevada</option>
-                                            <option>Legends, Arizona</option>
-                                            <option>Los Angeles, California</option>
-                                        </optgroup>
-                                    </select>
-                                </div>
-
-                                <div class="form-group date-form">
-                                    <label class="control-label sr-only" for="start-date">Start Date:</label>
-                                    <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Filter Start Date">
-                                </div>
-
-                                <div class="form-group date-form date-form-mb">
-                                    <label class="control-label sr-only" for="start-date">End Date:</label>
-                                    <input type="search" class="form-control input-sm" name="date" id="date" placeholder="Filter End Date">
-                                </div>
-
-                                <div class="form-group pull-right form-button">
-                                    <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-right"></i> Submit</button>
-                                    <button type="clear" class="btn btn-default"><i class="fa fa-trash"></i> Clear</button>
-                                </div>
-                            </form>
-                        </div>
                     </div>
 
                     <div class="tab-content">
-                        <div id="branch" class="tab-pane fade in active panel-body">
-                            <div id="map"></div>
+                        <div id="view-policy-expiration" class="tab-pane fade in active panel-body">
+
+                            <form class="template">
+                                <div class="row">
+                                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
+                                        <label class="control-label" for=""><span class="required">*</span>Template:</label>
+                                        <div class="custom-group-form">
+                                            <div class="input-group template-save">
+                                                <select class="form-control">
+                                                    <option value="1">Template 1</option>
+                                                    <option value="2">Template 2</option>
+                                                </select>
+                                            </div>
+                                            <a class="btn icon-btn add-button pull-right" data-toggle="tooltip" data-placement="top" title="Save as default template for viewing reports. "><i class="fa fa-save"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                        <label class="control-label" for="">Agency:</label>
+                                        <select data-placeholder=" -- Select Agency --" multiple class="chosen-select-width" tabindex="16">
+                                            <option selected>IOA (IOA)</option>
+                                            <option value="2">Eagle</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                        <label class="control-label" for="">Region:</label>
+                                        <select data-placeholder="Select region(s)..." multiple class="chosen-select-width" tabindex="16">
+                                            <option selected>Florida</option>
+                                            <option value="2">Central</option>
+                                            <option value="3">Georgia</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                        <label class="control-label" for="">Branch:</label>
+                                        <select data-placeholder=" Select branche(s)..." multiple class="chosen-select-width" tabindex="16">
+                                            <option selected>Birmingham</option>
+                                            <option value="2">Cleveland</option>
+                                            <option value="3">Cocoa</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row spacer20">
+                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                        <label class="control-label" for="">Department:</label>
+                                        <select data-placeholder=" Select department(s)..." multiple class="chosen-select-width" tabindex="16">
+                                            <option selected>Benefits</option>
+                                            <option value="2">Bond Department</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                        <label class="control-label" for="">Producer:</label>
+                                        <select data-placeholder="Select producer(s)..." multiple class="chosen-select-width" tabindex="16">
+                                            <option selected>Bernard Ware</option>
+                                            <option value="2">Chris Evans</option>
+                                            <option value="3">John Ethans</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                        <label class="control-label" for="">Policy expires on or after:</label>
+                                        <div class="input-group branch-add">
+                                            <input type="text" class="form-control" name="date" id="expire1" value="04/1/2020" placeholder="">
+                                            <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                        <label class="control-label" for="">Policy expires on or before:</label>
+                                        <div class="input-group branch-add">
+                                            <input type="text" class="form-control" name="date" id="expire2" value="" placeholder="">
+                                            <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row spacer20">
+                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                        <label class="control-label" for="">Account Manager:</label>
+                                        <select data-placeholder="Select account manager(s)..." multiple class="chosen-select-width" tabindex="16">
+                                            <option selected>Kurt Miller</option>
+                                            <option value="2">William Bekham</option>
+                                            <option value="3">Phylis Chapin</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <hr />
+
+                                <div class="buttons-footer">
+                                    <button id="cancel" name="cancel" class="btn btn-default"> Clear Filters</button>
+                                    <button id="save" name="save" class="pull-right btn btn-primary"> View Report</button>
+                                </div>
+
+                                <div class="row table-template table-style2">
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="col-md-12 col-xs-12 title-header">
+                                            <div class="pull-left head-drop">
+                                                <div class="btn-group">
+                                                    Report Generated
+                                                </div>
+                                            </div>
+                                            <div class="pull-right">
+                                                <div class="btn-group">
+                                                    <button id="add-new-user" name="add-new-template" data-toggle="modal" data-target="#add-new-user" class="btn visit-btn pull-right"> <i class="fa fa-file-excel-o" aria-hidden="true"></i> Export to Excel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body location-tables">
+
+                                            <div class="carrier-tables">
+                                                <table class="table-hover table-striped table-condensed cf">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Expiration Date</th>
+                                                            <th>Account Name</th>
+                                                            <th>Policy Type Code</th>
+                                                            <th>Premium Payable Name</th>
+                                                            <th>Bill Mode</th>
+                                                            <th>Premium Billed</th>
+                                                            <th>Commission Billed</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Motionways, Inc.</td>
+                                                            <td data-title="Policy Type Code">EOFL</td>
+                                                            <td data-title="Premium Payable Name">Travelers</td>
+                                                            <td data-title="Bill Mode">A</td>
+                                                            <td data-title="Premium Billed">$47,000</td>
+                                                            <td data-title="Commission Billed">$8,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Raven Entertainment.</td>
+                                                            <td data-title="Policy Type Code">DOJL</td>
+                                                            <td data-title="Premium Payable Name">New Jersey Insurance Companies</td>
+                                                            <td data-title="Bill Mode">D</td>
+                                                            <td data-title="Premium Billed">$35,000</td>
+                                                            <td data-title="Commission Billed">$7,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Ogre Intelligence</td>
+                                                            <td data-title="Policy Type Code">EORO</td>
+                                                            <td data-title="Premium Payable Name">AMWins Financial Group</td>
+                                                            <td data-title="Bill Mode">D</td>
+                                                            <td data-title="Premium Billed">$27,000</td>
+                                                            <td data-title="Commission Billed">$5,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Ridgecoe</td>
+                                                            <td data-title="Policy Type Code">RDIO</td>
+                                                            <td data-title="Premium Payable Name">Zenith N.A.</td>
+                                                            <td data-title="Bill Mode">A</td>
+                                                            <td data-title="Premium Billed">$17,000</td>
+                                                            <td data-title="Commission Billed">$4,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Leopard Navigations</td>
+                                                            <td data-title="Policy Type Code">LMNO</td>
+                                                            <td data-title="Premium Payable Name">Travelers</td>
+                                                            <td data-title="Bill Mode">A</td>
+                                                            <td data-title="Premium Billed">$14,000</td>
+                                                            <td data-title="Commission Billed">$3,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Beedle Foods, Inc.</td>
+                                                            <td data-title="Policy Type Code">BLFL</td>
+                                                            <td data-title="Premium Payable Name">New Jersey Insurance Companies</td>
+                                                            <td data-title="Bill Mode">N</td>
+                                                            <td data-title="Premium Billed">$37,000</td>
+                                                            <td data-title="Commission Billed">$2,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Paragon Corporation</td>
+                                                            <td data-title="Policy Type Code">PADJ</td>
+                                                            <td data-title="Premium Payable Name">Zenith N.A.</td>
+                                                            <td data-title="Bill Mode">D</td>
+                                                            <td data-title="Premium Billed">$47,000</td>
+                                                            <td data-title="Commission Billed">$11,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Mars Solutions LLC</td>
+                                                            <td data-title="Policy Type Code">MAIO</td>
+                                                            <td data-title="Premium Payable Name">Zenith N.A.</td>
+                                                            <td data-title="Bill Mode">D</td>
+                                                            <td data-title="Premium Billed">$37,000</td>
+                                                            <td data-title="Commission Billed">$12,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Surgesystems, Inc.</td>
+                                                            <td data-title="Policy Type Code">SURO</td>
+                                                            <td data-title="Premium Payable Name">Travelers</td>
+                                                            <td data-title="Bill Mode">A</td>
+                                                            <td data-title="Premium Billed">$47,000</td>
+                                                            <td data-title="Commission Billed">$2,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Nemopoint, Inc.</td>
+                                                            <td data-title="Policy Type Code">NEOM</td>
+                                                            <td data-title="Premium Payable Name">Insurance Group</td>
+                                                            <td data-title="Bill Mode">A</td>
+                                                            <td data-title="Premium Billed">$57,000</td>
+                                                            <td data-title="Commission Billed">$8,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Lucentsearch LLC</td>
+                                                            <td data-title="Policy Type Code">NEOM</td>
+                                                            <td data-title="Premium Payable Name">Zenith N.A</td>
+                                                            <td data-title="Bill Mode">D</td>
+                                                            <td data-title="Premium Billed">$43,000</td>
+                                                            <td data-title="Commission Billed">$9,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-title="Expiration Date">04/18/2020</td>
+                                                            <td data-title="Account Name">Motionways, Inc.</td>
+                                                            <td data-title="Policy Type Code">EOFL</td>
+                                                            <td data-title="Premium Payable Name">Travelers</td>
+                                                            <td data-title="Bill Mode">D</td>
+                                                            <td data-title="Premium Billed">$35,000</td>
+                                                            <td data-title="Commission Billed">$3,000</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                <p class="count">Showing 1 to 12 out of 48 entries</p>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
+
+                                                <ul class="pagination">
+                                                    <li>
+                                                        <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="active"><a href="#">1</a>
+                                                    </li>
+                                                    <li><a href="#">2</a>
+                                                    </li>
+                                                    <li><a href="#">3</a>
+                                                    </li>
+                                                    <li><a href="#">4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form> 
+
                         </div>
 
-                        <div id="department" class="tab-pane fade in panel-body">
-                            <div id="branch-department-visit" class="department-container"></div>
+                        <div id="data-audit" class="tab-pane fade in panel-body">
+
+                        <div class="row">
+                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                <label class="control-label" for="">Region:</label>
+                                <select data-placeholder="Select region(s)..." multiple class="chosen-select-width" tabindex="16">
+                                    <option selected>Florida</option>
+                                    <option value="2">Central</option>
+                                    <option value="3">Georgia</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                <label class="control-label" for="">Branch:</label>
+                                <select data-placeholder=" Select branche(s)..." multiple class="chosen-select-width" tabindex="16">
+                                    <option selected>Birmingham</option>
+                                    <option value="2">Cleveland</option>
+                                    <option value="3">Cocoa</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                <label class="control-label" for="">Department:</label>
+                                <select data-placeholder=" Select department(s)..." multiple class="chosen-select-width" tabindex="16">
+                                    <option selected>Benefits</option>
+                                    <option value="2">Bond Department</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                <label class="control-label" for="">Account Manager:</label>
+                                <select data-placeholder="Select account manager(s)..." multiple class="chosen-select-width" tabindex="16">
+                                    <option value="1">Kurt Miller</option>
+                                    <option value="2">William Bekham</option>
+                                    <option value="3">Phylis Chapin</option>
+                                </select>
+                            </div>
+                        </div>
+
+                            <hr />
+                            
+                            <div class="buttons-footer spacer20">
+                                <button id="cancel" name="cancel" class="btn btn-default"> Clear Filters</button>
+                            </div>
+
+                            <div class="chart-block">
+                                <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="3">
+                                    <div class="chart-text">Clients - Missing or incomplete NAICS code<span class="value bg1" data-value="172" data-max="2048">172</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 8.39844%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="4">
+                                    <div class="chart-text">Clients - Missing or Incomplete SIC Code<span class="value bg1" data-value="84" data-max="2048">84</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 4.10156%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="2">
+                                    <div class="chart-text">Clients - Shown as Prospects with active policies<span class="value bg1" data-value="5" data-max="2048">5</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 0.244141%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chart-block">
+                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="6">
+                                    <div class="chart-text">Commission - Deficient, PR/BR totals less than full rate <span class="value bg2" data-value="2048" data-max="2048">2048</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 100%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="9">
+                                    <div class="chart-text">Commission - PR/BR entered at 0%<span class="value bg2" data-value="1763" data-max="2048">1763</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 86.084%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="7">
+                                    <div class="chart-text">Commission - Excess, PR/BR totals more than full rate<span class="value bg2" data-value="64" data-max="2048">64</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 3.125%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="8">
+                                    <div class="chart-text">Commission - PR/BR Same producer entered multiple times<span class="value bg2" data-value="38" data-max="2048">38</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 1.85547%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="17">
+                                    <div class="chart-text">Commission - BENEFITS - Personal Life over 80% and other value not 60%<span class="value bg2" data-value="27" data-max="2048">27</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 1.31836%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="16">
+                                    <div class="chart-text">Commission - PR/BR Blank<span class="value bg2" data-value="0" data-max="2048">0</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 0%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chart-block">
+                                <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="19">
+                                    <div class="chart-text">Line - Estimated Commission is Zero<span class="value bg3" data-value="381" data-max="2048">381</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 18.6035%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="18">
+                                    <div class="chart-text">Line - Estimated Premium is Zero<span class="value bg3" data-value="333" data-max="2048">333</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 16.2598%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="20">
+                                    <div class="chart-text">Line - Blank Estimated Commission<span class="value bg3" data-value="85" data-max="2048">85</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 4.15039%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="15">
+                                    <div class="chart-text">Line - Missing Estimated Premium<span class="value bg3" data-value="78" data-max="2048">78</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 3.80859%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chart-block">
+                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="21">
+                                    <div class="chart-text">Policy - Missing Estimated Commission<span class="value bg4" data-value="208" data-max="2048">208</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 10.1563%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="13">
+                                    <div class="chart-text">Policy - Policies Missing Estimated Premium<span class="value bg4" data-value="159" data-max="2048">159</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 7.76367%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="11">
+                                    <div class="chart-text">Policy - Missing Account Manager Book<span class="value bg4" data-value="146" data-max="2048">146</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 7.12891%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="14">
+                                    <div class="chart-text">Policy - Missing - PPE or ICO<span class="value bg4" data-value="75" data-max="2048">75</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 3.66211%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="12">
+                                    <div class="chart-text">Policy - Missing Servicing Producer Book<span class="value bg4" data-value="18" data-max="2048">18</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 0.878906%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="22">
+                                    <div class="chart-text">Policy - Account Manager shows ZDELETE<span class="value bg4" data-value="0" data-max="2048">0</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 0%;"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="23">
+                                    <div class="chart-text">Policy - Servicing Producer shows ZDELETE<span class="value bg4" data-value="0" data-max="2048">0</span></div>
+                                    <div class="chart-bar">
+                                        <div class="chart-bar-progress" style="width: 0%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="grid-searchresults-div" style="position: relative; zoom: 1; display: none;">
+                            <div class="tablecontainer exception-table col-12">
+                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
+                                    <div class="pull-left head-drop">
+                                        PR/BR Blank
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="https://operations-uat.ioausa.com/Reports/DataAudit#" class="btn grid-btn pull-right" id="graph-export"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Export to Excel</a>
+                                        <a href="https://operations-uat.ioausa.com/Reports/DataAudit#" class="btn grid-btn pull-right" id="graph-toggle"><i class="fa fa-bar-chart" aria-hidden="true"></i> Show Main Graph</a>
+                                    </div>
+                                </div>
+                                <div class="panel-body location-tables">
+                                    <div class="carrier-tables">
+                                        <div class="alert alert-info empty-table-alert mt-3 ml-3 mr-3">
+                                            <strong>No data to display.</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         </div>
                     </div>
                 </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <div class="col-md-12 col-xs-12 title-header">
-                        <div class="pull-left head-drop">
-                            <div class="btn-group">
-                                Carrier Visits
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body">
-                        <div id="dashboard-carrier-visits"></div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-12 col-lg-12">
-                    <div class="col-md-12 col-xs-12 title-header2">
-                        <div class="pull-left head-drop">
-                            <div class="btn-group">
-                                Number of Visits
-                            </div>
-                        </div>
-
-                        <div class="pull-right head-drop">
-                            <div class="btn-group">
-                                <strong>TOTAL: 516</strong>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body location-tables">
-
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
-                            <div class="state-title">Alabama</div>
-                            <div class="carrier-tables">
-                                <table class="table-hover table-striped table-condensed cf">
-                                    <thead>
-                                        <tr>
-                                            <th>Branch</th>
-                                            <th class="text-right"># of visits</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td data-title="Branch">Birmingham</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">3</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Cleveland</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">3</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Colorado Springs</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">3</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Dallas</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">3</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Total"><strong>TOTAL:</strong>
-                                            </td>
-                                            <td data-title="# of visits" class="text-right"><strong>23</strong>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="text-center pagination-container">
-                                <ul class="pagination">
-                                    <li class="active"><a href="#">1</a>
-                                    </li>
-                                    <li><a href="#">2</a>
-                                    </li>
-                                    <li><a href="#">3</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
-                            <div class="state-title">Carolina/NE</div>
-
-                            <div class="carrier-tables">
-                                <table class="table-hover table-striped table-condensed cf">
-                                    <thead>
-                                        <tr>
-                                            <th>Branch</th>
-                                            <th class="text-right"># of visits</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td data-title="Branch">Baltimore</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">13</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Binghamton </td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">12</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Boston</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">17</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Cherry Hill </td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">19</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="TOTAL"><strong>TOTAL:</strong>
-                                            </td>
-                                            <td data-title="# of visits" class="text-right"><strong>116</strong>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="text-center pagination-container">
-                                <ul class="pagination">
-                                    <li class="active"><a href="#">1</a>
-                                    </li>
-                                    <li><a href="#">2</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
-                            <div class="state-title">Florida</div>
-                            <div class="carrier-tables">
-                                <table class="table-hover table-striped table-condensed cf">
-                                    <thead>
-                                        <tr>
-                                            <th>Branch</th>
-                                            <th class="text-right"># of visits</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td data-title="Branch">Fort Lauderdale </td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">20</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Jacksonville</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">23</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Jupiter</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">27</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Lakeland</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">29</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="TOTAL"><strong>TOTAL:</strong>
-                                            </td>
-                                            <td data-title="# of visits" class="text-right"><strong>151</strong>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="text-center pagination-container">
-                                <ul class="pagination">
-                                    <li class="active"><a href="#">1</a>
-                                    </li>
-                                    <li><a href="#">2</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
-                            <div class="state-title">Georgia</div>
-                            <div class="carrier-tables">
-                                <table class="table-hover table-striped table-condensed cf">
-                                    <thead>
-                                        <tr>
-                                            <th>Branch</th>
-                                            <th class="text-right"># of visits</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td data-title="Branch">Atlanta</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">32</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Carrollton </td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">34</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Gainesville</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">37</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="TOTAL"><strong>TOTAL:</strong>
-                                            </td>
-                                            <td data-title="# of visits" class="text-right"><strong>73</strong>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="text-center pagination-container">
-                                <ul class="pagination">
-                                    <li class="active"><a href="#">1</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 visit-container">
-                            <div class="state-title">Western</div>
-                            <div class="carrier-tables">
-                                <table class="table-hover table-striped table-condensed cf">
-                                    <thead>
-                                        <tr>
-                                            <th>Branch</th>
-                                            <th class="text-right"># of visits</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td data-title="Branch">Aliso Viejo</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">44</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Auburn</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">43</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Las Vegas</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">42</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="Branch">Legends</td>
-                                            <td data-title="# of visits" class="text-right"><a href="#">41</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td data-title="TOTAL"><strong>TOTAL:</strong>
-                                            </td>
-                                            <td data-title="# of visits" class="text-right"><strong>173</strong>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="text-center pagination-container">
-                                <ul class="pagination">
-                                    <li class="active"><a href="#">1</a>
-                                    </li>
-                                    <li><a href="#">2</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 
     <div class="text-center copyright">
-        <p>Copyright &#169; 2018 Insurance Office of America. All rights reserved. Version 1.0</p>
+        <p>Copyright &#169; 2020 Insurance Office of America. All rights reserved. Version 1.0</p>
     </div>
 
     <!-- Branch Department Visit Pie/Bar Chart -->
