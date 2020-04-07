@@ -75,7 +75,10 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="reports/view-policy-expiration-report.html">Policy Expiration</a>
+                            <li><a href="index.html">Policy Expiration</a>
+                                <hr>
+                            </li>
+                            <li><a href="index.html">Data Audit</a>
                                 <hr>
                             </li>
                             <li><a href="reports/view-user-access-report.html">User Access</a>
@@ -383,7 +386,6 @@
                                                 <p class="count">Showing 1 to 12 out of 48 entries</p>
                                             </div>
                                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
-
                                                 <ul class="pagination">
                                                     <li>
                                                         <a href="#" aria-label="Previous">
@@ -412,206 +414,184 @@
 
                         </div>
 
-                        <div id="data-audit" class="tab-pane fade in panel-body">
+                        <div id="data-audit" class="tab-pane fade panel-body">
 
-                        <div class="row">
-                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
-                                <label class="control-label" for="">Region:</label>
-                                <select data-placeholder="Select region(s)..." multiple class="chosen-select-width" tabindex="16">
-                                    <option selected>Florida</option>
-                                    <option value="2">Central</option>
-                                    <option value="3">Georgia</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
-                                <label class="control-label" for="">Branch:</label>
-                                <select data-placeholder=" Select branche(s)..." multiple class="chosen-select-width" tabindex="16">
-                                    <option selected>Birmingham</option>
-                                    <option value="2">Cleveland</option>
-                                    <option value="3">Cocoa</option>
-                                </select>
-                            </div>
-
-
-                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
-                                <label class="control-label" for="">Department:</label>
-                                <select data-placeholder=" Select department(s)..." multiple class="chosen-select-width" tabindex="16">
-                                    <option selected>Benefits</option>
-                                    <option value="2">Bond Department</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
-                                <label class="control-label" for="">Account Manager:</label>
-                                <select data-placeholder="Select account manager(s)..." multiple class="chosen-select-width" tabindex="16">
-                                    <option value="1">Kurt Miller</option>
-                                    <option value="2">William Bekham</option>
-                                    <option value="3">Phylis Chapin</option>
-                                </select>
-                            </div>
-                        </div>
-
-                            <hr />
-                            
-                            <div class="buttons-footer spacer20">
-                                <button id="cancel" name="cancel" class="btn btn-default"> Clear Filters</button>
-                            </div>
-
-                            <div class="chart-block">
-                                <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="3">
-                                    <div class="chart-text">Clients - Missing or incomplete NAICS code<span class="value bg1" data-value="172" data-max="2048">172</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 8.39844%;"></div>
-                                    </div>
+                            <div class="row">
+                                <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <label class="control-label" for="">Region:</label>
+                                    <select data-placeholder="Select region(s)..." multiple class="chosen-select-width" tabindex="16">
+                                        <option selected>Florida</option>
+                                        <option value="2">Central</option>
+                                        <option value="3">Georgia</option>
+                                    </select>
                                 </div>
-                                <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="4">
-                                    <div class="chart-text">Clients - Missing or Incomplete SIC Code<span class="value bg1" data-value="84" data-max="2048">84</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 4.10156%;"></div>
-                                    </div>
+
+                                <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <label class="control-label" for="">Branch:</label>
+                                    <select data-placeholder=" Select branche(s)..." multiple class="chosen-select-width" tabindex="16">
+                                        <option selected>Birmingham</option>
+                                        <option value="2">Cleveland</option>
+                                        <option value="3">Cocoa</option>
+                                    </select>
                                 </div>
-                                <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="2">
-                                    <div class="chart-text">Clients - Shown as Prospects with active policies<span class="value bg1" data-value="5" data-max="2048">5</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 0.244141%;"></div>
-                                    </div>
+
+
+                                <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <label class="control-label" for="">Department:</label>
+                                    <select data-placeholder=" Select department(s)..." multiple class="chosen-select-width" tabindex="16">
+                                        <option selected>Benefits</option>
+                                        <option value="2">Bond Department</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <label class="control-label" for="">Account Manager:</label>
+                                    <select data-placeholder="Select account manager(s)..." multiple class="chosen-select-width" tabindex="16">
+                                        <option value="1">Kurt Miller</option>
+                                        <option value="2">William Bekham</option>
+                                        <option value="3">Phylis Chapin</option>
+                                    </select>
                                 </div>
                             </div>
 
-                            <div class="chart-block">
-                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="6">
-                                    <div class="chart-text">Commission - Deficient, PR/BR totals less than full rate <span class="value bg2" data-value="2048" data-max="2048">2048</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 100%;"></div>
-                                    </div>
+                                <hr />
+                                
+                                <div class="buttons-footer spacer20">
+                                    <button id="cancel" name="cancel" class="btn btn-default"> Clear Filters</button>
                                 </div>
-                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="9">
-                                    <div class="chart-text">Commission - PR/BR entered at 0%<span class="value bg2" data-value="1763" data-max="2048">1763</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 86.084%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="7">
-                                    <div class="chart-text">Commission - Excess, PR/BR totals more than full rate<span class="value bg2" data-value="64" data-max="2048">64</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 3.125%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="8">
-                                    <div class="chart-text">Commission - PR/BR Same producer entered multiple times<span class="value bg2" data-value="38" data-max="2048">38</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 1.85547%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="17">
-                                    <div class="chart-text">Commission - BENEFITS - Personal Life over 80% and other value not 60%<span class="value bg2" data-value="27" data-max="2048">27</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 1.31836%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="16">
-                                    <div class="chart-text">Commission - PR/BR Blank<span class="value bg2" data-value="0" data-max="2048">0</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 0%;"></div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="chart-block">
-                                <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="19">
-                                    <div class="chart-text">Line - Estimated Commission is Zero<span class="value bg3" data-value="381" data-max="2048">381</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 18.6035%;"></div>
+                                <div class="chart-block">
+                                    <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="3">
+                                        <div class="chart-text">Clients - Missing or incomplete NAICS code<span class="value bg1" data-value="172" data-max="2048">172</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 8.39844%;"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="18">
-                                    <div class="chart-text">Line - Estimated Premium is Zero<span class="value bg3" data-value="333" data-max="2048">333</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 16.2598%;"></div>
+                                    <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="4">
+                                        <div class="chart-text">Clients - Missing or Incomplete SIC Code<span class="value bg1" data-value="84" data-max="2048">84</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 4.10156%;"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="20">
-                                    <div class="chart-text">Line - Blank Estimated Commission<span class="value bg3" data-value="85" data-max="2048">85</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 4.15039%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="15">
-                                    <div class="chart-text">Line - Missing Estimated Premium<span class="value bg3" data-value="78" data-max="2048">78</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 3.80859%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="chart-block">
-                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="21">
-                                    <div class="chart-text">Policy - Missing Estimated Commission<span class="value bg4" data-value="208" data-max="2048">208</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 10.1563%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="13">
-                                    <div class="chart-text">Policy - Policies Missing Estimated Premium<span class="value bg4" data-value="159" data-max="2048">159</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 7.76367%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="11">
-                                    <div class="chart-text">Policy - Missing Account Manager Book<span class="value bg4" data-value="146" data-max="2048">146</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 7.12891%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="14">
-                                    <div class="chart-text">Policy - Missing - PPE or ICO<span class="value bg4" data-value="75" data-max="2048">75</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 3.66211%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="12">
-                                    <div class="chart-text">Policy - Missing Servicing Producer Book<span class="value bg4" data-value="18" data-max="2048">18</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 0.878906%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="22">
-                                    <div class="chart-text">Policy - Account Manager shows ZDELETE<span class="value bg4" data-value="0" data-max="2048">0</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 0%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="23">
-                                    <div class="chart-text">Policy - Servicing Producer shows ZDELETE<span class="value bg4" data-value="0" data-max="2048">0</span></div>
-                                    <div class="chart-bar">
-                                        <div class="chart-bar-progress" style="width: 0%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row" id="grid-searchresults-div" style="position: relative; zoom: 1; display: none;">
-                            <div class="tablecontainer exception-table col-12">
-                                <div class="col-md-12 col-xs-12 panel-heading tableheader">
-                                    <div class="pull-left head-drop">
-                                        PR/BR Blank
-                                    </div>
-                                    <div class="pull-right">
-                                        <a href="https://operations-uat.ioausa.com/Reports/DataAudit#" class="btn grid-btn pull-right" id="graph-export"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Export to Excel</a>
-                                        <a href="https://operations-uat.ioausa.com/Reports/DataAudit#" class="btn grid-btn pull-right" id="graph-toggle"><i class="fa fa-bar-chart" aria-hidden="true"></i> Show Main Graph</a>
-                                    </div>
-                                </div>
-                                <div class="panel-body location-tables">
-                                    <div class="carrier-tables">
-                                        <div class="alert alert-info empty-table-alert mt-3 ml-3 mr-3">
-                                            <strong>No data to display.</strong>
+                                    <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="2">
+                                        <div class="chart-text">Clients - Shown as Prospects with active policies<span class="value bg1" data-value="5" data-max="2048">5</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 0.244141%;"></div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
+                                <div class="chart-block">
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="6">
+                                        <div class="chart-text">Commission - Deficient, PR/BR totals less than full rate <span class="value bg2" data-value="2048" data-max="2048">2048</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="9">
+                                        <div class="chart-text">Commission - PR/BR entered at 0%<span class="value bg2" data-value="1763" data-max="2048">1763</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 86.084%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="7">
+                                        <div class="chart-text">Commission - Excess, PR/BR totals more than full rate<span class="value bg2" data-value="64" data-max="2048">64</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 3.125%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="8">
+                                        <div class="chart-text">Commission - PR/BR Same producer entered multiple times<span class="value bg2" data-value="38" data-max="2048">38</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 1.85547%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="17">
+                                        <div class="chart-text">Commission - BENEFITS - Personal Life over 80% and other value not 60%<span class="value bg2" data-value="27" data-max="2048">27</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 1.31836%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="16">
+                                        <div class="chart-text">Commission - PR/BR Blank<span class="value bg2" data-value="0" data-max="2048">0</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="chart-block">
+                                    <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="19">
+                                        <div class="chart-text">Line - Estimated Commission is Zero<span class="value bg3" data-value="381" data-max="2048">381</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 18.6035%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="18">
+                                        <div class="chart-text">Line - Estimated Premium is Zero<span class="value bg3" data-value="333" data-max="2048">333</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 16.2598%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="20">
+                                        <div class="chart-text">Line - Blank Estimated Commission<span class="value bg3" data-value="85" data-max="2048">85</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 4.15039%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="15">
+                                        <div class="chart-text">Line - Missing Estimated Premium<span class="value bg3" data-value="78" data-max="2048">78</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 3.80859%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="chart-block">
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="21">
+                                        <div class="chart-text">Policy - Missing Estimated Commission<span class="value bg4" data-value="208" data-max="2048">208</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 10.1563%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="13">
+                                        <div class="chart-text">Policy - Policies Missing Estimated Premium<span class="value bg4" data-value="159" data-max="2048">159</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 7.76367%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="11">
+                                        <div class="chart-text">Policy - Missing Account Manager Book<span class="value bg4" data-value="146" data-max="2048">146</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 7.12891%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="14">
+                                        <div class="chart-text">Policy - Missing - PPE or ICO<span class="value bg4" data-value="75" data-max="2048">75</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 3.66211%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="12">
+                                        <div class="chart-text">Policy - Missing Servicing Producer Book<span class="value bg4" data-value="18" data-max="2048">18</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 0.878906%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="22">
+                                        <div class="chart-text">Policy - Account Manager shows ZDELETE<span class="value bg4" data-value="0" data-max="2048">0</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="23">
+                                        <div class="chart-text">Policy - Servicing Producer shows ZDELETE<span class="value bg4" data-value="0" data-max="2048">0</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -622,22 +602,6 @@
     <div class="text-center copyright">
         <p>Copyright &#169; 2020 Insurance Office of America. All rights reserved. Version 1.0</p>
     </div>
-
-    <!-- Branch Department Visit Pie/Bar Chart -->
-    <script type="text/javascript" src="js/department-visit/pie-charts/branch/branch-department-visit-highchart.js"></script>
-    <script type="text/javascript" src="js/department-visit/pie-charts/branch/branch-department-visit-exporting.js"></script>
-    <script type="text/javascript" src="js/department-visit/pie-charts/carrier/branch-department-visit-highchart.js"></script>
-    <script type="text/javascript" src="js/department-visit/pie-charts/carrier/branch-department-visit-exporting.js"></script>
-
-    <!-- Carrier Visit Pie/Bar Chart -->
-    <script type="text/javascript" src="js/dashboard/pie-charts/dashboard-carrier-visit.js"></script>
-    <script type="text/javascript" src="js/dashboard/pie-charts/dashboard-carrier-visit-highchart.js"></script>
-    <script type="text/javascript" src="js/dashboard/pie-charts/dashboard-carrier-visit-exporting.js"></script>
-
-    <!-- Date of Visit Bar Chart-->
-    <script type="text/javascript" src="js/dashboard/bar-charts/dashboard-date-of-visits.js"></script>
-    <script type="text/javascript" src="js/dashboard/bar-charts/dashboard-date-of-visits-highchart.js"></script>
-    <script type="text/javascript" src="js/dashboard/bar-charts/dashboard-date-of-visits-exporting.js"></script>
 
     <script type="text/javascript" src="chosen_v1.6.2/docsupport/multi-select.js"></script>
 
