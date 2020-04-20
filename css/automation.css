@@ -1,0 +1,25 @@
+.nav.nav-pills a {
+    font-size: 12px;
+}
+
+.panel-body {
+    padding-top: 50px;
+}
+
+.btn-default {
+    color: #333 !important;
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    font-size: 14px;
+}
+
+.btn-default:hover, .btn-default:focus {
+    color: #333 !important;
+    background-color: #e6e6e6 !important;
+    border: 1px solid #adadad !important;
+    font-size: 14px;
+}
+
+.dropzone {
+    margin-top: 10px;
+}

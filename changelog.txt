@@ -1,3 +1,6 @@
+## 2020-4-20
+• Added automation.html, automation.css, and default drop zone css
+
 ## 2020-4-7
 • Updated navigation menus and changes on index.html
 
