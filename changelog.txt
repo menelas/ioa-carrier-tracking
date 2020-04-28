@@ -1,3 +1,7 @@
+## 2020-4-28
+• Added Error, Success, and Results section on automation.html
+• Edited automation.css
+
 ## 2020-4-20
 • Added automation.html, automation.css, and default drop zone css
 
