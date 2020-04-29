@@ -1,3 +1,6 @@
+## 2020-4-29
+• Added Error, Success, and Results sections on Statement of Value Import and Fleet Schedule Comparison
+
 ## 2020-4-28
 • Added Error, Success, and Results section on automation.html
 • Edited automation.css
