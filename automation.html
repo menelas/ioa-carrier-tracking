@@ -33,7 +33,16 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>
     <link rel="stylesheet" href="css/dropzone.css">
 
-
+    <!--Use default toastr when programming and not this demo version-->    
+    <link rel="stylesheet" href="https://codeseven.github.io/toastr/build/toastr.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript" src="js/toastr.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $('#display-error').click(function() {
+           toastr.error('The form could not be populated.'); });
+        });
+    </script>
 </head>
 
 <body class="carrier-pad carrier-tracking">
@@ -139,7 +148,7 @@
                             <li><a href="#">Edit Profile</a>
                             </li>
                             <li><a href="#">Help</a>
-                            </li>
+                            </li> 
                             <li><a href="#">Logout</a>
                             </li>
                         </ul>
@@ -263,6 +272,43 @@
                                 </div>
                             </div>
 
+                            <div class="row spacer20 table-template table-style2">
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="col-md-12 col-xs-12 title-header">
+                                        <div class="pull-left head-drop">
+                                            <div class="btn-group">
+                                                Results Generated
+                                            </div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="btn-group">
+                                                <button id="export-to-excel" name="add-new-template" data-toggle="modal" data-target="#export-to-excel" class="btn visit-btn pull-right"> <i class="fa fa-file-excel-o" aria-hidden="true"></i> Export Policies Not Updated to Excel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body results-tables">
+
+                                        <div class="carrier-tables">
+                                            <table class="table-hover table-striped table-condensed cf">
+                                                <thead>
+                                                    <tr>
+                                                        <th># of Policies Updated Successfully</th>
+                                                        <th># of Policies Not Updated</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-title="# of Policies Updated Successfully">4</td>
+                                                        <td data-title="# of Policies Not Updated">9</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <hr />
 
                             <div class="buttons-footer">
@@ -293,6 +339,13 @@
                                 </div>
                             </div>
 
+                            <div class="row spacer20">
+                                <div class="col-md-12 col-lg-12">
+                                    <button type="button" class="btn btn-primary" id="display-error">Click to Show Error</button><br />
+                                    <small>Modal will open automatically on live version and not require user to click to show errors</small>
+                                </div>
+                            </div>
+
                             <hr />
 
                             <div class="buttons-footer">
@@ -314,31 +367,42 @@
 
                             <button id="save" name="save" class="btn-sm btn-primary"> Download the template</button>
 
-                            <!--Display if an error occurs-->
-                            <div class="row spacer20">
-                                <div class="col-xs-12 col-md-12 col-lg-12 alert-danger">
-                                    <div class="import-title"><i class="fa fa-exclamation-triangle"></i> Error</div>
-                                        <p>Error message goes here with an explanation of the error and how to fix the error. Error can span across the entire page if needed.
-                                            <button id="save" name="save" class="btn-sm btn-danger"> Export to Excel</button>
-                                        <p>
+                            <div class="row spacer20 table-template table-style2">
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="col-md-12 col-xs-12 title-header">
+                                        <div class="pull-left head-drop">
+                                            <div class="btn-group">
+                                                Results Generated
+                                            </div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="btn-group">
+                                                <button id="export-to-excel" name="add-new-template" data-toggle="modal" data-target="#export-to-excel" class="btn visit-btn pull-right"> <i class="fa fa-file-excel-o" aria-hidden="true"></i> Export Policies Not Updated to Excel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body results-tables">
+
+                                        <div class="carrier-tables">
+                                            <table class="table-hover table-striped table-condensed cf">
+                                                <thead>
+                                                    <tr>
+                                                        <th># of Policies Updated Successfully</th>
+                                                        <th># of Policies Not Updated</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-title="# of Policies Updated Successfully">4</td>
+                                                        <td data-title="# of Policies Not Updated">9</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-                            <!--Display if import was a success-->
-                            <div class="row spacer20">
-                                <div class="col-xs-12 col-md-12 col-lg-12 alert-success">
-                                    <div class="import-title"><i class="fa fa-check-circle"></i> Success</div>
-                                        <p>Your import has been successfully processed.<p>
-                                </div>
-                            </div> 
-
-                            <!--Display Results-->
-                            <div class="row spacer20">
-                                <div class="col-xs-12 col-md-12 col-lg-12 alert-info">
-                                    <div class="import-title"><i class="fa fa-list-alt"></i> Results</div>
-                                        <p>Results of import file if needed to be displayed.<p>
-                                </div>
-                            </div>      
 
                             <hr />
 
@@ -360,31 +424,42 @@
 
                             <button id="save" name="save" class="btn-sm btn-primary"> Download the template</button>
 
-                            <!--Display if an error occurs-->
-                            <div class="row spacer20">
-                                <div class="col-xs-12 col-md-12 col-lg-12 alert-danger">
-                                    <div class="import-title"><i class="fa fa-exclamation-triangle"></i> Error</div>
-                                        <p>Error message goes here with an explanation of the error and how to fix the error. Error can span across the entire page if needed.
-                                            <button id="save" name="save" class="btn-sm btn-danger"> Export to Excel</button>
-                                        <p>
+                            <div class="row spacer20 table-template table-style2">
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="col-md-12 col-xs-12 title-header">
+                                        <div class="pull-left head-drop">
+                                            <div class="btn-group">
+                                                Results Generated
+                                            </div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="btn-group">
+                                                <button id="export-to-excel" name="add-new-template" data-toggle="modal" data-target="#export-to-excel" class="btn visit-btn pull-right"> <i class="fa fa-file-excel-o" aria-hidden="true"></i> Export Records Not Updated to Excel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body results-tables">
+
+                                        <div class="carrier-tables">
+                                            <table class="table-hover table-striped table-condensed cf">
+                                                <thead>
+                                                    <tr>
+                                                        <th># of Records Updated Successfully</th>
+                                                        <th># of Records Not Updated</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-title="# of Policies Updated Successfully">4</td>
+                                                        <td data-title="# of Policies Not Updated">9</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-                            <!--Display if import was a success-->
-                            <div class="row spacer20">
-                                <div class="col-xs-12 col-md-12 col-lg-12 alert-success">
-                                    <div class="import-title"><i class="fa fa-check-circle"></i> Success</div>
-                                        <p>Your import has been successfully processed.<p>
-                                </div>
-                            </div> 
-
-                            <!--Display Results-->
-                            <div class="row spacer20">
-                                <div class="col-xs-12 col-md-12 col-lg-12 alert-info">
-                                    <div class="import-title"><i class="fa fa-list-alt"></i> Results</div>
-                                        <p>Results of import file if needed to be displayed.<p>
-                                </div>
-                            </div>   
 
                             <hr />
 
@@ -410,32 +485,6 @@
                                         </form>
                                 </div>
                             </div>
-
-                            <!--Display if an error occurs-->
-                            <div class="row spacer20">
-                                <div class="col-xs-12 col-md-12 col-lg-12 alert-danger">
-                                    <div class="import-title"><i class="fa fa-exclamation-triangle"></i> Error</div>
-                                        <p>Error message goes here with an explanation of the error and how to fix the error. Error can span across the entire page if needed.
-                                            <button id="save" name="save" class="btn-sm btn-danger"> Export to Excel</button>
-                                        <p>
-                                </div>
-                            </div>
-
-                            <!--Display if import was a success-->
-                            <div class="row spacer20">
-                                <div class="col-xs-12 col-md-12 col-lg-12 alert-success">
-                                    <div class="import-title"><i class="fa fa-check-circle"></i> Success</div>
-                                        <p>Your import has been successfully processed.<p>
-                                </div>
-                            </div> 
-
-                            <!--Display Results-->
-                            <div class="row spacer20">
-                                <div class="col-xs-12 col-md-12 col-lg-12 alert-info">
-                                    <div class="import-title"><i class="fa fa-list-alt"></i> Results</div>
-                                        <p>Results of import file if needed to be displayed.<p>
-                                </div>
-                            </div>   
 
                             <hr />
 
