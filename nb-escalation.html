@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/nb-escalation.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/add-row.js"></script>
+
+
+    <!-- Chosen Multi Select -->
+    <link rel="stylesheet" href="chosen_v1.6.2/docsupport/style.css">
+    <link rel="stylesheet" href="chosen_v1.6.2/docsupport/prism.css">
+    <link rel="stylesheet" href="chosen_v1.6.2/chosen.css">
+    <script type="text/javascript" src="chosen_v1.6.2/chosen.jquery.js"></script>
+    <script type="text/javascript" src="chosen_v1.6.2/docsupport/prism.js"></script>
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <!-- Use default app date picker when programming date picker and not this demo version-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
+    <script type="text/javascript" src="js/date-picker.js"></script>
+
+</head>
+
+<body class="carrier-pad carrier-tracking">
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+        <div class="container-fluid menu-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="../index.html"><img src="img/logo.png" width="150" alt="Insurance Office of America">
+            </a>
+                <h4 class="company-title">Insurance Office of America</h4>
+                <h5>Operations</h5>
+            </div>
+            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chris Robertson <i class="fa fa-cog" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content">
+        <div class="row sidebar-container">
+            <div id="sidebar" class="col-sm-3 sidebar1 sidebar navbar-collapse collapse">
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="index.html"><i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span></a>
+                        <hr />
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-laptop fa-2x" aria-hidden="true"></i><span>Automation</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="automation.html">Fleet Schedule Comparison</a>
+                                <hr>
+                            </li>
+                            <li><a href="nb-escalation.html">New Business Escalation Form</a>
+                                <hr>
+                            </li>
+                            <li><a href="automation.html">New Florida Work Comp Form</a>
+                                <hr>
+                            </li>
+                            <li><a href="automation.html">Policy Header Import</a>
+                                <hr>
+                            </li>
+                            <li><a href="automation.html">Policy Mailing Address Update</a>
+                                <hr>
+                            </li>
+                            <li><a href="automation.html">Statement of Value Import</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Data Audit</a>
+                                <hr>
+                            </li>
+                            <li><a href="index.html">New Business Escalation</a>
+                                <hr>
+                            </li>
+                            <li><a href="index.html">Policy Expiration</a>
+                                <hr>
+                            </li>
+                            <li><a href="reports/view-user-access-report.html">User Access</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-gears fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="reports/add-user.html">Add User</a>
+                                <hr>
+                            </li>
+                            <li><a href="reports/user-search.html">View Users</a>
+                                <hr>
+                            </li>
+                            <li><a href="reports/add-template.html">Add Template</a>
+                                <hr>
+                            </li>
+                            <li><a href="reports/edit-template.html">Edit Template</a>
+                                <hr>
+                            </li>
+                            <li><a href="reports/branches.html">View Branches</a>
+                                <hr>
+                            </li>
+                        </ul>
+                        <hr />
+                    </li>
+                </ul>
+                <ul class="nav nav-sidebar nav-sidebar2">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Chris Robertson</span>
+                     <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="#">Help</a>
+                            </li> 
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+            <!-- Body -->
+            <div class="body-container">
+
+                <div class="col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header">
+                        <div class="pull-left head-drop">
+                            <div class="btn-group">
+                                New Business Escalation Form
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                <label class="requiredfield control-label" for="">Submitter Role:</label>
+                                <select id="submitterRole" data-placeholder="-- Select Role --" class="form-control" tabindex="1">
+                                    <option value="">-- Select Role --</option>
+                                    <option value="">Producer</option>
+                                    <option value="">Account Manager</option>
+                                    <option value="">Account Executive</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                <label class="requiredfield control-label" for="">Submitter Branch:</label>
+                                <select data-placeholder="-- Select Branch --" class="chosen-select-width" tabindex="2">
+                                    <option value="">-- Select Branch --</option>
+                                    <option value="">Aliso Viejo (ORG)</option>
+                                    <option value="">Atlanta (ATL)</option>
+                                    <option value="">Auburn (AUB)</option>
+                                    <option value="">Baltimore (BLT)</option>
+                                    <option value="">Binghamton (BIN)</option>
+                                    <option value="">Birmingham (BRM)</option>
+                                    <option value="">Boston (BOS)</option>
+                                    <option value="">Carrollton (CRL)</option>
+                                    <option value="">Charleston (CHS)</option>
+                                    <option value="">Charlotte (CHR)</option>
+                                    <option value="">Cherry Hill (NJ)</option>
+                                    <option value="">Colorado Springs (COS)</option>
+                                    <option value="">Columbia (COL)</option>
+                                    <option value="">Cranston (CRN)</option>
+                                    <option value="">Dallas (DAL)</option>
+                                    <option value="">Daytona (DAY)</option>
+                                    <option value="">Denver (DEN)</option>
+                                    <option value="">East Hanover (EHA)</option>
+                                    <option value="">Elkhart (ELK)</option>
+                                    <option value="">EUS (BRZ)</option>
+                                    <option value="">Farmingdale (FAR)</option>
+                                    <option value="">Florham Park (FLP)</option>
+                                    <option value="">Fort Lauderdale (FTL)</option>
+                                    <option value="">Fort Myers (FTM)</option>
+                                    <option value="">Gainesville (GGA)</option>
+                                    <option value="">Jacksonville (JAX)</option>
+                                    <option value="">Jupiter (JUP)</option>
+                                    <option value="">Lakeland (LKL)</option>
+                                    <option value="">Las Vegas (LV)</option>
+                                    <option value="">Legends (LEG)</option>
+                                    <option value="">Longwood (LNG)</option>
+                                    <option value="">Los Angeles (LA)</option>
+                                    <option value="">Miami (MIA)</option>
+                                    <option value="">Ocala (OCA)</option>
+                                    <option value="">Ontario (ONT)</option>
+                                    <option value="">Ormond Beach (ORM)</option>
+                                    <option value="">Phoenix (PHX)</option>
+                                    <option value="">Pleasanton (SF)</option>
+                                    <option value="">Sacramento (SAC)</option>
+                                    <option value="">San Diego (SD)</option>
+                                    <option value="">Santa Barbara (SB)</option>
+                                    <option value="">Syracuse (SYR)</option>
+                                    <option value="">Tallahassee (TAL)</option>
+                                    <option value="">Tampa (TPA)</option>
+                                    <option value="">Tucson (TUC)</option>
+                                    <option value="">Walsenburg (WAL)</option>
+                                    <option value="">West Palm Beach (WPB)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                <label class="requiredfield control-label" for="">Submitter Region:</label>
+                                <select data-placeholder=" -- Select Region --" class="form-control" tabindex="3">
+                                    <option value="">-- Select Region --</option>
+                                    <option value="">Carolina/NE</option>
+                                    <option value="">Central</option>
+                                    <option value="">Florida</option>
+                                    <option value="">Georgia</option>
+                                    <option value="">Western</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-md-3 col-lg-3">
+                                <label class="requiredfield control-label" for="">Date Submitted:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="date" id="expire1" value="05/22/2020" placeholder="">
+                                    <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div id="otherSubmitterRole" class="form-group hidden col-xs-12 col-md-3 col-lg-3">
+                                <label class="requiredfield control-label" for="">Type Your Role:</label>
+                                <input id="" name="" value="" class="form-control input-md" required="" type="text">
+                            </div>
+
+                            <div class="form-group col-xs-12 col-md-3 col-lg-3">
+                                <label class="requiredfield control-label" for="">Target Premium:</label>
+                                <input id="" name="" value="" class="form-control input-md" required="" type="text">
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-xs-12 col-md-12 col-lg-12">
+                                <label class="requiredfield control-label" for="">Describe Reason for Escalation:</label> <br />
+                                Please include terms / coverages needed, and if declined by the carrier or underwriter, please include reason for denial.
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div id="add-additional-carrier-container">
+                            <div class="carrier-row">
+                                <div class="row">
+                                    <hr />
+
+                                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
+                                        <label class="requiredfield control-label" for="">Carrier Submitted To:</label>
+                                        <div class="custom-group-form">
+                                            <div class="input-group add-carrier">
+                                                <select data-placeholder="-- Carrier Submitted To --" class="carrier chosen-select-width" tabindex="1">
+                                                    <option value="">-- Select Carrier --</option>
+                                                    <option value="CNA">CNA</option>
+                                                    <option value="Hartford">Hartford</option>
+                                                    <option value="Liberty Mutual">Liberty Mutual</option>
+                                                    <option value="Nationwide">Nationwide</option>
+                                                    <option value="Travelers">Travelers</option>
+                                                </select>
+                                            </div>
+
+                                        <a href="#" class="btn icon-btn add-row add-carrier-row"><i class="fa fa-plus"></i></a>
+                                        <a href="#" class="btn icon-btn hidden remove-carrier-row"><i class="fa fa-minus"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-xs-12 col-md-3 col-lg-3">
+                                        <label class="requiredfield control-label" for="">Underwriter Company Name:</label>
+                                        <input id="" name="" value="" class="form-control input-md" required="" type="text">
+                                    </div>
+
+                                    <div class="form-group col-xs-12 col-md-3 col-lg-3">
+                                        <label class="requiredfield control-label" for="">Underwriter Contact Name:</label>
+                                        <input id="" name="" value="" class="form-control input-md" required="" type="text">
+                                    </div>
+
+                                    <div class="form-group col-xs-12 col-md-3 col-lg-3">
+                                        <label class="requiredfield control-label" for="">Underwriter Contact Phone Number:</label>
+                                        <input id="" name="" value="" class="form-control input-md" required="" type="text">
+                                    </div>
+
+                                    <div class="form-group col-xs-12 col-md-3 col-lg-3">
+                                        <label class="requiredfield control-label" for="">Underwriter Contact Email Address:</label>
+                                        <input id="" name="" value="" class="form-control input-md" required="" type="text">
+                                    </div>
+
+                                    <div class="form-group col-xs-12 col-md-3 col-lg-3">
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="buttons-footer">
+                            <button id="cancel" name="cancel" class="btn btn-default"> Cancel</button>
+                            <button id="save" name="save" class="pull-right btn btn-primary"> Submit</button>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2020 Insurance Office of America. All rights reserved. Version 1.0</p>
+    </div>
+    <script type="text/javascript" src="chosen_v1.6.2/docsupport/multi-select.js"></script>
+</body>
+
+</html>

@@ -914,7 +914,7 @@ tr {
     height: auto !important;
 }
 .table-template .carrier-tables th, .table-template .carrier-tables td{
-    padding: 12px 10px !important;
+    padding: 12px 8px !important;
 }
 .table-template .actionBtn a {
     padding: 8px;
@@ -1027,7 +1027,7 @@ td a {
     border-radius: 3px;
     text-align: center;
     color: #fff;
-    font-size: 10px;
+    font-size: 12px;
     white-space: nowrap;
 }
 
@@ -1037,6 +1037,10 @@ td a {
 
 .actionBtn a.actionGray {
     background: #adadad;
+}
+
+.actionBtn a.actionGreen {
+    background: #58c71f;
 }
 
 .actionBtn a.actionRed {
@@ -1324,7 +1328,7 @@ th {
     margin-left: 30px;
     margin-right: 10px;
     margin-top: 8px;
-    padding: 6px 9px;
+    padding: 6px 9px !important;
 }
 
 .visit-btn:hover, .visit-btn:visited {
@@ -1333,7 +1337,7 @@ th {
     color: #fff;
     font-size: 12px;
     margin-left: 30px;
-    padding: 6px 9px;
+    padding: 6px 9px !important;
     text-decoration: none !important;
 }
 
