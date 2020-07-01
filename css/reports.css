@@ -1,9 +1,3 @@
-.new-business-report {
-    padding: 20px;
-    margin: -30px -20px -20px -20px !important;
-    clear: both;
-}
-
 .chosen-choices{
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -20,9 +14,6 @@
     margin: 5px 5px 3px 0 !important;
 }
 
-.table-template {
-    margin-top: 30px;
-}
 
 .chosen-container{
     margin-top: 3px;
@@ -30,10 +21,6 @@
 
 .panel-body {
     padding: 0px;
-}
-
-.control-label-normal{
-    font-weight: normal;
 }
 
 .btn-default {
@@ -48,10 +35,18 @@
     background-color: #e6e6e6 !important;
     border: 1px solid #adadad !important;
     font-size: 14px;
+    padding-top: 4px;
+    padding-bottom: 6px;
 }
 
 .panel-body {
     margin-bottom:  20px;
+}
+
+/* Form */
+
+.control-label-normal{
+    font-weight: normal;
 }
 
 .icon-btn {
@@ -70,7 +65,8 @@
 .icon-btn:hover {
     background-color: #296198;
     color: #fff;
-    padding: 6px 9px;
+    padding-top: 4px;
+    padding-bottom: 6px;
     border-radius: 4px;
     font-size: 12px;
     margin-top: 4px;
@@ -96,4 +92,36 @@ i.fa.fa-envelope {
 
 .required {
     color: red;
+}
+
+/* Table */
+
+.table-template {
+    margin-top: 30px;
+}
+
+.plus-sign, .plus-sign:hover{
+   cursor: pointer;
+   color: #40c13f;
+   font-size: 14px;
+   margin-right: 5px;
+}
+
+.minus-sign, .minus-sign:hover{
+   cursor: pointer;
+   color: #e34647;
+   font-size: 14px;
+   margin-right: 5px;
+}
+
+.table-striped>tbody>tr.odd {
+    background-color: #fff;
+}
+
+.table-striped>tbody>tr.even {
+    background-color: #efefef;
+}
+
+.pagination {
+    margin-bottom: 30px !important;
 }

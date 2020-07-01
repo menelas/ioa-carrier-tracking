@@ -9,7 +9,9 @@ $(function() {
 		$(appended_row).appendTo('#add-additional-carrier-container');
 		$(appended_row).find('.remove-carrier-row').removeClass('hidden');
 		$(appended_row).find('.chosen-container-single').remove();
-
+		$('html, body').animate({ scrollTop: $("#add-additional-carrier-container .carrier-row:last-child").offset().top }, 1000);
+		$(appended_row).find('.other-carrier').addClass('hidden');
+		$(appended_row).find('.textarea').val("");
 		appended_row.find('.carrier').css({ display: 'block' }).chosen();
 
 	});
@@ -32,4 +34,19 @@ $(function() {
 
 		return false;
 	});
+
+	$(document).on('change', '.carrier-submitted', function() {
+		
+		var value = $(this).find('option:selected').text();
+		var othercarrierSubmitted = $(this).parent().parent().parent().parent().find('.other-carrier');
+		if(value === 'Other' ) {
+			othercarrierSubmitted.removeClass('hidden').addClass('d-block');
+		} else {
+			othercarrierSubmitted.removeClass('d-block').addClass('hidden');
+		}
+
+		return false;
+	});
+
+
 });

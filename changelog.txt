@@ -1,9 +1,8 @@
-## 2020-5-26
-• Updated menu items by adding new menu for New Business Escalation Form and Reports
-• Created new tab under index.html titled New Business Escalation
-• Updated css/app.css
-• Created nb-escalation.html, css/nb-escalation.css, css/reports.css, and js/add-row.js
+## 2020-7-1
+• Added New Branch Rep Table meeting and form
 
+## 2020-5-5
+• Updated automation.html - New FL work comp form
 
 ## 2020-4-29
 • Updated Error and Results section

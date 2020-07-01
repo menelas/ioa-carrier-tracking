@@ -5,6 +5,15 @@
 .btn-group {
     text-transform: uppercase;
 }
+
+.business-wins {
+    margin-bottom: 30px;
+}
+
+.business-wins > p .fa-plus, p .fa-minus {
+   color: #296198;
+}
+
 .chosen-choices {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -63,11 +72,7 @@
     display: table;
 }
 
-.form-group > p .fa-plus, .form-group > p .fa-minus {
-    color: #296198;
-}
-
-#add-additional-carrier-container .carrier-row:nth-child(even) .row{
+#add-additional-account-container .carrier-row:nth-child(even) .row{
     background-color: #f2f2f2;
 }
 
@@ -75,11 +80,22 @@
     margin-bottom: 20px;
 }
 
-.custom-group-form .add-carrier {
+.custom-group-form .add-account {
     float: left;
-    width: 15%;
+    width: 60%;
     margin-right: 10px;
 }
+
+input.account-name {
+  border-radius: 4px !important;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+  background-image: -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%);
+  background-image: -moz-linear-gradient(#eeeeee 1%, #ffffff 15%);
+  background-image: -o-linear-gradient(#eeeeee 1%, #ffffff 15%);
+  background-image: linear-gradient(#eeeeee 1%, #ffffff 15%);
+}
+
 
 .icon-btn {
     background-color: #296198;
@@ -88,7 +104,7 @@
     border-radius: 4px;
     font-size: 12px;
     margin-right: 4px;
-    margin-top: 15px;
+    margin-top: 10px;
     text-transform: uppercase;
     z-index: 100;
 }

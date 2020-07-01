@@ -73,24 +73,48 @@
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-laptop fa-2x" aria-hidden="true"></i><span>Automation</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+
                         <ul class="dropdown-menu">
-                            <li><a href="automation.html">Fleet Schedule Comparison</a>
-                                <hr>
+                            <li class="dropdown-submenu">
+                                <a class="menu-item" data-toggle="dropdown" tabindex="-1" href="#">
+                                Forms 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="branch-post-meeting.html">Branch Rep Post Meeting</a>
+                                        <hr>
+                                    </li>
+                                    <li><a href="nb-escalation.html">New Business Escalation</a>
+                                        <hr>
+                                    </li>
+                                    <li><a href="automation.html">New Florida Work Comp</a>
+                                        <hr>
+                                    </li>
+                                    <li><a href="automation.html">Statement of Value</a>
+                                        <hr>
+                                    </li>
+                                </ul>
                             </li>
-                            <li><a href="nb-escalation.html">New Business Escalation Form</a>
-                                <hr>
-                            </li>
-                            <li><a href="automation.html">New Florida Work Comp Form</a>
-                                <hr>
-                            </li>
-                            <li><a href="automation.html">Policy Header Import</a>
-                                <hr>
-                            </li>
-                            <li><a href="automation.html">Policy Mailing Address Update</a>
-                                <hr>
-                            </li>
-                            <li><a href="automation.html">Statement of Value Import</a>
-                                <hr>
+                            <li class="dropdown-submenu">
+                                <a class="menu-item" data-toggle="dropdown" tabindex="-1" href="#">
+                               Imports
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="automation.html">Fleet Schedule Comparison</a>
+                                        <hr>
+                                    </li>
+                                    <li><a href="automation.html">Policy Header</a>
+                                        <hr>
+                                    </li>
+                                    <li><a href="automation.html">Policy Mailing Address Update</a>
+                                        <hr>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                         <hr />
@@ -99,6 +123,9 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
+                            <li><a href="index.html">Branch Rep Post Meeting</a>
+                                <hr>
+                            </li>
                             <li><a href="index.html">Data Audit</a>
                                 <hr>
                             </li>
@@ -158,7 +185,9 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="col-xs-12 col-md-12 title-header">
                         <ul class="nav nav-pills">
-                            <li class="active"><a data-toggle="pill" href="#data-audit">Data Audit</a>
+                            <li class="active"><a data-toggle="pill" href="#branch-round-table">Branch Rep Post Meeting</a>
+                            </li>
+                            <li><a data-toggle="pill" href="#data-audit">Data Audit</a>
                             </li>
                             <li><a data-toggle="pill" href="#new-business">New Business Escalation</a>
                             </li>
@@ -169,11 +198,258 @@
 
                     <div class="tab-content">
 
-                        <div id="data-audit" class="tab-pane fade in active panel-body">
+                        <div id="branch-round-table" class="tab-pane fade in active panel-body">
+
+                                <form class="template">
+                                    <div class="row">
+                                        <div class="form-group col-sm-12 col-md-4 col-lg-6">
+                                            <label class="control-label" for="">Date of Meeting From:</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="date" id="expire1" value="" placeholder="">
+                                                <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-sm-12 col-md-4 col-lg-6">
+                                            <label class="control-label" for="">Date of Meeting To:</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="date" id="expire1" value="" placeholder="">
+                                                <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="buttons-footer spacer20">
+                                        <button id="cancel" name="cancel" class="btn btn-default"> Clear Filters</button>
+                                        <button id="save" name="save" class="pull-right btn btn-primary"> View Report</button>
+                                    </div>
+                                </form>
+
+
+                                <div class="table-template table-style2">
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="col-md-12 col-xs-12 title-header">
+                                            <div class="pull-left head-drop">
+                                                <div class="btn-group">
+                                                    Report Generated
+                                                </div>
+                                            </div>
+                                        <div class="pull-right">
+                                            <div class="btn-group">
+                                                <a id="" href="Data/BranchRep-Sample.xlsx" class="btn visit-btn pull-right" role="button"> <i class="fa fa-file-excel-o" aria-hidden="true"></i> Export to Excel</a>
+                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body">
+
+                                        <div class="carrier-tables">
+                                            <table class="table-hover table-striped table-condensed cf">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Submitter Name</th>
+                                                        <th>Which branch are you representing?</th>
+                                                        <th>Date of Meeting</th>
+                                                        <th>Account Name(s)</th>
+                                                        <th>New Business Type</th>
+                                                        <th>Producer Name(s)</th>
+                                                        <th>Account Management Staff</th>
+                                                        <th>Estimated Annual Revenue</th>
+                                                        <th>Prospecting Strategy that Opened the Door</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="even">
+                                                        <td data-title="Submitter Name">
+                                                            <i class="fa fa-plus-circle plus-sign" aria-hidden="true" data-car-class="car-class-1"></i><i style="display: none" class="fa fa-minus-circle minus-sign" aria-hidden="true" data-car-class="car-class-1"></i>Phillip
+                                                            Mel
+                                                        </td>
+                                                        <td data-title="Which branch are you representing?">Fort Lauderdale (FTL)</td>
+                                                        <td data-title="Date of Meeting">5/21/2020</td>
+                                                        <td data-title="Account Name(s)">Alpine Insurance</td>
+                                                        <td data-title="New Business Type">Employee Benefits</td>
+                                                        <td data-title="Producer Name(s)">Ryan Floyd, Rachel Lyons</td>
+                                                        <td data-title="Account Management Staff">Jax Khan</td>
+                                                        <td data-title="Estimated Annual Revenue">$12,000,000</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Referrals</td>
+                                                    </tr>
+
+                                                    <tr class="even car-class-1" style="display: none">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td data-title="Account Name(s)">Intelli Inc.</td>
+                                                        <td data-title="New Business Type">Employee Benefits</td>
+                                                        <td data-title="Producer Name(s)">Cierra Vega</td>
+                                                        <td data-title="Account Management Staff">Mario Griffin</td>
+                                                        <td data-title="Estimated Annual Revenue">$542,000</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Cold Calling</td>
+                                                    </tr>
+
+                                                    <tr class="even car-class-1" style="display: none">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td data-title="Account Name(s)">Central Cost</td>
+                                                        <td data-title="New Business Type">Employee Benefits</td>
+                                                        <td data-title="Producer Name(s)">Mark Lowe, Heath Eaton</td>
+                                                        <td data-title="Account Management Staff">Jake Anderson</td>
+                                                        <td data-title="Estimated Annual Revenue">$930,000</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Cold Calling</td>
+                                                    </tr>
+
+                                                    <tr class="odd">
+                                                        <td data-title="Submitter Name">Willow Oneil</td>
+                                                        <td data-title="Which brand are you representing?">Binghamton (BIN)</td>
+                                                        <td data-title="Date of Meeting">5/18/2020</td>
+                                                        <td data-title="Account Name(s)">Limitless Contact</td>
+                                                        <td data-title="New Business Type">P&C</td>
+                                                        <td data-title="Producer Name(s)">Avery Williams</td>
+                                                        <td data-title="Account Management Staff">Larissa Malone</td>
+                                                        <td data-title="Estimated Annual Revenue">$3,402,032</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Email Campaigns</td>
+                                                    </tr>
+
+                                                    <tr class="even">
+                                                        <td data-title="Submitter Name">Melvin Liu</td>
+                                                        <td data-title="Which brand are you representing?">Auburn (AUB)</td>
+                                                        <td data-title="Date of Meeting">5/18/2020</td>
+                                                        <td data-title="Account Name(s)">Federal Insurance</td>
+                                                        <td data-title="New Business Type">Work Comp</td>
+                                                        <td data-title="Producer Name(s)">Leonard Cooke, Keenan Warren, Luka Ramsey</td>
+                                                        <td data-title="Account Management Staff">Niko Banks</td>
+                                                        <td data-title="Estimated Annual Revenue">$540,000</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Networking</td>
+                                                    </tr>
+
+                                                    <tr class="odd">
+                                                        <td data-title="Submitter Name">Keshawn Hoffman</td>
+                                                        <td data-title="Which brand are you representing?">Daytona (DAY)</td>
+                                                        <td data-title="Date of Meeting">5/17/2020</td>
+                                                        <td data-title="Account Name(s)">Scount Insurance</td>
+                                                        <td data-title="New Business Type">Employee Benefits</td>
+                                                        <td data-title="Producer Name(s)">Kathy Shaw, Cali Leon</td>
+                                                        <td data-title="Account Management Staff">London Hanson</td>
+                                                        <td data-title="Estimated Annual Revenue">$340,000</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Social media</td>
+                                                    </tr>
+
+                                                    <tr class="even">
+                                                        <td data-title="Submitter Name">
+                                                            <i class="fa fa-plus-circle plus-sign" aria-hidden="true" data-car-class="car-class-2"></i><i style="display: none" class="fa fa-minus-circle minus-sign" aria-hidden="true" data-car-class="car-class-2"></i>Bobby Farmer
+                                                        </td>
+                                                        <td data-title="Which branch are you representing?">Longwood (LNG)</td>
+                                                        <td data-title="Date of Meeting">5/16/2020</td>
+                                                        <td data-title="Account Name(s)">Recreation Co.</td>
+                                                        <td data-title="New Business Type">P&C</td>
+                                                        <td data-title="Producer Name(s)">Edwin Jefferson</td>
+                                                        <td data-title="Account Management Staff">Denise Wolfe</td>
+                                                        <td data-title="Estimated Annual Revenue">$1,230,000</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Referrals</td>
+                                                    </tr>
+
+                                                    <tr class="even car-class-2" style="display: none">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td data-title="Account Name(s)">Axiom Industries.</td>
+                                                        <td data-title="New Business Type">Work Comp</td>
+                                                        <td data-title="Producer Name(s)">Jada Pierce</td>
+                                                        <td data-title="Account Management Staff">Rory Combs</td>
+                                                        <td data-title="Estimated Annual Revenue">$984,000</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Cold Calling</td>
+                                                    </tr>
+
+                                                    <tr class="even car-class-2" style="display: none">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td data-title="Account Name(s)">Ridge Supplies</td>
+                                                        <td data-title="New Business Type">Employee Benefits</td>
+                                                        <td data-title="Producer Name(s)">Jair Pineda</td>
+                                                        <td data-title="Account Management Staff">Linda Lara</td>
+                                                        <td data-title="Estimated Annual Revenue">$870,000</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Cold Calling</td>
+                                                    </tr>
+
+
+                                                    <tr class="odd">
+                                                        <td data-title="Submitter Name">Edwin Shepphard</td>
+                                                        <td data-title="Which brand are you representing?">Syracuse (SYR)</td>
+                                                        <td data-title="Date of Meeting">5/15/2020</td>
+                                                        <td data-title="Account Name(s)">Cutting Edge Tech.</td>
+                                                        <td data-title="New Business Type">Employee Benefits</td>
+                                                        <td data-title="Producer Name(s)">Mark Williams</td>
+                                                        <td data-title="Account Management Staff">Talia Frost</td>
+                                                        <td data-title="Estimated Annual Revenue">$900,000</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Networking</td>
+                                                    </tr>
+
+                                                    <tr class="even">
+                                                        <td data-title="Submitter Name">Rhett Rollins</td>
+                                                        <td data-title="Which brand are you representing?">Santa Barbara (SB)</td>
+                                                        <td data-title="Date of Meeting">5/14/2020</td>
+                                                        <td data-title="Account Name(s)">Vertical Co.</td>
+                                                        <td data-title="New Business Type">P&C</td>
+                                                        <td data-title="Producer Name(s)">Harper Wilkerson, Kelvin Orozco</td>
+                                                        <td data-title="Account Management Staff">Kyan Potter</td>
+                                                        <td data-title="Estimated Annual Revenue">$1,402,403</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Cross Selling</td>
+                                                    </tr>
+
+                                                    <tr class="odd">
+                                                        <td data-title="Submitter Name">Alijah Kelley</td>
+                                                        <td data-title="Which brand are you representing?">Jupiter (JUP)</td>
+                                                        <td data-title="Date of Meeting">5/13/2020</td>
+                                                        <td data-title="Account Name(s)">Silverback Technologies</td>
+                                                        <td data-title="New Business Type">Work Comp</td>
+                                                        <td data-title="Producer Name(s)">Adriel Kerr, Adalynn Montgomery</td>
+                                                        <td data-title="Account Management Staff">Dave Singh</td>
+                                                        <td data-title="Estimated Annual Revenue">$2,293,000</td>
+                                                        <td data-title="Prospecting Strategy that Opened the Door">Email Campaigns</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <p class="count">Showing 1 to 8 out of 32 entries</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
+                                            <ul class="pagination">
+                                                <li>
+                                                    <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                </li>
+                                                <li class="active"><a href="#">1</a>
+                                                </li>
+                                                <li><a href="#">2</a>
+                                                </li>
+                                                <li><a href="#">3</a>
+                                                </li>
+                                                <li><a href="#">4</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="data-audit" class="tab-pane fade panel-body">
 
                             <form class="template">
                                 <div class="row">
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-3">
                                         <label class="control-label" for="">Region:</label>
                                         <select data-placeholder="Select region(s)..." multiple class="chosen-select-width" tabindex="16">
                                             <option selected>Florida</option>
@@ -182,7 +458,7 @@
                                         </select>
                                     </div>
 
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-3">
                                         <label class="control-label" for="">Branch:</label>
                                         <select data-placeholder=" Select branche(s)..." multiple class="chosen-select-width" tabindex="16">
                                             <option selected>Birmingham</option>
@@ -192,7 +468,7 @@
                                     </div>
 
 
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-3">
                                         <label class="control-label" for="">Department:</label>
                                         <select data-placeholder=" Select department(s)..." multiple class="chosen-select-width" tabindex="16">
                                             <option selected>Benefits</option>
@@ -200,7 +476,7 @@
                                         </select>
                                     </div>
 
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-3">
                                         <label class="control-label" for="">Account Manager:</label>
                                         <select data-placeholder="Select account manager(s)..." multiple class="chosen-select-width" tabindex="16">
                                             <option value="1">Kurt Miller</option>
@@ -210,148 +486,177 @@
                                     </div>
                                 </div>
 
-                                    <hr />
-                                    
-                                    <div class="buttons-footer spacer20">
-                                        <button id="cancel" name="cancel" class="btn btn-default"> Clear Filters</button>
-                                    </div>
+                                <hr />
 
-                                    <div class="chart-block">
-                                        <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="3">
-                                            <div class="chart-text">Clients - Missing or incomplete NAICS code<span class="value bg1" data-value="172" data-max="2048">172</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 8.39844%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="4">
-                                            <div class="chart-text">Clients - Missing or Incomplete SIC Code<span class="value bg1" data-value="84" data-max="2048">84</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 4.10156%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="2">
-                                            <div class="chart-text">Clients - Shown as Prospects with active policies<span class="value bg1" data-value="5" data-max="2048">5</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 0.244141%;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="buttons-footer spacer20">
+                                    <button id="cancel" name="cancel" class="btn btn-default"> Clear Filters</button>
+                                </div>
 
-                                    <div class="chart-block">
-                                        <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="6">
-                                            <div class="chart-text">Commission - Deficient, PR/BR totals less than full rate <span class="value bg2" data-value="2048" data-max="2048">2048</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 100%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="9">
-                                            <div class="chart-text">Commission - PR/BR entered at 0%<span class="value bg2" data-value="1763" data-max="2048">1763</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 86.084%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="7">
-                                            <div class="chart-text">Commission - Excess, PR/BR totals more than full rate<span class="value bg2" data-value="64" data-max="2048">64</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 3.125%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="8">
-                                            <div class="chart-text">Commission - PR/BR Same producer entered multiple times<span class="value bg2" data-value="38" data-max="2048">38</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 1.85547%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="17">
-                                            <div class="chart-text">Commission - BENEFITS - Personal Life over 80% and other value not 60%<span class="value bg2" data-value="27" data-max="2048">27</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 1.31836%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="16">
-                                            <div class="chart-text">Commission - PR/BR Blank<span class="value bg2" data-value="0" data-max="2048">0</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 0%;"></div>
-                                            </div>
+                                <div class="chart-block">
+                                    <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="3">
+                                        <div class="chart-text">Clients - Missing or incomplete NAICS code<span class="value bg1" data-value="172" data-max="2048">172</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 8.39844%;"></div>
                                         </div>
                                     </div>
+                                    <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="4">
+                                        <div class="chart-text">Clients - Missing or Incomplete SIC Code<span class="value bg1" data-value="84" data-max="2048">84</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 4.10156%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style1 clearfix discrepancy" data-auditid="2">
+                                        <div class="chart-text">Clients - Shown as Prospects with active policies<span class="value bg1" data-value="5" data-max="2048">5</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 0.244141%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <div class="chart-block">
-                                        <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="19">
-                                            <div class="chart-text">Line - Estimated Commission is Zero<span class="value bg3" data-value="381" data-max="2048">381</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 18.6035%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="18">
-                                            <div class="chart-text">Line - Estimated Premium is Zero<span class="value bg3" data-value="333" data-max="2048">333</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 16.2598%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="20">
-                                            <div class="chart-text">Line - Blank Estimated Commission<span class="value bg3" data-value="85" data-max="2048">85</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 4.15039%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="15">
-                                            <div class="chart-text">Line - Missing Estimated Premium<span class="value bg3" data-value="78" data-max="2048">78</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 3.80859%;"></div>
-                                            </div>
+                                <div class="chart-block">
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="6">
+                                        <div class="chart-text">Commission - Deficient, PR/BR totals less than full rate <span class="value bg2" data-value="2048" data-max="2048">2048</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 100%;"></div>
                                         </div>
                                     </div>
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="9">
+                                        <div class="chart-text">Commission - PR/BR entered at 0%<span class="value bg2" data-value="1763" data-max="2048">1763</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 86.084%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="7">
+                                        <div class="chart-text">Commission - Excess, PR/BR totals more than full rate<span class="value bg2" data-value="64" data-max="2048">64</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 3.125%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="8">
+                                        <div class="chart-text">Commission - PR/BR Same producer entered multiple times<span class="value bg2" data-value="38" data-max="2048">38</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 1.85547%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="17">
+                                        <div class="chart-text">Commission - BENEFITS - Personal Life over 80% and other value not 60%<span class="value bg2" data-value="27" data-max="2048">27</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 1.31836%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style2 clearfix discrepancy" data-auditid="16">
+                                        <div class="chart-text">Commission - PR/BR Blank<span class="value bg2" data-value="0" data-max="2048">0</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <div class="chart-block">
-                                        <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="21">
-                                            <div class="chart-text">Policy - Missing Estimated Commission<span class="value bg4" data-value="208" data-max="2048">208</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 10.1563%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="13">
-                                            <div class="chart-text">Policy - Policies Missing Estimated Premium<span class="value bg4" data-value="159" data-max="2048">159</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 7.76367%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="11">
-                                            <div class="chart-text">Policy - Missing Account Manager Book<span class="value bg4" data-value="146" data-max="2048">146</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 7.12891%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="14">
-                                            <div class="chart-text">Policy - Missing - PPE or ICO<span class="value bg4" data-value="75" data-max="2048">75</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 3.66211%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="12">
-                                            <div class="chart-text">Policy - Missing Servicing Producer Book<span class="value bg4" data-value="18" data-max="2048">18</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 0.878906%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="22">
-                                            <div class="chart-text">Policy - Account Manager shows ZDELETE<span class="value bg4" data-value="0" data-max="2048">0</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 0%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="23">
-                                            <div class="chart-text">Policy - Servicing Producer shows ZDELETE<span class="value bg4" data-value="0" data-max="2048">0</span></div>
-                                            <div class="chart-bar">
-                                                <div class="chart-bar-progress" style="width: 0%;"></div>
-                                            </div>
+                                <div class="chart-block">
+                                    <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="19">
+                                        <div class="chart-text">Line - Estimated Commission is Zero<span class="value bg3" data-value="381" data-max="2048">381</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 18.6035%;"></div>
                                         </div>
                                     </div>
+                                    <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="18">
+                                        <div class="chart-text">Line - Estimated Premium is Zero<span class="value bg3" data-value="333" data-max="2048">333</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 16.2598%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="20">
+                                        <div class="chart-text">Line - Blank Estimated Commission<span class="value bg3" data-value="85" data-max="2048">85</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 4.15039%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style3 clearfix discrepancy" data-auditid="15">
+                                        <div class="chart-text">Line - Missing Estimated Premium<span class="value bg3" data-value="78" data-max="2048">78</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 3.80859%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="chart-block">
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="21">
+                                        <div class="chart-text">Policy - Missing Estimated Commission<span class="value bg4" data-value="208" data-max="2048">208</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 10.1563%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="13">
+                                        <div class="chart-text">Policy - Policies Missing Estimated Premium<span class="value bg4" data-value="159" data-max="2048">159</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 7.76367%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="11">
+                                        <div class="chart-text">Policy - Missing Account Manager Book<span class="value bg4" data-value="146" data-max="2048">146</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 7.12891%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="14">
+                                        <div class="chart-text">Policy - Missing - PPE or ICO<span class="value bg4" data-value="75" data-max="2048">75</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 3.66211%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="12">
+                                        <div class="chart-text">Policy - Missing Servicing Producer Book<span class="value bg4" data-value="18" data-max="2048">18</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 0.878906%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="22">
+                                        <div class="chart-text">Policy - Account Manager shows ZDELETE<span class="value bg4" data-value="0" data-max="2048">0</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-chart progress-style4 clearfix discrepancy" data-auditid="23">
+                                        <div class="chart-text">Policy - Servicing Producer shows ZDELETE<span class="value bg4" data-value="0" data-max="2048">0</span></div>
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-progress" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
 
-                        <div id="new-business" class="tab-pane panel-body">
-                                <div class="row table-template table-style2 new-business-report">
+                        <div id="new-business" class="tab-pane fade panel-body">
+
+                                <form class="template">
+                                    <div class="row">
+                                        <div class="form-group col-sm-12 col-md-4 col-lg-6">
+                                            <label class="control-label" for="">Date Submitted From:</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="date" id="expire1" value="04/1/2020" placeholder="">
+                                                <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-sm-12 col-md-4 col-lg-6">
+                                            <label class="control-label" for="">Date Submitted To:</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="date" id="expire1" value="06/1/2020" placeholder="">
+                                                <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="buttons-footer spacer20">
+                                        <button id="cancel" name="cancel" class="btn btn-default"> Clear Filters</button>
+                                        <button id="save" name="save" class="pull-right btn btn-primary"> View Report</button>
+                                    </div>
+                                </form>
+
+
+                                <div class="table-template table-style2">
                                     <div class="col-md-12 col-lg-12">
                                         <div class="col-md-12 col-xs-12 title-header">
                                             <div class="pull-left head-drop">
@@ -359,290 +664,330 @@
                                                     Report Generated
                                                 </div>
                                             </div>
-                                            <div class="pull-right">
-                                                <div class="btn-group">
-                                                    <button id="" name="" class="btn visit-btn pull-right"> <i class="fa fa-file-excel-o" aria-hidden="true"></i> Export to Excel</button>
+                                        <div class="pull-right">
+                                            <div class="btn-group">
+                                                <a id="" href="Data/NB-Sample.xlsx" class="btn visit-btn pull-right" role="button"> <i class="fa fa-file-excel-o" aria-hidden="true"></i> Export to Excel</a>
+                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body">
+
+                                        <div class="carrier-tables">
+                                            <table class="table-hover table-striped table-condensed cf">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Submitter Name</th>
+                                                        <th>Submitter Branch</th>
+                                                        <th>Submitter Region</th>
+                                                        <th>Target Effective Date</th>
+                                                        <th>Date Escalation Submitted</th>
+                                                        <th>Date Escalation Closed</th>
+                                                        <th>Target Premium</th>
+                                                        <th>Carrier(s) Submitted To</th>
+                                                        <th>Successful (Y/N)</th>
+                                                        <th>Close Escalation</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="even">
+                                                        <td data-title="Submitter Name">
+                                                            <i class="fa fa-plus-circle plus-sign" aria-hidden="true" data-car-class="car-class-1"></i><i style="display: none" class="fa fa-minus-circle minus-sign" aria-hidden="true" data-car-class="car-class-1"></i>Phillip
+                                                            Mel
+                                                        </td>
+                                                        <td data-title="Submitter Branch">Fort Lauderdale (FTL)</td>
+                                                        <td data-title="Submitter Region">Florida</td>
+                                                        <td data-title="Target Effective Date">5/29/2020</td>
+                                                        <td data-title="Date Escalation Submitted">5/21/2020</td>
+                                                        <td data-title="Date Escalation Closed">---</td>
+                                                        <td data-title="Target Premium">$85,000</td>
+                                                        <td data-title="Carrier(s) Submitted To">CNA</td>
+                                                        <td data-title="Successful (Y/N)">---</td>
+                                                        <td data-title="Close Escalation" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a data-dismiss="modal" data-toggle="modal" data-target="#close-escalation" class="actionBlue"><i class="fa fa-times"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="car-class-1 even" style="display: none">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td data-title="Carrier(s) Submitted To">Travelers</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr class="odd">
+                                                        <td data-title="Submitter Name">Eric Hershberger</td>
+                                                        <td data-title="Submitter Branch">San Diego (SD)</td>
+                                                        <td data-title="Submitter Region">Western</td>
+                                                        <td data-title="Target Effective Date">5/28/2020</td>
+                                                        <td data-title="Date Escalation Submitted">5/19/2020</td>
+                                                        <td data-title="Date Escalation Closed">5/24/2020</td>
+                                                        <td data-title="Target Premium">$81,000</td>
+                                                        <td data-title="Carrier(s) Submitted To">Liberty Mutual</td>
+                                                        <td data-title="Successful (Y/N)">Y</td>
+                                                        <td data-title="Close Escalation" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a data-dismiss="modal" data-toggle="modal" data-target="#view-escalation" class="actionGray"><i class="fa fa-eye"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="even">
+                                                        <td data-title="Submitter Name">
+                                                            <i class="fa fa-plus-circle plus-sign" aria-hidden="true" data-car-class="car-class-2"></i><i style="display: none" class="fa fa-minus-circle minus-sign" aria-hidden="true" data-car-class="car-class-2"></i>John Young
+                                                        </td>
+                                                        <td data-title="Submitter Branch">Sacramento (SAC)</td>
+                                                        <td data-title="Submitter Region">Western</td>
+                                                        <td data-title="Target Effective Date">5/27/2020</td>
+                                                        <td data-title="Date Escalation Submitted">5/19/2020</td>
+                                                        <td data-title="Date Escalation Closed">---</td>
+                                                        <td data-title="Target Premium">$89,000</td>
+                                                        <td data-title="Carrier(s) Submitted To">Hartford</td>
+                                                        <td data-title="Successful (Y/N)">---</td>
+                                                        <td data-title="Close Escalation" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a data-dismiss="modal" data-toggle="modal" data-target="#close-escalation" class="actionBlue"><i class="fa fa-times"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="even car-class-2" style="display: none">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td data-title="Carrier(s) Submitted To">Nationwide</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="even car-class-2" style="display: none">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td data-title="Carrier(s) Submitted To">Liberty Mutual</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    <tr class="odd">
+                                                        <td data-title="Submitter Name">Marie Jones</td>
+                                                        <td data-title="Submitter Branch">Santa Barbara (SB)</td>
+                                                        <td data-title="Submitter Region">Western</td>
+                                                        <td data-title="Target Effective Date">5/29/2020</td>
+                                                        <td data-title="Date Escalation Submitted">5/18/2020</td>
+                                                        <td data-title="Date Escalation Closed">---</td>
+                                                        <td data-title="Target Premium">$15,000</td>
+                                                        <td data-title="Carrier(s) Submitted To">Travelers</td>
+                                                        <td data-title="Successful (Y/N)">---</td>
+                                                        <td data-title="Close Escalation" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a data-dismiss="modal" data-toggle="modal" data-target="#close-escalation" class="actionBlue"><i class="fa fa-times"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="even">
+                                                        <td data-title="Submitter Name">William Mahler</td>
+                                                        <td data-title="Submitter Branch">West Palm Beach (WPB)</td>
+                                                        <td data-title="Submitter Region">Florida</td>
+                                                        <td data-title="Target Effective Date">5/28/2020</td>
+                                                        <td data-title="Date Escalation Submitted">5/15/2020</td>
+                                                        <td data-title="Date Escalation Closed">5/17/2020</td>
+                                                        <td data-title="Target Premium">$13,000</td>
+                                                        <td data-title="Carrier(s) Submitted To">Nationwide</td>
+                                                        <td data-title="Successful (Y/N)">Y</td>
+                                                        <td data-title="Close Escalation" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a data-dismiss="modal" data-toggle="modal" data-target="#close-escalation" class="actionBlue"><i class="fa fa-times"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="odd">
+                                                        <td data-title="Submitter Name">Beth Freeman</td>
+                                                        <td data-title="Submitter Branch">Daytona (DAY)</td>
+                                                        <td data-title="Submitter Region">Florida</td>
+                                                        <td data-title="Target Effective Date">5/27/2020</td>
+                                                        <td data-title="Date Escalation Submitted">5/15/2020</td>
+                                                        <td data-title="Date Escalation Closed">5/16/2020</td>
+                                                        <td data-title="Target Premium">$23,000</td>
+                                                        <td data-title="Carrier(s) Submitted To">CNA</td>
+                                                        <td data-title="Successful (Y/N)">N</td>
+                                                        <td data-title="Close Escalation" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a data-dismiss="modal" data-toggle="modal" data-target="#close-escalation" class="actionBlue"><i class="fa fa-times"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="even">
+                                                        <td data-title="Submitter Name">Marrion Kennedy</td>
+                                                        <td data-title="Submitter Branch">Gainesville (GGA)</td>
+                                                        <td data-title="Submitter Region">Florida</td>
+                                                        <td data-title="Target Effective Date">5/27/2020</td>
+                                                        <td data-title="Date Escalation Submitted">5/15/2020</td>
+                                                        <td data-title="Date Escalation Closed">5/16/2020</td>
+                                                        <td data-title="Target Premium">$55,000</td>
+                                                        <td data-title="Carrier(s) Submitted To">Nationwide</td>
+                                                        <td data-title="Successful (Y/N)">Y</td>
+                                                        <td data-title="Close Escalation" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a data-dismiss="modal" data-toggle="modal" data-target="#view-escalation" class="actionGray"><i class="fa fa-eye"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="odd">
+                                                        <td data-title="Submitter Name">Dorothy Harper</td>
+                                                        <td data-title="Submitter Branch">Atlanta (ATL)</td>
+                                                        <td data-title="Submitter Region">Georgia</td>
+                                                        <td data-title="Target Effective Date">5/27/2020</td>
+                                                        <td data-title="Date Escalation Submitted">5/15/2020</td>
+                                                        <td data-title="Date Escalation Closed">---</td>
+                                                        <td data-title="Target Premium">$100,000</td>
+                                                        <td data-title="Carrier(s) Submitted To">CNA</td>
+                                                        <td data-title="Successful (Y/N)">Y</td>
+                                                        <td data-title="Close Escalation" class="actionBtn">
+                                                            <div class="btn-cell">
+                                                                <a data-dismiss="modal" data-toggle="modal" data-target="#close-escalation" class="actionBlue"><i class="fa fa-times"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <!-- Close Escalation Modal -->
+                                            <div id="close-escalation" class="modal fade" role="dialog">
+                                                <div class="modal-dialog">
+
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title">Close Escalation</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                    <label class="control-label" for="">Notes</label>
+                                                                    <textarea class="form-control" maxlength="4000" spellcheck="true" rows="11" cols="20" placeholder="Enter reason for closing this escalation" id=""></textarea>
+                                                                </div>
+
+                                                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                    <label class="control-label" for="radio-sample-0">Successful?</label>
+                                                                    <p>If successful, please include carrier name and if target premium was achieved.</p>
+                                                                    
+                                                                    <div class="radio">
+                                                                        <input type="radio" name="escalation-closed" value="Yes">
+                                                                        <label for="Yes">Yes</label>
+
+                                                                        <input type="radio" name="escalation-closed" value="No">
+                                                                        <label for="Yes">No</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button id="cancel" name="cancel" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
+                                                            <button id="save" name="save" class="btn btn-primary">Close Escalation</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                            <!-- Modal -->
 
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body location-tables">
+                                            <!-- View Closed Escalation Modal -->
+                                            <div id="view-escalation" class="modal fade" role="dialog">
+                                                <div class="modal-dialog">
 
-                                            <div class="carrier-tables">
-                                                <table class="table-hover table-striped table-condensed cf">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Submitter Name</th>
-                                                            <th>Submitter Role</th>
-                                                            <th>Submitter Branch</th>
-                                                            <th>Submitter Region</th>
-                                                            <th>Date Submitted</th>
-                                                            <th>Target Premium</th>
-                                                            <th>Describe Reason for Escalation</th>
-                                                            <th>Carrier(s) Submitted To</th>
-                                                            <th>Underwriter Company Name</th>
-                                                            <th>Underwriter Contact Name</th>
-                                                            <th>Underwriter Contact Phone Number</th>
-                                                            <th>Underwriter Contact Email Address</th>
-                                                            <th>Close Escalation</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td data-title="Submitter Name">Phillip Melnick</td>
-                                                            <td data-title="Submitter Role">Account Manager</td>
-                                                            <td data-title="Submitter Branch">Fort Lauderdale (FTL)</td>
-                                                            <td data-title="Submitter Region">Florida</td>
-                                                            <td data-title="Date Submitted">5/21/2020</td>
-                                                            <td data-title="Target Premium">$85,000</td>
-                                                            <td data-title="Describe Reason for Escalation">
-                                                                <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper vitae est tempus posuere. Pellentesque egestas nibh in vulputate cursus.">The reason for...</a> </td>
-                                                            <td data-title="Carrier(s) Submitted To">CNA, Nationwide</td>
-                                                            <td data-title="Underwriter Company Name">Summit &amp; Co.</td>
-                                                            <td data-title="Underwriter Contact Name">Monica Jansen</td>
-                                                            <td data-title="Underwriter Contact Phone Number">941-323-3023</td>
-                                                            <td data-title="Underwriter Contact Email Address"><a href="mailto:monica.jansen@summitco.com"><i class="fa fa-envelope"></i></a></td>
-                                                            <td data-title="Close Escalation" class="actionBtn">
-                                                                <div class="btn-cell">
-                                                                    <a data-dismiss="modal" data-toggle="modal" data-target="#close-escalation" class="actionBlue"><i class="fa fa-times"></i></a>
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title">View Escalation</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="row">
+                                                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                    <label class="control-label" for="">Notes</label>
+                                                                    <textarea readonly class="form-control" maxlength="4000" spellcheck="true" rows="3" cols="20" placeholder="" id="">Sample of a reason this escalation was closed with the option of reading only and not editing the reason.</textarea>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
 
-                                                        <tr>
-                                                            <td data-title="Submitter Name">John Young</td>
-                                                            <td data-title="Submitter Role">Account Executive</td>
-                                                            <td data-title="Submitter Branch">Sacramento (SAC)</td>
-                                                            <td data-title="Submitter Region">Western</td>
-                                                            <td data-title="Date Submitted">5/19/2020</td>
-                                                            <td data-title="Target Premium">$89,000</td>
-                                                            <td data-title="Describe Reason for Escalation">
-                                                                <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper vitae est tempus posuere. Pellentesque egestas nibh in vulputate cursus.">The reason for...</a> </td>
-                                                            <td data-title="Carrier(s) Submitted To">Hartford</td>
-                                                            <td data-title="Underwriter Company Name">Columbia Insurance</td>
-                                                            <td data-title="Underwriter Contact Name">Sarah Warren</td>
-                                                            <td data-title="Underwriter Contact Phone Number">916-294-3403</td>
-                                                            <td data-title="Underwriter Contact Email Address"><a href="mailto:sarah@columbiains.com"><i class="fa fa-envelope"></i></a></td>
-                                                            <td data-title="Close Escalation" class="actionBtn">
-                                                                <div class="btn-cell">
-                                                                    <a data-dismiss="modal" data-toggle="modal" data-target="#view-escalation" class="actionGreen"><i class="fa fa-check-circle"></i></a>
+                                                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                    <label class="control-label" for="radio-sample-0">Successful?</label>
+                                                                    <p>If successful, please include carrier name and if target premium was achieved.</p>
+                                                                    <div class="radio">
+                                                                        <input type="radio" name="" value="Yes" checked>
+                                                                        <label for="Yes">Yes</label>
+
+                                                                        <input type="radio" name="" value="No" disabled>
+                                                                        <label for="Yes">No</label>
+                                                                    </div>
                                                                 </div>
-                                                            </td>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td data-title="Submitter Name">Eric Hershberger</td>
-                                                            <td data-title="Submitter Role">Producer</td>
-                                                            <td data-title="Submitter Branch">San Diego (SD)</td>
-                                                            <td data-title="Submitter Region">Western</td>
-                                                            <td data-title="Date Submitted">5/19/2020</td>
-                                                            <td data-title="Target Premium">$81,000</td>
-                                                            <td data-title="Describe Reason for Escalation">
-                                                                <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper vitae est tempus posuere. Pellentesque egestas nibh in vulputate cursus.">The reason for...</a> </td>
-                                                            <td data-title="Carrier(s) Submitted To">Liberty Mutual, CNA</td>
-                                                            <td data-title="Underwriter Company Name">Florida Casualty</td>
-                                                            <td data-title="Underwriter Contact Name">Michael Bullock</td>
-                                                            <td data-title="Underwriter Contact Phone Number">619-439-4391</td>
-                                                            <td data-title="Underwriter Contact Email Address"><a href="mailto:michael@flcasualty.com"><i class="fa fa-envelope"></i></a></td>
-                                                            <td data-title="Close Escalation" class="actionBtn">
-                                                                <div class="btn-cell">
-                                                                    <a data-dismiss="modal" data-toggle="modal" data-target="#view-escalation" class="actionGreen"><i class="fa fa-check-circle"></i></a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td data-title="Submitter Name">Marie Jones</td>
-                                                            <td data-title="Submitter Role">Other: Specialist</td>
-                                                            <td data-title="Submitter Branch">Santa Barbara (SB)</td>
-                                                            <td data-title="Submitter Region">Western</td>
-                                                            <td data-title="Date Submitted">5/18/2020</td>
-                                                            <td data-title="Target Premium">$15,000</td>
-                                                            <td data-title="Describe Reason for Escalation">
-                                                                <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper vitae est tempus posuere. Pellentesque egestas nibh in vulputate cursus.">The reason for...</a> </td>
-                                                            <td data-title="Carrier(s) Submitted To">Travelers</td>
-                                                            <td data-title="Underwriter Company Name">Info Underwriting</td>
-                                                            <td data-title="Underwriter Contact Name">Zoe Hancock</td>
-                                                            <td data-title="Underwriter Contact Phone Number">805-234-3293</td>
-                                                            <td data-title="Underwriter Contact Email Address"><a href="mailto:zoe@infounderwriting.com"><i class="fa fa-envelope"></i></a></td>
-                                                            <td data-title="Close Escalation" class="actionBtn">
-                                                                <div class="btn-cell">
-                                                                    <a data-dismiss="modal" data-toggle="modal" data-target="#close-escalation" class="actionBlue"><i class="fa fa-times"></i></a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td data-title="Submitter Name">William Mahler</td>
-                                                            <td data-title="Submitter Role">Producer</td>
-                                                            <td data-title="Submitter Branch">West Palm Beach (WPB)</td>
-                                                            <td data-title="Submitter Region">Florida</td>
-                                                            <td data-title="Date Submitted">5/17/2020</td>
-                                                            <td data-title="Target Premium">$13,000</td>
-                                                            <td data-title="Describe Reason for Escalation">
-                                                                <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper vitae est tempus posuere. Pellentesque egestas nibh in vulputate cursus.">The reason for...</a> </td>
-                                                            <td data-title="Carrier(s) Submitted To">Nationwide</td>
-                                                            <td data-title="Underwriter Company Name">Key Castle Insurance</td>
-                                                            <td data-title="Underwriter Contact Name">Dominic Poole</td>
-                                                            <td data-title="Underwriter Contact Phone Number">561-403-4340</td>
-                                                            <td data-title="Underwriter Contact Email Address"><a href="mailto:dominic@keycastle.com"><i class="fa fa-envelope"></i></a></td>
-                                                            <td data-title="Close Escalation" class="actionBtn">
-                                                                <div class="btn-cell">
-                                                                    <a data-dismiss="modal" data-toggle="modal" data-target="#close-escalation" class="actionBlue"><i class="fa fa-times"></i></a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td data-title="Submitter Name">Beth Freeman</td>
-                                                            <td data-title="Submitter Role">Account Executive</td>
-                                                            <td data-title="Submitter Branch">Daytona (DAY)</td>
-                                                            <td data-title="Submitter Region">Florida</td>
-                                                            <td data-title="Date Submitted">5/16/2020</td>
-                                                            <td data-title="Target Premium">$23,000</td>
-                                                            <td data-title="Describe Reason for Escalation">
-                                                                <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper vitae est tempus posuere. Pellentesque egestas nibh in vulputate cursus.">The reason for...</a> </td>
-                                                            <td data-title="Carrier(s) Submitted To">CNA</td>
-                                                            <td data-title="Underwriter Company Name">Night Underwriting</td>
-                                                            <td data-title="Underwriter Contact Name">Jodie Swift</td>
-                                                            <td data-title="Underwriter Contact Phone Number">386-459-2392</td>
-                                                            <td data-title="Underwriter Contact Email Address"><a href="mailto:jodie@nightunder.com"><i class="fa fa-envelope"></i></a></td>
-                                                            <td data-title="Close Escalation" class="actionBtn">
-                                                                <div class="btn-cell">
-                                                                    <a data-dismiss="modal" data-toggle="modal" data-target="#close-escalation" class="actionBlue"><i class="fa fa-times"></i></a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td data-title="Submitter Name">Marrion Kennedy</td>
-                                                            <td data-title="Submitter Role">Account Executive</td>
-                                                            <td data-title="Submitter Branch">Gainesville (GGA)</td>
-                                                            <td data-title="Submitter Region">Florida</td>
-                                                            <td data-title="Date Submitted">5/16/2020</td>
-                                                            <td data-title="Target Premium">$55,000</td>
-                                                            <td data-title="Describe Reason for Escalation">
-                                                                <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper vitae est tempus posuere. Pellentesque egestas nibh in vulputate cursus.">The reason for...</a> </td>
-                                                            <td data-title="Carrier(s) Submitted To">Nationwide</td>
-                                                            <td data-title="Underwriter Company Name">Heritage Insurance</td>
-                                                            <td data-title="Underwriter Contact Name">Scarlet Noble</td>
-                                                            <td data-title="Underwriter Contact Phone Number">941-932-3029</td>
-                                                            <td data-title="Underwriter Contact Email Address"><a href="mailto:scarlet@heritage.com"><i class="fa fa-envelope"></i></a></td>
-                                                            <td data-title="Close Escalation" class="actionBtn">
-                                                                <div class="btn-cell">
-                                                                    <a data-dismiss="modal" data-toggle="modal" data-target="#view-escalation" class="actionGreen"><i class="fa fa-check-circle"></i></a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td data-title="Submitter Name">Dorothy Harper</td>
-                                                            <td data-title="Submitter Role">Account Manager</td>
-                                                            <td data-title="Submitter Branch">Atlanta (ATL)</td>
-                                                            <td data-title="Submitter Region">Georgia</td>
-                                                            <td data-title="Date Submitted">5/15/2020</td>
-                                                            <td data-title="Target Premium">$100,000</td>
-                                                            <td data-title="Describe Reason for Escalation">
-                                                                <a href="#" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper vitae est tempus posuere. Pellentesque egestas nibh in vulputate cursus.">The reason for...</a> </td>
-                                                            <td data-title="Carrier(s) Submitted To">CNA, Nationwide</td>
-                                                            <td data-title="Underwriter Company Name">Florida Casualty</td>
-                                                            <td data-title="Underwriter Contact Name">Ethan Thompson</td>
-                                                            <td data-title="Underwriter Contact Phone Number">678-553-4303</td>
-                                                            <td data-title="Underwriter Contact Email Address"><a href="mailto:ethan@flcasualty.com"><i class="fa fa-envelope"></i></a></td>
-                                                            <td data-title="Close Escalation" class="actionBtn">
-                                                                <div class="btn-cell">
-                                                                    <a data-dismiss="modal" data-toggle="modal" data-target="#close-escalation" class="actionBlue"><i class="fa fa-times"></i></a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-
-                                                <!-- Close Escalation Modal -->
-                                                <div id="close-escalation" class="modal fade" role="dialog">
-                                                    <div class="modal-dialog">
-
-                                                        <!-- Modal content-->
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                <h4 class="modal-title">Close Escalation</h4>
-                                                            </div>
-                                                            <div class="modal-body">
-
-                                                                <label class="control-label" for="">Notes</label>
-                                                                <textarea class="form-control" maxlength="4000" spellcheck="true" rows="11" cols="20" placeholder="Enter reason for closing this escalation" id=""></textarea>
-                                                            </div>
-
-                                                            <div class="modal-footer">
-                                                                <button id="cancel" name="cancel" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
-                                                                <button id="save" name="save" class="btn btn-primary">Close Escalation</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!-- Modal -->
-
-                                                <!-- View Closed Escalation Modal -->
-                                                <div id="view-escalation" class="modal fade" role="dialog">
-                                                    <div class="modal-dialog">
-
-                                                        <!-- Modal content-->
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                <h4 class="modal-title">View Escalation</h4>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <label class="control-label" for="">Notes</label>
-                                                                <textarea readonly class="form-control" maxlength="4000" spellcheck="true" rows="3" cols="20" id="">Sample of a reason this escalation was closed with the option of reading only and not editing the reason.</textarea>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Modal -->
-
-
                                             </div>
+                                            <!-- Modal -->
+
+
                                         </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <p class="count">Showing 1 to 8 out of 32 entries</p>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
-                                                <ul class="pagination">
-                                                    <li>
-                                                        <a href="#" aria-label="Previous">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <p class="count">Showing 1 to 8 out of 32 entries</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
+                                            <ul class="pagination">
+                                                <li>
+                                                    <a href="#" aria-label="Previous">
                                                             <span aria-hidden="true">&laquo;</span>
                                                         </a>
-                                                    </li>
-                                                    <li class="active"><a href="#">1</a>
-                                                    </li>
-                                                    <li><a href="#">2</a>
-                                                    </li>
-                                                    <li><a href="#">3</a>
-                                                    </li>
-                                                    <li><a href="#">4</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" aria-label="Next">
+                                                </li>
+                                                <li class="active"><a href="#">1</a>
+                                                </li>
+                                                <li><a href="#">2</a>
+                                                </li>
+                                                <li><a href="#">3</a>
+                                                </li>
+                                                <li><a href="#">4</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" aria-label="Next">
                                                             <span aria-hidden="true">&raquo;</span>
                                                         </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                         </div>
 
 
                         <div id="view-policy-expiration" class="tab-pane fade panel-body">
                             <form class="template">
                                 <div class="row">
-                                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-12 col-lg-3">
                                         <label class="control-label" for=""><span class="required">*</span>Template:</label>
                                         <div class="custom-group-form">
                                             <div class="input-group template-save">
@@ -655,7 +1000,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
                                         <label class="control-label" for="">Agency:</label>
                                         <select data-placeholder=" -- Select Agency --" multiple class="chosen-select-width" tabindex="16">
                                             <option selected>IOA (IOA)</option>
@@ -663,7 +1008,7 @@
                                         </select>
                                     </div>
 
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
                                         <label class="control-label" for="">Region:</label>
                                         <select data-placeholder="Select region(s)..." multiple class="chosen-select-width" tabindex="16">
                                             <option selected>Florida</option>
@@ -672,7 +1017,7 @@
                                         </select>
                                     </div>
 
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
                                         <label class="control-label" for="">Branch:</label>
                                         <select data-placeholder=" Select branche(s)..." multiple class="chosen-select-width" tabindex="16">
                                             <option selected>Birmingham</option>
@@ -683,7 +1028,7 @@
                                 </div>
 
                                 <div class="row spacer20">
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
                                         <label class="control-label" for="">Department:</label>
                                         <select data-placeholder=" Select department(s)..." multiple class="chosen-select-width" tabindex="16">
                                             <option selected>Benefits</option>
@@ -691,7 +1036,7 @@
                                         </select>
                                     </div>
 
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
                                         <label class="control-label" for="">Producer:</label>
                                         <select data-placeholder="Select producer(s)..." multiple class="chosen-select-width" tabindex="16">
                                             <option selected>Bernard Ware</option>
@@ -700,7 +1045,7 @@
                                         </select>
                                     </div>
 
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
                                         <label class="control-label" for="">Policy expires on or after:</label>
                                         <div class="input-group branch-add">
                                             <input type="text" class="form-control" name="date" id="expire1" value="04/1/2020" placeholder="">
@@ -708,7 +1053,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
                                         <label class="control-label" for="">Policy expires on or before:</label>
                                         <div class="input-group branch-add">
                                             <input type="text" class="form-control" name="date" id="expire2" value="" placeholder="">
@@ -718,7 +1063,7 @@
                                 </div>
 
                                 <div class="row spacer20">
-                                    <div class="form-group col-sm-12 col-md-3 col-lg-3">
+                                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
                                         <label class="control-label" for="">Account Manager:</label>
                                         <select data-placeholder="Select account manager(s)..." multiple class="chosen-select-width" tabindex="16">
                                             <option selected>Kurt Miller</option>
@@ -734,8 +1079,9 @@
                                     <button id="cancel" name="cancel" class="btn btn-default"> Clear Filters</button>
                                     <button id="save" name="save" class="pull-right btn btn-primary"> View Report</button>
                                 </div>
+                            </form>
 
-                                <div class="row table-template table-style2">
+                                <div class="table-template table-style2">
                                     <div class="col-md-12 col-lg-12">
                                         <div class="col-md-12 col-xs-12 title-header">
                                             <div class="pull-left head-drop">
@@ -750,7 +1096,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body location-tables">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body">
 
                                             <div class="carrier-tables">
                                                 <table class="table-hover table-striped table-condensed cf">
@@ -909,7 +1255,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </form> 
                         </div>
 
                     </div>
@@ -922,6 +1267,7 @@
         <p>Copyright &#169; 2020 Insurance Office of America. All rights reserved. Version 1.0</p>
     </div>
 
+    <script type="text/javascript" src="js/carrier-dropdown.js"></script>
     <script type="text/javascript" src="chosen_v1.6.2/docsupport/multi-select.js"></script>
     <script type="text/javascript" src="js/tooltip.js"></script>
 </body>

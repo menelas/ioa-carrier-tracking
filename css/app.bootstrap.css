@@ -48,3 +48,12 @@
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
     color: #fff;
 }
+
+.radio input[type=radio] {
+    margin-top: 1px;
+    margin-left: 0px;
+}
+
+.checkbox label, .radio label {
+    margin-right: 15px;
+}
