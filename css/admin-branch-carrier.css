@@ -1,10 +1,7 @@
-.title-header {
-    margin-bottom: 20px;
-}
-
 .btn-group {
     text-transform: uppercase;
 }
+
 .chosen-choices {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -58,11 +55,6 @@
     margin-top: 0px !important;
 }
 
-.btn-cell {
-    position: relative;
-    display: table;
-}
-
 .form-group {
     min-height: 65px;
 }
@@ -71,24 +63,8 @@
     color: #296198;
 }
 
-.alert-info {
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
 #add-additional-carrier-container .carrier-row:nth-child(even) .row{
     background-color: #f2f2f2;
-}
-
-.carrier-row {
-    margin-bottom: 20px;
-}
-
-.custom-group-form .add-carrier {
-    float: left;
-    width: 55%;
-    margin-right: 10px;
 }
 
 .icon-btn {
@@ -120,7 +96,39 @@
     margin-bottom: 30px;
 }
 
-.carrier-row hr {
-    margin-top: 0px;
-    margin-bottom: 15px !important;
+
+/* Table */
+
+.panel-body {
+    padding: 0px;
+}
+
+.table-template {
+    margin-top: 30px;
+}
+
+.plus-sign, .plus-sign:hover{
+   cursor: pointer;
+   color: #40c13f;
+   font-size: 14px;
+   margin-right: 5px;
+}
+
+.minus-sign, .minus-sign:hover{
+   cursor: pointer;
+   color: #e34647;
+   font-size: 14px;
+   margin-right: 5px;
+}
+
+.table-striped>tbody>tr.odd {
+    background-color: #fff;
+}
+
+.table-striped>tbody>tr.even {
+    background-color: #efefef;
+}
+
+.pagination {
+    margin-bottom: 30px !important;
 }

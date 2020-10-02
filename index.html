@@ -16,6 +16,9 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
+
+    <script type="text/javascript" src="js/automation/carrier-successful.js"></script>
+
     <!-- Chosen Multi Select -->
     <link rel="stylesheet" href="chosen_v1.6.2/docsupport/style.css">
     <link rel="stylesheet" href="chosen_v1.6.2/docsupport/prism.css">
@@ -74,51 +77,33 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-laptop fa-2x" aria-hidden="true"></i><span>Automation</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
 
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-submenu">
-                                <a class="menu-item" data-toggle="dropdown" tabindex="-1" href="#">
-                                Forms 
-                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                                <i class="fa fa-minus" aria-hidden="true"></i>
-                            </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="branch-post-meeting.html">Branch Rep Post Meeting</a>
-                                        <hr>
-                                    </li>
-                                    <li><a href="nb-escalation.html">New Business Escalation</a>
-                                        <hr>
-                                    </li>
-                                    <li><a href="automation.html">New Florida Work Comp</a>
-                                        <hr>
-                                    </li>
-                                    <li><a href="automation.html">Statement of Value</a>
-                                        <hr>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a class="menu-item" data-toggle="dropdown" tabindex="-1" href="#">
-                               Imports
-                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                                <i class="fa fa-minus" aria-hidden="true"></i>
-                            </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="automation.html">Fleet Schedule Comparison</a>
-                                        <hr>
-                                    </li>
-                                    <li><a href="automation.html">Policy Header</a>
-                                        <hr>
-                                    </li>
-                                    <li><a href="automation.html">Policy Mailing Address Update</a>
-                                        <hr>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <hr />
+                            <ul class="dropdown-menu">
+                                <li><a href="automation.html">Fleet Schedule Comparison</a>
+                                    <hr>
+                                </li>
+                                <li><a href="automation.html">Policy Header</a>
+                                    <hr>
+                                </li>
+                                <li><a href="automation.html">Statement of Value</a>
+                                    <hr>
+                                </li>
+                            </ul>
                     </li>
+                    <hr />
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-file-text fa-2x" aria-hidden="true"></i><span>Forms</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="branch-post-meeting.html">Branch Rep Post Meeting</a>
+                                    <hr>
+                                </li>
+                                <li><a href="nb-escalation.html">New Business Escalation</a>
+                                    <hr>
+                                </li>
+                            </ul>
+                    </li>
+                    <hr />
 
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
@@ -157,6 +142,9 @@
                                 <hr>
                             </li>
                             <li><a href="reports/branches.html">View Branches</a>
+                                <hr>
+                            </li>
+                            <li><a href="admin-branch-carrier.html">Edit Branch-Carrier Matrix</a>
                                 <hr>
                             </li>
                         </ul>
@@ -680,10 +668,11 @@
                                                         <th>Submitter Name</th>
                                                         <th>Submitter Branch</th>
                                                         <th>Submitter Region</th>
-                                                        <th>Target Effective Date</th>
+                                                        <th>Insured Name</th>
+                                                        <th>Policy Effective Date</th>
+                                                        <th>Total Account Target Premium</th>
                                                         <th>Date Escalation Submitted</th>
                                                         <th>Date Escalation Closed</th>
-                                                        <th>Target Premium</th>
                                                         <th>Carrier(s) Submitted To</th>
                                                         <th>Successful (Y/N)</th>
                                                         <th>Close Escalation</th>
@@ -691,16 +680,15 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr class="even">
-                                                        <td data-title="Submitter Name">
-                                                            <i class="fa fa-plus-circle plus-sign" aria-hidden="true" data-car-class="car-class-1"></i><i style="display: none" class="fa fa-minus-circle minus-sign" aria-hidden="true" data-car-class="car-class-1"></i>Phillip
-                                                            Mel
+                                                        <td data-title="Submitter Name"><i class="fa fa-plus-circle plus-sign" aria-hidden="true" data-car-class="car-class-1"></i><i style="display: none" class="fa fa-minus-circle minus-sign" aria-hidden="true" data-car-class="car-class-1"></i>Phillip Mel
                                                         </td>
                                                         <td data-title="Submitter Branch">Fort Lauderdale (FTL)</td>
                                                         <td data-title="Submitter Region">Florida</td>
-                                                        <td data-title="Target Effective Date">5/29/2020</td>
+                                                        <td data-title="Insured Name">Judith Wall</td>
+                                                        <td data-title="Policy Effective Date">5/29/2020</td>
+                                                        <td data-title="Total Account Target Premium">$85,000</td>
                                                         <td data-title="Date Escalation Submitted">5/21/2020</td>
                                                         <td data-title="Date Escalation Closed">---</td>
-                                                        <td data-title="Target Premium">$85,000</td>
                                                         <td data-title="Carrier(s) Submitted To">CNA</td>
                                                         <td data-title="Successful (Y/N)">---</td>
                                                         <td data-title="Close Escalation" class="actionBtn">
@@ -718,6 +706,7 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
+                                                        <td></td>
                                                         <td data-title="Carrier(s) Submitted To">Travelers</td>
                                                         <td></td>
                                                         <td></td>
@@ -727,10 +716,11 @@
                                                         <td data-title="Submitter Name">Eric Hershberger</td>
                                                         <td data-title="Submitter Branch">San Diego (SD)</td>
                                                         <td data-title="Submitter Region">Western</td>
-                                                        <td data-title="Target Effective Date">5/28/2020</td>
+                                                        <td data-title="Insured Name">Merle Owens</td>
+                                                        <td data-title="Policy Effective Date">5/28/2020</td>
+                                                        <td data-title="Total Account Target Premium">$81,000</td>
                                                         <td data-title="Date Escalation Submitted">5/19/2020</td>
                                                         <td data-title="Date Escalation Closed">5/24/2020</td>
-                                                        <td data-title="Target Premium">$81,000</td>
                                                         <td data-title="Carrier(s) Submitted To">Liberty Mutual</td>
                                                         <td data-title="Successful (Y/N)">Y</td>
                                                         <td data-title="Close Escalation" class="actionBtn">
@@ -741,15 +731,14 @@
                                                     </tr>
 
                                                     <tr class="even">
-                                                        <td data-title="Submitter Name">
-                                                            <i class="fa fa-plus-circle plus-sign" aria-hidden="true" data-car-class="car-class-2"></i><i style="display: none" class="fa fa-minus-circle minus-sign" aria-hidden="true" data-car-class="car-class-2"></i>John Young
-                                                        </td>
+                                                        <td data-title="Submitter Name"><i class="fa fa-plus-circle plus-sign" aria-hidden="true" data-car-class="car-class-2"></i><i style="display: none" class="fa fa-minus-circle minus-sign" aria-hidden="true" data-car-class="car-class-2"></i>John Young</td>
                                                         <td data-title="Submitter Branch">Sacramento (SAC)</td>
                                                         <td data-title="Submitter Region">Western</td>
-                                                        <td data-title="Target Effective Date">5/27/2020</td>
+                                                        <td data-title="Insured Name">Lucille Zamora</td>
+                                                        <td data-title="Policy Effective Date">5/27/2020</td>
+                                                        <td data-title="Total Account Target Premium">$89,000</td>
                                                         <td data-title="Date Escalation Submitted">5/19/2020</td>
                                                         <td data-title="Date Escalation Closed">---</td>
-                                                        <td data-title="Target Premium">$89,000</td>
                                                         <td data-title="Carrier(s) Submitted To">Hartford</td>
                                                         <td data-title="Successful (Y/N)">---</td>
                                                         <td data-title="Close Escalation" class="actionBtn">
@@ -766,11 +755,13 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
+                                                        <td></td>
                                                         <td data-title="Carrier(s) Submitted To">Nationwide</td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
                                                     <tr class="even car-class-2" style="display: none">
+                                                        <td></td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
@@ -787,10 +778,11 @@
                                                         <td data-title="Submitter Name">Marie Jones</td>
                                                         <td data-title="Submitter Branch">Santa Barbara (SB)</td>
                                                         <td data-title="Submitter Region">Western</td>
-                                                        <td data-title="Target Effective Date">5/29/2020</td>
+                                                        <td data-title="Insured Name">Moshe Simmons</td>
+                                                        <td data-title="Policy Effective Date">5/29/2020</td>
+                                                        <td data-title="Total Account Target Premium">$15,000</td>
                                                         <td data-title="Date Escalation Submitted">5/18/2020</td>
                                                         <td data-title="Date Escalation Closed">---</td>
-                                                        <td data-title="Target Premium">$15,000</td>
                                                         <td data-title="Carrier(s) Submitted To">Travelers</td>
                                                         <td data-title="Successful (Y/N)">---</td>
                                                         <td data-title="Close Escalation" class="actionBtn">
@@ -804,10 +796,11 @@
                                                         <td data-title="Submitter Name">William Mahler</td>
                                                         <td data-title="Submitter Branch">West Palm Beach (WPB)</td>
                                                         <td data-title="Submitter Region">Florida</td>
-                                                        <td data-title="Target Effective Date">5/28/2020</td>
+                                                        <td data-title="Insured Name">Jordan Odonnell</td>
+                                                        <td data-title="Policy Effective Date">5/28/2020</td>
+                                                        <td data-title="Total Account Target Premium">$13,000</td>
                                                         <td data-title="Date Escalation Submitted">5/15/2020</td>
                                                         <td data-title="Date Escalation Closed">5/17/2020</td>
-                                                        <td data-title="Target Premium">$13,000</td>
                                                         <td data-title="Carrier(s) Submitted To">Nationwide</td>
                                                         <td data-title="Successful (Y/N)">Y</td>
                                                         <td data-title="Close Escalation" class="actionBtn">
@@ -821,10 +814,11 @@
                                                         <td data-title="Submitter Name">Beth Freeman</td>
                                                         <td data-title="Submitter Branch">Daytona (DAY)</td>
                                                         <td data-title="Submitter Region">Florida</td>
-                                                        <td data-title="Target Effective Date">5/27/2020</td>
+                                                        <td data-title="Insured Name">Miguel Harmon</td>
+                                                        <td data-title="Policy Effective Date">5/27/2020</td>
+                                                        <td data-title="Total Account Target Premium">$23,000</td>
                                                         <td data-title="Date Escalation Submitted">5/15/2020</td>
                                                         <td data-title="Date Escalation Closed">5/16/2020</td>
-                                                        <td data-title="Target Premium">$23,000</td>
                                                         <td data-title="Carrier(s) Submitted To">CNA</td>
                                                         <td data-title="Successful (Y/N)">N</td>
                                                         <td data-title="Close Escalation" class="actionBtn">
@@ -838,10 +832,11 @@
                                                         <td data-title="Submitter Name">Marrion Kennedy</td>
                                                         <td data-title="Submitter Branch">Gainesville (GGA)</td>
                                                         <td data-title="Submitter Region">Florida</td>
-                                                        <td data-title="Target Effective Date">5/27/2020</td>
+                                                        <td data-title="Insured Name">Jorge Wade</td>
+                                                        <td data-title="Policy Effective Date">5/27/2020</td>
+                                                        <td data-title="Total Account Target Premium">$55,000</td>
                                                         <td data-title="Date Escalation Submitted">5/15/2020</td>
                                                         <td data-title="Date Escalation Closed">5/16/2020</td>
-                                                        <td data-title="Target Premium">$55,000</td>
                                                         <td data-title="Carrier(s) Submitted To">Nationwide</td>
                                                         <td data-title="Successful (Y/N)">Y</td>
                                                         <td data-title="Close Escalation" class="actionBtn">
@@ -855,10 +850,11 @@
                                                         <td data-title="Submitter Name">Dorothy Harper</td>
                                                         <td data-title="Submitter Branch">Atlanta (ATL)</td>
                                                         <td data-title="Submitter Region">Georgia</td>
-                                                        <td data-title="Target Effective Date">5/27/2020</td>
+                                                        <td data-title="Insured Name">Lisa Martin</td>
+                                                        <td data-title="Policy Effective Date">5/27/2020</td>
+                                                        <td data-title="Total Account Target Premium">$100,000</td>
                                                         <td data-title="Date Escalation Submitted">5/15/2020</td>
                                                         <td data-title="Date Escalation Closed">---</td>
-                                                        <td data-title="Target Premium">$100,000</td>
                                                         <td data-title="Carrier(s) Submitted To">CNA</td>
                                                         <td data-title="Successful (Y/N)">Y</td>
                                                         <td data-title="Close Escalation" class="actionBtn">
@@ -872,7 +868,7 @@
 
                                             <!-- Close Escalation Modal -->
                                             <div id="close-escalation" class="modal fade" role="dialog">
-                                                <div class="modal-dialog">
+                                                <div class="modal-dialog modal-lg">
 
                                                     <!-- Modal content-->
                                                     <div class="modal-content">
@@ -883,31 +879,92 @@
                                                         <div class="modal-body">
 
                                                             <div class="row">
-                                                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                                    <label class="control-label" for="">Notes</label>
-                                                                    <textarea class="form-control" maxlength="4000" spellcheck="true" rows="11" cols="20" placeholder="Enter reason for closing this escalation" id=""></textarea>
+
+                                                                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                                                    <label class="control-label" for="">IOA Sales Leader:</label>
+                                                                    <br />Joseph Winter
                                                                 </div>
 
-                                                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                                    <label class="control-label" for="radio-sample-0">Successful?</label>
-                                                                    <p>If successful, please include carrier name and if target premium was achieved.</p>
+                                                                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                                                    <label class="control-label" for="">Carrier:</label>
+                                                                    <br />CNA
+                                                                </div>
+
+                                                                <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                                    <label class="requiredfield control-label" for="radio-sample-0">Successful?</label>
+                                                                    <p>If successful, please state the final premium amount.</p>
                                                                     
                                                                     <div class="radio">
-                                                                        <input type="radio" name="escalation-closed" value="Yes">
+                                                                        <input id="carrierSuccessful" type="radio" name="escalation-closed" value="Yes">
                                                                         <label for="Yes">Yes</label>
 
                                                                         <input type="radio" name="escalation-closed" value="No">
                                                                         <label for="Yes">No</label>
                                                                     </div>
                                                                 </div>
+
+                                                                <div class="form-group col-xs-12 col-md-3 col-lg-3 targetPremium" style="display: none;">
+                                                                    <label class="requiredfield control-label" for="">Final Premium Amount:</label>
+                                                                    <input id="" name="" value="" class="form-control input-md" required="" type="text">
+                                                                </div>
+
+                                                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                    <label class="requiredfield control-label" for="">Notes</label>
+                                                                    <textarea class="form-control" maxlength="4000" spellcheck="true" rows="4" cols="5" placeholder="Enter reason for closing this escalation. If terms/coverages could not be agreed upon, please provide reason." id=""></textarea>
+                                                                </div>
+
                                                             </div>
 
+                                                            <div class="row">
 
+                                                                <hr />
+
+                                                                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                                                    <label class="control-label" for="">IOA Sales Leader:</label>
+                                                                    <br />Harvey Patrick
+                                                                </div>
+
+                                                                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                                                    <label class="control-label" for="">Carrier:</label>
+                                                                    <br />Liberty Mutual
+                                                                </div>
+
+                                                                <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                                    <label class="requiredfield control-label" for="radio-sample-0">Successful?</label>
+                                                                    <p>If successful, please state the final premium amount.</p>
+                                                                    
+                                                                    <div class="radio">
+                                                                        <input type="radio" name="escalation-closed2" value="Yes">
+                                                                        <label for="Yes">Yes</label>
+
+                                                                        <input type="radio" name="escalation-closed2" value="No">
+                                                                        <label for="Yes">No</label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-group col-xs-12 col-md-3 col-lg-3 targetPremium" style="display: none;">
+                                                                    <label class="requiredfield control-label" for="">Final Premium Amount:</label>
+                                                                    <input id="" name="" value="" class="form-control input-md" required="" type="text">
+                                                                </div>
+
+                                                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                    <label class="requiredfield control-label" for="">Notes</label>
+                                                                    <textarea class="form-control" maxlength="4000" spellcheck="true" rows="4" cols="5" placeholder="Enter reason for closing this escalation. If terms/coverages could not be agreed upon, please provide reason." id=""></textarea>
+                                                                </div>
+                                                            </div>
                                                         </div>
 
                                                         <div class="modal-footer">
                                                             <button id="cancel" name="cancel" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
-                                                            <button id="save" name="save" class="btn btn-primary">Close Escalation</button>
+
+                                                            <div class="dropdown">
+                                                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Save/Close Escalation
+                                                              <span class="caret"></span></button>
+                                                              <ul class="dropdown-menu pull-right">
+                                                                <li><a href="#">Save</a></li>
+                                                                <li><a href="#">Close Escalation</a></li>
+                                                              </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -916,7 +973,7 @@
 
                                             <!-- View Closed Escalation Modal -->
                                             <div id="view-escalation" class="modal fade" role="dialog">
-                                                <div class="modal-dialog">
+                                                <div class="modal-dialog modal-lg">
 
                                                     <!-- Modal content-->
                                                     <div class="modal-content">
@@ -925,21 +982,53 @@
                                                             <h4 class="modal-title">View Escalation</h4>
                                                         </div>
                                                         <div class="modal-body">
+
                                                             <div class="row">
-                                                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                                    <label class="control-label" for="">Notes</label>
-                                                                    <textarea readonly class="form-control" maxlength="4000" spellcheck="true" rows="3" cols="20" placeholder="" id="">Sample of a reason this escalation was closed with the option of reading only and not editing the reason.</textarea>
-                                                                </div>
+                                                                <div class="table-style2">
+                                                                    <div class="col-md-12 col-lg-12">
+                                                                        <div class="col-md-12 col-xs-12 title-header">
+                                                                            <div class="pull-left head-drop">
+                                                                                <div class="btn-group">
+                                                                                    Escalations
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
 
-                                                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                                    <label class="control-label" for="radio-sample-0">Successful?</label>
-                                                                    <p>If successful, please include carrier name and if target premium was achieved.</p>
-                                                                    <div class="radio">
-                                                                        <input type="radio" name="" value="Yes" checked>
-                                                                        <label for="Yes">Yes</label>
+                                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body">
 
-                                                                        <input type="radio" name="" value="No" disabled>
-                                                                        <label for="Yes">No</label>
+                                                                            <div class="carrier-tables">
+                                                                                <table class="table-hover table-striped table-condensed cf">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>Carrier(s)</th>
+                                                                                            <th>IOA Sales Leader</th>
+                                                                                            <th>Successful</th>
+                                                                                            <th>Notes</th>
+                                                                                            <th>Final Premium Amount(s)</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td data-title="Carrier(s)">CNA</td>
+                                                                                            <td data-title="IOA Sales Leader">Joseph Winter</td>
+                                                                                            <td data-title="Successful">Yes</td>
+                                                                                            <td data-title="Notes">Sample of a reason this escalation was closed with the option of reading only and not editing the reason.</td>
+                                                                                            <td data-title="Final Premium Amount(s)">$125,000</td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td data-title="Carrier(s)">Hartford</td>
+                                                                                            <td data-title="IOA Sales Leder">Harvey Patrick</td>
+                                                                                            <td data-title="Successful">Yes</td>
+                                                                                            <td data-title="Notes">Sample of a reason this escalation was closed with the option of reading only and not editing the reason.</td>
+                                                                                            <td data-title="Final Premium Amount(s)">$187,000</td>
+                                                                                        </tr>
+
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -948,7 +1037,6 @@
                                                 </div>
                                             </div>
                                             <!-- Modal -->
-
 
                                         </div>
                                     </div>

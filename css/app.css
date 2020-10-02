@@ -384,7 +384,7 @@ a, a:active, a:hover, a:focus, a:visited  {
 }
 
 .title-header .visit-btn{
-    margin: 0 5px 0 0;
+    margin: 2px 5px 0 0;
 }
 
 .title-header2 .btn-group {
@@ -907,7 +907,7 @@ tr {
 }
 
 .btn-group {
-    text-transform: normal;
+    text-transform: uppercase;
 }
 .btn-group.open .dropdown-toggle {
     box-shadow: none;
@@ -942,6 +942,8 @@ tr {
 }
 
 .carrier-tracking .table-striped > tbody > tr:nth-of-type(even) {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
     border-left: none;
 }
 
@@ -1217,9 +1219,6 @@ td a {
     background: #8e8e8e;
 }
 
-.btn-group {
-    text-transform: inherit;
-}
 .btn-cell {
     display: table-cell;
     padding-left: 2px;
@@ -1606,6 +1605,12 @@ select.form-control {
 }
 .margin-top15{
     margin-top: 15px;
+}
+.margin-top10{
+    margin-top: 10px;
+}
+.margin-top5{
+    margin-top: 5px;
 }
 .margin-right15{
     margin-right: 15px;
