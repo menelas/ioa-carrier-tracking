@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/trucking-client-dashboard.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <!-- Use default app date picker when programming date picker and not this demo version-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <script type="text/javascript" src="js/date-picker.js"></script>
+
+    <script type="text/javascript" src="js/dropzone.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>
+    <link rel="stylesheet" href="css/dropzone.css">
+
+</head>
+
+<body class="carrier-pad carrier-tracking">
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-top">
+        <div class="container-fluid menu-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".sidebar1" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="trucking-client-dashboard.html"><img src="img/logo.png" width="150" alt="Insurance Office of America">
+            </a>
+                <h4 class="company-title">Insurance Office of America</h4>
+                <h5>Operations</h5>
+            </div>
+            <div id="navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chris Robertson <i class="fa fa-cog" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow-up"></div>
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content">
+        <div class="row sidebar-container">
+            <div id="sidebar" class="col-sm-3 sidebar1 sidebar navbar-collapse collapse">
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="trucking-client-dashboard.html"><i class="fa fa-tachometer fa-2x" aria-hidden="true"></i><span>Dashboard</span></a>
+                        <hr />
+                    </li>
+                </ul>
+                <ul class="nav nav-sidebar nav-sidebar2">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog fa-3x" aria-hidden="true"></i><span> Chris Robertson</span>
+                     <i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Edit Profile</a>
+                            </li>
+                            <li><a href="#">Help</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+            <!-- Body -->
+            <div class="body-container">
+
+                <div class="col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-header margin-bottom20">
+                        <div class="pull-left head-drop">
+                            <div class="btn-group">
+                                Run Report for ABC Trucking, Inc.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="form-group col-sm-12 col-md-6 col-lg-3">
+                            <label class="requiredfield control-label" for="">Report Start Date:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="date" id="expire1" value="" placeholder="">
+                                    <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                </div>
+                        </div>
+
+                        <div class="form-group col-sm-12 col-md-6 col-lg-3">
+                            <label class="requiredfield control-label" for="">Report End Date:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="date" id="expire1" value="" placeholder="">
+                                    <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="alert-info" role="alert">
+                                <p>Vehicles Added, Deleted or Amended during the Reporting Period must be reproted on the MONTHLY REPORT - VEHICLE CHANGES form. FAILURE TO REPORT ADDED VEHICLES MAY RESULT IN DENIAL OF COVERAGE<p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-template row table-style2">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="col-md-12 col-xs-12 title-header">
+                                <div class="pull-left head-drop">
+                                    <div class="btn-group">
+                                        Enter exposure for this rating period
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-body location-tables">
+
+                                <div class="carrier-tables">
+                                    <table class="table-hover table-striped table-condensed cf">
+                                        <thead>
+                                            <tr>
+                                                <th>Coverage</th>
+                                                <th>Reporting Base</th>
+                                                <th>Exposure for the Period</th>
+                                                <th>Monthly Rate</th>
+                                                <th>=Premium</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Coverage">Liability</td>
+                                                <td data-title="Reporting Base">Units</td>
+                                                <td data-title="Exposure for the Period">
+                                                    <label class="control-label sr-only" for="">Exposure for the Period</label>
+                                                    <input id="" name="" value="115" class="form-control input-md" required="" type="text">
+                                                </td>
+                                                <td data-title="Monthly Rate">$450.864<br /><strong>Minimum</strong></td>
+                                                <td data-title="=Premium">$51,849.25<br />$7,000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td data-title="Coverage">Physical Damage</td>
+                                                <td data-title="Reporting Base">Total Insured Value</td>
+                                                <td data-title="Exposure for the Period">
+                                                    <label class="control-label sr-only" for="">Exposure for the Period</label>
+                                                    <input id="" name="" value="1,689,245" class="form-control input-md" required="" type="text">
+                                                </td>
+                                                <td data-title="Monthly Rate">0.2800%</td>
+                                                <td data-title="=Premium">$4,729.89</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td data-title="Coverage">Cargo</td>
+                                                <td data-title="Reporting Base">Units</td>
+                                                <td data-title="Exposure for the Period">
+                                                    <label class="control-label sr-only" for="">Exposure for the Period</label>
+                                                    <input id="" name="" value="" class="form-control input-md" required="" type="text">
+                                                </td>
+                                                <td data-title="Monthly Rate">$1.450</td>
+                                                <td></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td data-title="Coverage">Non Trucking Liability</td>
+                                                <td data-title="Reporting Base">Owner/Operator Count</td>
+                                                <td data-title="Exposure for the Period">
+                                                    <label class="control-label sr-only" for="">Exposure for the Period</label>
+                                                    <input id="" name="" value="" class="form-control input-md" required="" type="text">
+                                                </td>
+                                                <td data-title="Monthly Rate">$0.2800</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="total-premium-due-container pull-right">
+                                <div class="total-premium">- Total Premium Due - </div>
+                                <div class="premium-number">$56,579.14</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-md-9 col-lg-9">
+                            <label class="requiredfield control-label" for="">Upload Equipment Schedule:</label>
+                                <form class="dropzone needsclick" id="demo-upload" action="/upload">
+                                    <div class="dz-message needsclick">Drop file(s) here or click to upload.</div>
+                                </form>
+                        </div>
+
+                        <div class="form-group col-xs-12 col-md-9 col-lg-3 spacer60">
+                            <button id="save" name="save" class="pull-right btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#generate-invoice" > Submit Report and Generate Invoice</button>
+                        </div>
+
+                        <!-- Generate Invoice Modal -->
+                        <div id="generate-invoice" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Your Invoice</h4>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                                <p>Please download the invoice for your records, or if you would prefer to mail a check to our office. You can continue on to the payment site to make payment direct.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row spacer30">
+                                            <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                                                <label class="control-label">Download Invoice:</label>
+                                                <button id="" name="" class="btn btn-primary" href="#"><i class="fa fa-file-pdf-o"></i> Download Invoice</button>
+                                            </div>
+
+                                            <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                                                <label class="control-label">Mail Paper Check:</label>
+                                                <button id="" name="" class="btn btn-primary" href="#"><i class="fa fa-print"></i> Print Invoice</button>
+                                            </div>
+
+                                            <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                                                <label class="control-label">Make a Payment Now:</label>
+                                                <button id="" name="" class="btn btn-primary" href="#"><i class="fa fa-lock"></i> Continue to Payment Site</button>
+                                                <small>Connect to SecureFee Site</small>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center copyright">
+        <p>Copyright &#169; 2020 Insurance Office of America. All rights reserved. Version 1.0</p>
+    </div>
+</body>
+
+</html>

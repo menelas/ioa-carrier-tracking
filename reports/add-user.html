@@ -101,6 +101,19 @@
                     <hr />
 
                     <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-truck fa-flip-horizontal fa-2x" aria-hidden="true"></i><span> Transportation</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../add-trucking-client.html">Add Client</a>
+                                <hr>
+                            </li>
+                            <li><a href="../trucking-client-search.html">Client Search</a>
+                                <hr>
+                        </ul>
+                        <hr />
+                    </li>
+                    <hr />
+
+                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i><span> Reports</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="../index.html">Branch Rep Post Meeting</a>
@@ -124,7 +137,7 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-gears fa-2x" aria-hidden="true"></i><span> Administration</span><i class="fa fa-plus fa-2x location" aria-hidden="true"></i><i class="fa fa-minus fa-2x location" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="add-user.html">Users</a>
+                            <li><a href="user-search.html">Users</a>
                                 <hr>
                             </li>
                             <li><a href="../reports/add-template.html">Templates</a>
@@ -188,12 +201,12 @@
                     <div class="form-group">
                         <label class="requiredfield control-label" for="">Role Assignment:</label>
                         <select multiple class="chosen-select-width" data-placeholder=" -- Select Role(s) --" >
-                            <option>Operations User</option>
+                            <option>Branch Rep</option>
                             <option>Branch Admin</option>
                             <option>Report Generator</option>
                             <option>Report Generator Admin</option>
-                            <option>NB Escalation User</option>
-                            <option>NB Escalation Form User</option>
+                            <option>New Business Escalation User</option>
+                            <option>New Business Escalation Form User</option>
                         </select>
                     </div>
 
@@ -215,15 +228,34 @@
                             <div role="tabpanel" class="tab-pane active" id="user-types">
                                 <ul class="list-group">
                                     <li class="list-group-item">
-                                        <h4 class="list-group-item-heading">Operations User</h4>
+                                        <h4 class="list-group-item-heading">Branch Rep</h4>
                                         <p class="list-group-item-text">
-                                            Allows access to the policy expiration and data audit reports.
+                                           Lorem ipsum
+                                        </p>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-item-heading">Branch Rep Admin</h4>
+                                        <p class="list-group-item-text">
+                                            Allows user to add, edit and delete branches.
                                         </p>
                                     </li>
                                     <li class="list-group-item">
-                                        <h4 class="list-group-item-heading">Branch Admin</h4>
+                                        <h4 class="list-group-item-heading">New Business Escalation</h4>
                                         <p class="list-group-item-text">
-                                            Allows user to add, edit and delete branches.
+                                            Allows users to access the form and generate new business reports.
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-item-heading">New Business Escalation Admin</h4>
+                                        <p class="list-group-item-text">
+                                            Allows users to access the form, generate new business reports, edit and close all escalation requests, add/edit branches, and add/edit producer users.
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4 class="list-group-item-heading">New Business Escalation Form User</h4>
+                                        <p class="list-group-item-text">
+                                            Allows users to access the new business form only.
                                         </p>
                                     </li>
                                     <li class="list-group-item">
@@ -236,24 +268,6 @@
                                         <h4 class="list-group-item-heading">Report Generator Admin</h4>
                                         <p class="list-group-item-text">
                                             Allows users to manage users, create templates and generate reports.
-                                        </p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <h4 class="list-group-item-heading">NB Escalation Admin</h4>
-                                        <p class="list-group-item-text">
-                                            Allows users to access the form, generate new business reports, edit and close all escalation requests, add/edit branches, and add/edit producer users.
-                                        </p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <h4 class="list-group-item-heading">NB Escalation User</h4>
-                                        <p class="list-group-item-text">
-                                            Allows users to access the form and generate new business reports.
-                                        </p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <h4 class="list-group-item-heading">NB Escalation Form User</h4>
-                                        <p class="list-group-item-text">
-                                            Allows users to access the new business form only.
                                         </p>
                                     </li>
                                 </ul>

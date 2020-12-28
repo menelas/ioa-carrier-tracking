@@ -1,3 +1,6 @@
+## 2020-10-28
+• Added new trucking menu and pages
+
 ## 2020-10-5
 • Updated add user screen and menus
 
