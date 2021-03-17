@@ -1,3 +1,6 @@
+## 2021-3-17
+• Added Help Request modal
+
 ## 2020-10-28
 • Added new trucking menu and pages
 

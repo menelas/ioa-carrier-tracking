@@ -184,6 +184,12 @@
                                 Branch Rep Round Table Post Meeting Form
                             </div>
                         </div>
+
+                        <div class="pull-right">
+                            <div class="btn-group">
+                                <button id="" name="e" data-toggle="modal" data-target="#help-request" class="btn visit-btn pull-right"> <i class="fa fa-question-circle" aria-hidden="true"></i> Questions</button>
+                            </div>
+                        </div>
                     </div>
                     <form>
                         <div class="row">
@@ -392,6 +398,49 @@
                         </div>
                     </form>
                 </div>
+
+                <!-- Help Request Modal -->
+                <div id="help-request" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Submit Help Request</h4>
+                            </div>
+                            <div class="modal-body">
+                                
+                                <div class="row">
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                        <label class="control-label" for="">Name:</label>
+                                        <br /> Chris Robertson
+                                    </div>
+
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                                        <label class="requiredfield control-label" for="">Form in Question</label>
+                                        <select data-placeholder="-- Select Form --" class="chosen-select-width" tabindex="">
+                                            <option selected value="">Branch Rep Post Meeting</option>
+                                            <option value="">New Business Escalation</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <label class="requiredfield control-label" for="">Message</label>
+                                        <textarea class="form-control" maxlength="4000" spellcheck="true" rows="4" cols="5" placeholder="Enter text here" id=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button id="cancel" name="cancel" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
+                                <button class="btn btn-primary" type="button" data-toggle="dropdown">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+
             </div>
         </div>
     </div>
