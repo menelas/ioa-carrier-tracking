@@ -125,3 +125,41 @@ i.fa.fa-envelope {
 .pagination {
     margin-bottom: 30px !important;
 }
+
+/* Help Request Reply Modal */
+
+.modal-content .panel.panel-default {
+    border: none;
+}
+
+.modal-content .panel-default>.panel-heading {
+    color: #fff;
+    background-color: #4a96ca;
+    border-color: #4a96ca;
+    padding: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.modal-content .panel-body {
+    margin-top: -2px;
+    border-radius: 0px;
+}
+
+.panel-body .panel-box {
+    padding: 15px 10px;
+    background-color: #f4f4f4;
+}
+
+.panel-body .panel-box:nth-child(2n+2) {
+    background-color: #fff;
+}
+
+.panel-box h5 {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.modal-content .panel .panel-title {
+    padding: 15px;
+}
